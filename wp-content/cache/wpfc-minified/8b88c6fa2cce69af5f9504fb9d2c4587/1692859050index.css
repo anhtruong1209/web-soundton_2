@@ -1,0 +1,1318 @@
+@charset "utf-8";
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+margin: 0;
+padding: 0;
+border: 0;
+list-style: none;
+line-height: 1;
+display: block;
+position: relative;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+content: ".";
+display: block;
+clear: both;
+visibility: hidden;
+line-height: 0;
+height: 0;
+}
+#cssmenu #menu-button {
+display: none;
+}
+#cssmenu {
+clear: both;
+z-index: 99999;
+margin-top: 12px;
+float: left
+}
+#cssmenu > ul > li {
+float: left;
+}
+#cssmenu.align-center > ul {
+font-size: 0;
+text-align: center;
+}
+#cssmenu.align-center > ul > li {
+display: inline-block;
+float: none;
+}
+#cssmenu.align-center ul ul {
+text-align: left;
+}
+#cssmenu.align-right > ul > li {
+float: right;
+}
+#cssmenu > ul > li > a {
+padding: 13px;
+font-size: 12px;
+letter-spacing: 1px;
+text-decoration: none;
+color: #616161;
+font-weight: 700;
+}
+#cssmenu > ul > li:hover > a {
+}
+#cssmenu > ul > li.has-sub:hover > a:before {
+top: 23px;
+height: 0;
+}
+#cssmenu ul ul {
+position: absolute;
+left: -9999px;
+}
+#cssmenu.align-right ul ul {
+text-align: right;
+}
+#cssmenu ul ul li {
+height: 0;
+-webkit-transition: all .25s ease;
+-moz-transition: all .25s ease;
+-ms-transition: all .25s ease;
+-o-transition: all .25s ease;
+transition: all .25s ease;
+}
+#cssmenu li:hover > ul {
+left: auto;
+}
+#cssmenu.align-right li:hover > ul {
+left: auto;
+right: 0;
+}
+#cssmenu li:hover > ul > li {
+height: 35px;
+}
+#cssmenu ul ul ul {
+margin-left: 100%;
+top: 0;
+}
+#cssmenu.align-right ul ul ul {
+margin-left: 0;
+margin-right: 100%;
+}
+#cssmenu ul ul li a {
+border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+padding: 11px 15px;
+min-width: 220px;
+font-size: 12px;
+text-decoration: none;
+color: #333;
+font-weight: 400;
+background: #fff;
+}
+#cssmenu ul ul li:last-child > a,
+#cssmenu ul ul li.last-item > a {
+border-bottom: 0;
+}
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li a:hover {
+background: #F3F3F3;
+}
+#cssmenu ul ul li.has-sub > a:after {
+position: absolute;
+top: 16px;
+right: 11px;
+width: 8px;
+height: 2px;
+display: block;
+background: #fff;
+content: '';
+}
+#cssmenu.align-right ul ul li.has-sub > a:after {
+right: auto;
+left: 11px;
+}
+#cssmenu ul ul li.has-sub > a:before {
+position: absolute;
+top: 13px;
+right: 14px;
+display: block;
+width: 2px;
+height: 8px;
+background: #fff;
+content: '';
+-webkit-transition: all .25s ease;
+-moz-transition: all .25s ease;
+-ms-transition: all .25s ease;
+-o-transition: all .25s ease;
+transition: all .25s ease;
+}
+#cssmenu.align-right ul ul li.has-sub > a:before {
+right: auto;
+left: 14px;
+}
+#cssmenu ul ul > li.has-sub:hover > a:before {
+top: 17px;
+height: 0;
+}
+@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+#cssmenu {
+width: 100%;
+background: #E47626;
+margin-bottom: 10px;
+}
+#cssmenu ul {
+width: 100%;
+display: none;
+}
+#cssmenu.align-center > ul {
+text-align: left;
+}
+#cssmenu ul li {
+width: 100%;
+border-top: 1px solid rgba(120, 120, 120, 0.2);
+}
+#cssmenu ul ul li,
+#cssmenu li:hover > ul > li {
+height: auto;
+}
+#cssmenu > ul > li > a{
+color:#fff;
+}
+#cssmenu ul li a,
+#cssmenu ul ul li a {
+width: 100%;
+border-bottom: 0;
+}
+#cssmenu > ul > li {
+float: none;
+}
+#cssmenu ul ul li a {
+padding-left: 25px;
+}
+#cssmenu ul ul ul li a {
+padding-left: 35px;
+}
+#cssmenu ul ul li a {
+color: #fff;
+background: none;
+}
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li.active > a {
+color: #ffffff;
+}
+#cssmenu ul ul,
+#cssmenu ul ul ul,
+#cssmenu.align-right ul ul {
+position: relative;
+left: 0;
+width: 100%;
+margin: 0;
+text-align: left;
+}
+#cssmenu > ul > li.has-sub > a:after,
+#cssmenu > ul > li.has-sub > a:before,
+#cssmenu ul ul > li.has-sub > a:after,
+#cssmenu ul ul > li.has-sub > a:before {
+display: none;
+}
+#cssmenu #menu-button {
+display: block;
+padding: 17px;
+color: #fff;
+cursor: pointer;
+font-size: 12px;
+text-transform: uppercase;
+font-weight: 700;
+}
+#cssmenu #menu-button:after {
+position: absolute;
+top: 22px;
+right: 17px;
+display: block;
+height: 4px;
+width: 20px;
+border-top: 2px solid #fff;
+border-bottom: 2px solid #fff;
+content: '';
+}
+#cssmenu #menu-button:before {
+position: absolute;
+top: 16px;
+right: 17px;
+display: block;
+height: 2px;
+width: 20px;
+background: #fff;
+content: '';
+}
+#cssmenu #menu-button.menu-opened:after {
+top: 23px;
+border: 0;
+height: 2px;
+width: 15px;
+background: #ffffff;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+#cssmenu #menu-button.menu-opened:before {
+top: 23px;
+background: #ffffff;
+width: 15px;
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+#cssmenu .submenu-button {
+position: absolute;
+z-index: 99;
+right: 0;
+top: 0;
+display: block;
+border-left: 1px solid rgba(120, 120, 120, 0.2);
+height: 38px;
+width: 38px;
+cursor: pointer;
+}
+#cssmenu .submenu-button.submenu-opened {
+background: #F7822D;
+}
+#cssmenu ul ul li:hover > a, #cssmenu ul ul li a:hover {
+background: #F7822D;
+}
+#cssmenu ul ul .submenu-button {
+height: 34px;
+width: 34px;
+}
+#cssmenu .submenu-button:after {
+position: absolute;
+top: 19px;
+right: 13px;
+width: 8px;
+height: 2px;
+display: block;
+background: #fff;
+content: '';
+}
+#cssmenu ul ul .submenu-button:after {
+top: 15px;
+right: 13px;
+}
+#cssmenu .submenu-button.submenu-opened:after {
+background: #ffffff;
+}
+#cssmenu .submenu-button:before {
+position: absolute;
+top: 16px;
+right: 16px;
+display: block;
+width: 2px;
+height: 8px;
+background: #fff;
+content: '';
+}
+#cssmenu ul ul .submenu-button:before {
+top: 12px;
+right: 16px;
+}
+#cssmenu .submenu-button.submenu-opened:before {
+display: none;
+}
+}#cssmenu_doc > ul > li {
+background: url(wp-content/themes/hanlgroup/images/bullArrow.png) no-repeat scroll 2px 11px transparent;
+color: #636363;
+display: block;
+padding: 7px 0 7px 15px;
+text-decoration: none;
+border-bottom: 1px solid #CECECE;
+}
+#cssmenu_doc ul ul{
+display: none;
+margin-left: 15px;
+}
+#cssmenu_doc ul li.active > a {
+color: #444;
+font-weight: bold;
+}
+#cssmenu_doc ul li.active > ul{
+display:block;
+}
+#cssmenu_doc ul li.active > ul > li > a{
+background: url(wp-content/themes/hanlgroup/images/row-cate.png) no-repeat 0px center;
+display: block;
+outline: none;
+margin: 0;
+padding: 5px 3px 5px 10px;
+text-decoration: none;
+color: #636363;
+}
+ html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+background: transparent; }
+body {
+line-height: 1.6;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: #333;
+background: rgb(251, 251, 251);
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+} :focus {
+outline: 0;
+} ins {
+text-decoration: none;
+}
+del {
+text-decoration: line-through;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0; }
+a { line-height:18px; text-decoration:none; color:#666;}
+a:hover{color: #E47626;}
+p { line-height:18px; }
+h3 {}
+h4 {}
+*:focus { outline: none;}
+*::-moz-focus-inner { border: none;}
+button::-moz-focus-inner { border:medium none;}
+button::-moz-focus-inner { margin:0; padding:0;}
+input, select {
+_zoom:1;
+font-size:11px; margin-bottom:4px;
+} .tlqcontent{
+font-size:13px;
+font-family:wf_segoe-ui_normal,Tahoma,Verdana,Arial,sans-serif;
+line-height:1.6;
+padding-bottom:20px;
+float: left;
+width: 100%;
+box-sizing: border-box;
+}
+.tlqcontent div {
+width: 100% !important;
+}
+.tlqcontent:after{
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+.tlqcontent img{
+max-width:100%;height: auto;
+}
+.tlqcontent ul,.tlqcontent ol{
+padding: 0;
+margin:0;
+margin-left: 18px !important;
+}
+.tlqcontent li{
+padding: 0px;
+}
+.tlqcontent blockquote {
+padding: 10px 20px;
+margin: 0 0 20px;
+border-left: 5px solid #eee;
+}
+.tlqcontent td {
+border: solid 1px;
+padding: 3px;
+box-sizing: border-box;
+}
+.tlqcontent h1,.tlqcontent h2,.tlqcontent h3{
+margin:10px 0px;
+}
+.tlqcontent p{
+margin: 10px 0px;
+line-height: 22px;
+}
+.textcontent{
+font-size:14px;
+line-height: 22px;
+}
+.textcontent img {
+margin: auto;
+display:block;
+}
+.textcontent ol , .textcontent ul{
+float: left;
+width: 100%;
+margin-left: 30px;
+line-height: 22px;
+font-size: 14px;
+}
+.textcontent  ol li{
+list-style-type:decimal;
+margin-bottom: 14px;
+width: 80%;
+}
+.textcontent  ul li{
+list-style-type:disc;
+margin-bottom: 14px;
+width: 80%;
+}
+.textcontent p{
+margin-bottom:14px;
+font-size:14px;
+line-height: 22px;
+text-align: justify;
+}
+.textcontent td , .textcontent th{
+border:solid 1px #ccc;
+padding: 5px;
+}
+.wp-caption {
+display: block;
+border: solid 1px #ccc;
+padding: 3px;
+background: #EAEAEA;
+text-align: center;
+}
+p.wp-caption-text {
+margin: 0px;
+}
+img.aligncenter {
+margin: auto;
+display: block;
+float: none;
+text-align: center;
+}
+.header{
+width: 100%;
+background: url(wp-content/themes/hanlgroup/images/bg-header.png) repeat-x left top;
+height: 100px;
+float: left;
+position: fixed;
+transition: 0.5s;
+z-index: 999999;
+}
+.fixedfix{
+width:100%;
+height:100px;
+float:left;
+position:relative;
+}
+.wapper{
+width:1170px;
+margin:auto;
+position: relative;
+}
+.topheader{
+width:1170px;
+float:left;
+}
+.logo{
+float:left;
+padding:20px 0px;
+transition: 0.5s;
+}
+.logo img{
+width: 162px;
+}
+.rightheader{
+float: right;
+width: 905px;
+}
+.toplink{
+height: 36px;
+border-bottom: solid 1px #DC2927;
+float: left;
+width: 905px;
+transition: 0.5s;
+}
+.linkicon{
+float: left;
+line-height: 36px;
+color: #E47626;
+margin-right: 5px;
+}
+.linkicon:nth-child(1){
+}
+.linkicon:nth-child(2){
+background:url(wp-content/themes/hanlgroup/images/2.png) no-repeat center left;
+padding-left: 30px;
+}
+.linkicon:nth-child(3){
+background:url(wp-content/themes/hanlgroup/images/3.png) no-repeat center left;
+padding-left: 30px;
+}
+.link{
+float: right;
+line-height: 36px;
+color: #fff;
+}
+.searchbox{
+float: right;
+width: 250px;
+margin-top: 5px;
+}
+.searchbox span{
+color: #fff;
+text-transform: uppercase;
+margin-top: 30px;
+float: left;
+margin-bottom: 10px;
+font-size: 13px;
+}
+.searchbox form {
+clear: both;
+}
+input.sinput {
+width: 168px;
+padding: 3px;
+margin: 0px;
+height: 26px;
+box-sizing: border-box;
+float: left;
+border: solid 1px #E47626;
+}
+input.ssubmit {
+background: #E47626;
+border: none;
+color: #fff;
+text-transform: uppercase;
+float: left;
+margin: 0px;
+padding: 2px 15px;
+line-height: 22px;
+cursor: pointer;
+}
+.phonecart{
+float: left;
+width: 425px;
+}
+.phonecart .phone{
+float: right;
+background: url(wp-content/themes/hanlgroup/images/mobi.png) no-repeat center left;
+height: 75px;
+margin-top: 15px;
+padding-left: 75px;
+background-size: 60px;
+min-width: 200px;
+color: #fff;
+}
+.phonecart .phone p {
+line-height: 24px;
+font-size: 16px;
+}
+.phonecart .phone p:nth-child(1) {
+padding-top:12px;
+}
+.header.small_header {
+height: 62px;
+background: url(wp-content/themes/hanlgroup/images/bg-header.png) repeat-x left top;
+background-size: auto 100%;
+}
+.header.small_header .toplink {
+height: 0px;
+overflow: hidden;
+border: none;
+}
+.header.small_header .logo {
+float: left;
+padding: 0px;
+}
+#slider{
+width:1170px; 
+margin:30px auto;
+position: relative;
+clear:both;
+}
+.sliderwap {
+width: 1170px;
+position: relative;
+float: left;
+}
+#main{
+float: left;
+clear: both;
+width: 100%;
+margin-top: 20px;
+padding-top: 20px;
+background:#fff;
+}
+.leftbar {
+width: 270px;
+float: left;
+}
+#mobile-sidebar {display: none;}
+.leftmenubox{
+width: 270px;
+float: left;
+margin-bottom:10px;
+}
+.leftmenubox h3{
+padding: 0px 20px;
+color: #FFF;
+line-height: 45px;
+font-size: 14px;
+background: #E47626;
+text-transform: uppercase;
+}
+.leftmenubox_content {
+width: 100%;
+float: left;
+}
+.leftbox{
+padding: 20px;
+border: solid 1px #ccc;
+clear: both;
+float: left;
+width: 228px;
+margin-bottom: 10px;
+}
+.leftbox > h3{
+color: #000;
+font-weight: normal;
+text-transform: uppercase;
+font-size: 16px;
+padding-right: 30px;
+float: left;
+border-bottom: solid 3px #E47626;
+padding-bottom: 10px;
+margin-bottom: 10px;
+}
+.leftbox .boxcontent{
+float: left;
+clear: both;
+width: 100%;
+}
+.leftbox .boxcontent table {
+width: 100%;
+}
+li.newline {
+float: left;
+width: 100%;
+margin-bottom: 0px;
+border-bottom: dashed 1px #ccc;
+}
+li.newline img {
+width: 42px;
+height: 42px;
+float: left;
+margin: 5px 10px 5px 0px;
+border-radius: 5px;
+}
+li.newline h2 {
+margin-top: 5px;
+text-transform: lowercase;
+font-size: 12px;
+line-height: 22px;
+}
+.dktv img{
+margin:20px 0px;
+}
+a.dkbtn {
+background: #02ab37;
+color: #fff;
+padding: 9px 20px;
+margin-right: 10px;
+font-size: 14px;
+line-height: 19px;
+margin: auto;
+display: block;
+width: 88px;
+text-align: center;
+}
+.chatline {
+margin: 4px 0px;
+float: left;
+width: 100%;
+clear: both;
+}
+.chatline span{
+float: left;
+line-height: 34px;
+}
+.chatline img{
+float: left;
+height: 20px;
+margin: 7px 10px;
+}
+.htttphonebox {
+border-bottom: solid 1px #ccc;
+float: left;
+clear: both;
+width: 225px;
+margin-top: 10px;
+}
+.phoneline {
+float: left;
+clear: both;
+width: 225px;
+height: 65px;
+background:url(wp-content/themes/hanlgroup/images/icon_hotline.png) no-repeat;
+}
+.phoneline .line1{
+color: #DC2927;
+float: left;
+margin-left: 60px;
+line-height: 20px;
+font-size: 15px;
+}
+.phoneline .line2{
+color: red;
+float: left;
+margin-left: 60px;
+line-height: 26px;
+font-size: 15px;
+font-weight: bold;
+clear: both;
+}
+.rightbar{
+float: left;
+margin-left: 20px;
+width: 880px;
+}
+#main .rightbar .boxmain{
+width: 100%;
+box-sizing: border-box;
+margin-top: 10px;
+float: left;
+}
+#main .rightbar .boxmain .title{
+padding: 0px 20px;
+color: #fff;
+line-height: 45px;
+font-size: 14px;
+background: #F3F3F3;
+text-transform: uppercase;
+}
+#main .rightbar .boxmain .title a{
+color: #333;
+}
+.longitemwap {
+float: left;
+width: 100%;
+margin-top: 10px;
+}
+#main .rightbar .longitem{
+margin-right: 20px;
+border-bottom: solid 1px #ccc;
+padding-bottom: 10px;
+float: left;
+width: 430px;
+margin-bottom: 20px;
+box-sizing: border-box;
+}
+#main .rightbar .longitem:nth-child(2n+2){
+margin-right: 0px;
+}
+#main .rightbar .longitem img{
+padding: 5px;
+border: solid 1px #ccc;
+width: 152px;
+height: 110px;
+float: left;
+margin-right: 10px;
+}
+#main .rightbar .longitem h2{
+font-size: 14px;
+margin-bottom: 10px;
+line-height: 18px;
+height: 36px;
+overflow: hidden;
+}
+#main .rightbar .longitem h2 a:hover{
+color: #E47626;
+}
+#main .rightbar .longitem p{
+text-align: justify;
+height: 69px;
+overflow: hidden;
+line-height: 18px;
+}
+#main .rightbar .boxmain .xemtatca{
+height: 40px;
+width: 100%;
+float: left;
+}
+#main .rightbar .boxhomes{
+float: left;
+width: 100%;
+}
+#main .rightbar .boxhome{
+float: left;
+width: 430px;
+margin-bottom: 14px;
+box-sizing: border-box;
+margin-right: 20px;
+}
+#main .rightbar .boxhome:nth-child(2n+2){
+margin-right: 0px;
+}
+#main .rightbar .boxhome:nth-child(2n+1){
+clear:both;
+}
+#main .rightbar .boxhome h3{
+padding: 0px 20px;
+color: #333;
+line-height: 45px;
+font-size: 14px;
+background: #F3F3F3;
+text-transform: uppercase;
+}
+#main .rightbar .boxhome h3 a{
+color: #333;
+}
+#main .rightbar .boxhome .bigtop{
+margin-top: 10px;
+}
+#main .rightbar .boxhome .bigtop img{
+float: left;
+width: 140px;
+height: 140px;
+padding: 4px;
+border: solid 1px #ccc;
+background: #fff;
+margin-right: 10px;
+}
+#main .rightbar .boxhome .bigtop h2{
+height: 36px;
+margin-bottom: 10px;
+overflow: hidden;
+}
+#main .rightbar .boxhome .bigtop h2 a{
+color: #da0404;
+}
+#main .rightbar .boxhome .bigtop p{
+text-align: justify;
+height: 90px;
+overflow: hidden;
+}
+#main .rightbar .boxhome ul{
+clear: both;
+margin-top: 10px;
+float: left;
+}
+#main .rightbar .boxhome ul li{
+clear: both;
+padding-left: 15px;
+background: url(wp-content/themes/hanlgroup/images/ldot.png) no-repeat center left;
+margin-bottom: 5px;
+}
+#main .rightbar .boxhome .xemtatca{
+clear: both;
+float: right;
+width: 105px;
+height: 26px;
+margin-top: 10px;
+color: red;
+}
+#main .rightbar .boxhome .xemtatca:hover{
+}
+#doitac{
+width:100%;
+float:left;
+clear:both;
+}
+#doitac h3 {
+width: 1200px;
+float: left;
+background:url(wp-content/themes/hanlgroup/images/doitac.png) no-repeat center bottom;
+text-align: center;
+padding-bottom: 10px;
+font-weight: normal;
+color: #000;
+text-transform: uppercase;
+font-size: 17px;
+}
+.slider_doitac{
+margin:20px 0px;
+clear:both;
+}
+#footer{
+width:100%;
+float:left;
+clear:both;
+}
+.footerwap{
+width:1200px;
+float:left;
+border-top:solid 1px #ccc;
+margin-top: 40px;
+padding-top: 40px;
+}
+.fcol{
+float: left;
+width: 20%;
+}
+.fcol > h3{
+font-size: 13px;
+font-weight: bold;
+padding-bottom: 5px;
+border-bottom: solid 1px #DC2927;
+margin: 0px 5px 10px 5px;
+}
+.fcol_content ul{
+}
+.fcol_content ul li{
+list-style: disc;
+margin-bottom: 12px;
+color: #ccc;
+margin-left: 20px;
+}
+#copy{
+width: 100%;
+float: left;
+clear: both;
+background: #DC2927;
+text-align: center;
+color: #fff;
+height: 50px;
+}
+#copy p{
+line-height: 50px;
+}
+.lang_btn {
+padding-left: 25px;
+margin-right: 10px;
+font-weight: bold;
+color: #0061A3;
+text-decoration: underline;
+}
+.lang_btn:hover {
+color: #E02927;
+}
+.singlepost ul li {
+list-style-type: square;
+}
+.singlepost > h1 {
+font-size: 20px;
+line-height: 44px;
+border-bottom: 1px solid #CECECE;
+color: #E47626;
+margin-bottom: 10px;
+}
+.list_new {
+width: 100%;
+float: left;
+margin-top: 10px;
+}
+.list_new h4 {
+font-size: 14px;
+font-weight: bold;
+padding-bottom: 5px;
+border-bottom: solid 1px #DC2927;
+margin: 0px 5px 10px 5px;
+}
+.list_new ul li {
+list-style: disc;
+margin-bottom: 12px;
+color: #ccc;
+margin-left: 20px;
+}
+.breadcrumbs {
+width: 100%;
+margin-bottom: 10px;
+}
+.pagenavi {
+float: right;
+margin-bottom: 20px;
+clear: both;
+text-align: center;
+}
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+border-color: #E47626;
+background: #E47626;
+color: #fff;
+}
+.subcat_item {
+float: left;
+width: 25%;
+position: relative;
+padding: 10px;
+box-sizing: border-box;
+text-align: center;
+}
+.subcat_item:nth-child(4n+1){
+clear:both;
+}
+.subcat_item img {
+width: 190px;
+height: 190px;
+border: solid 1px #ccc;
+border-radius: 7px;
+overflow: hidden;
+}
+.items{
+float: left;
+width: 900px;
+margin-top: 10px;
+}
+.item{
+float:left;
+width:205px;
+margin-right: 20px;
+margin-bottom:20px;
+}
+.itemimg{
+width: 207px;
+height: 207px;
+position: relative;
+border: solid 1px #ccc;
+box-sizing: border-box;
+}
+.item img {
+max-width: 100%;
+max-height: 100%;
+position: absolute;
+margin: auto;
+top: 0px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+}
+.item h2 {
+font-size: 12px;
+margin: 8px 0px;
+height: 36px;
+overflow: hidden;
+text-align: center;
+line-height: 18px;
+}
+.item h2 a {
+color: red;
+}
+.item span {
+color: #7a0400;
+font-weight: bold;
+font-size: 15px;
+width: 100%;
+text-align: center;
+float: left;
+line-height: 18px;
+height: 18px;
+overflow: hidden;
+}
+.item .btn_bar{
+clear: both;
+margin-top: 10px;
+float: left;	
+width: 100%;
+}
+.item .btn_bar .mua{
+background: #02ab37;
+color: #fff;
+padding: 9px 20px;
+float: left;
+margin-right: 10px;
+font-size: 14px;
+line-height: 19px;
+}
+.item .btn_bar .gio{
+background: url(wp-content/themes/hanlgroup/images/gh.jpg) no-repeat;
+width: 41px;
+height: 37px;
+float: left;
+}
+.item > p {
+text-align: justify;
+height: 52px;
+overflow: hidden;
+line-height: 18px;
+font-size: 12px;
+}
+.fcol_content.row {
+padding: 10px;
+box-sizing: border-box;
+width: 100%;
+float: left;
+}
+.widget-container {
+padding: 20px;
+border: solid 1px #ccc;
+clear: both;
+float: left;
+width: 228px;
+margin-bottom: 10px;
+list-style: none;
+}
+h3.widget-title {
+color: #000;
+font-weight: normal;
+text-transform: uppercase;
+font-size: 16px;
+padding-right: 30px;
+float: left;
+border-bottom: solid 3px #E47626;
+padding-bottom: 10px;
+position: relative;
+width: 100%;
+box-sizing: border-box;
+margin-bottom: 10px;
+}
+.textwidget {
+float: left;
+clear: both;
+width: 100%;
+}
+.leftmenubox_content img {
+max-width: 100%;
+height: auto;
+}
+a.xemtatca_fcol {
+clear: both;
+float: left;
+color: red;
+margin-left:15px;
+}@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+.wapper {
+width: 100%;
+padding: 0px 10px;
+box-sizing: border-box;
+}
+.header {
+height: auto;
+background: url(wp-content/themes/hanlgroup/images/bg-header.png) repeat-x left top;
+background-size: auto 100%;
+position: relative;
+width: 100%;
+box-sizing: border-box;
+}
+.topheader {
+width: 100%;
+}
+.logo {
+width: 100%;
+text-align: center;
+}
+.rightheader {
+width: 100%;
+}
+.toplink {
+width: 100%;
+height: auto;
+text-align: left;
+}
+.linkicon {
+width: 100%;
+margin: 0px;
+float: left;
+box-sizing: border-box;
+text-align: center;
+background: none !important;
+padding: 0px !important;
+text-align: left;
+}
+.searchbox {
+width: 100%;
+float: left;
+}	
+input.sinput {
+width: 70%;
+}
+input.ssubmit {
+width: 30%;
+margin-bottom: 10px;
+}
+.fixedfix{
+display: none;	
+}
+#slider {
+width: 100%;
+float: left;
+margin: 10px auto;
+}
+.sliderwap {
+width: 100%;
+}
+.header.small_header {
+height: 109px;
+background: url(wp-content/themes/hanlgroup/images/bg-header.png) repeat-x left top;
+background-size: auto 100%;
+}
+.header.small_header #cssmenu{
+margin:0px;
+}
+.header.small_header .logo {
+float: left;
+padding: 0px;
+height: 62px;
+}
+.leftbar {
+width: 100%;
+display: none;
+}
+#mobile-sidebar {display: block; width: 100%;}
+.leftmenubox {
+width: 100%;
+}
+.leftbox {
+width: 100%;
+box-sizing: border-box;
+}
+.rightbar {
+width: 100%;
+margin: 0px;
+}
+#main .rightbar .boxhome {
+width: 100%;
+}
+#main .rightbar .boxhome .bigtop img {
+width: 30%;
+height: auto;
+}
+#main .rightbar .boxhome .bigtop h2 {
+height: auto;
+}
+#main .rightbar .boxhome .bigtop p {
+height: auto;
+}
+.footerwap {
+width: 100%;
+}
+.fcol {
+width: 100%;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+.subcat_item {
+width: 100%;
+}
+.items {
+width: 100%;
+}
+.item {
+width: 48%;
+margin: 1%;
+background: #EFEFEF;
+padding: 5px;
+box-sizing: border-box;
+border: solid 1px #ccc;
+}
+.itemimg {
+width: 100%;
+height: 160px;
+background: #fff;
+}
+.item > p {
+text-align: left;
+}
+.widget-container {
+width: 100%;
+box-sizing: border-box;
+}
+}

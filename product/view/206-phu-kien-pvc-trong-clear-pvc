@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -91,12 +92,7 @@ $(document).ready(function(){
 <div id="wraper">
 	<div class="top-menu-mobile">
 		<ul>
-			<!--li><a href="https://sdt.com.vn/">Trang chủ</a></li>
-			<li><a href="https://sdt.com.vn/download">Download</a></li-->
-			<!--li class="nav-style2"><a href="https://sdt.com.vn/article">Hỗ trợ kỹ thuật</a></li>
-			<li class="nav-style2"><a href="https://sdt.com.vn/gallery">Dự án đã thực hiện</a></li>
-			<li class="nav-style2"><a href="https://sdt.com.vn/aboutus">Giới thiệu</a></li-->			
-js/jquery.bxslider/jquery.bxslider.css
+
 		</ul>
 	</div>
 	<header> 

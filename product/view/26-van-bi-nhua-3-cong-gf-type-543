@@ -91,10 +91,6 @@ $(document).ready(function(){
 <div id="wraper">
 	<div class="top-menu-mobile">
 		<ul>
-			<!--li><a href="https://sdt.com.vn/">Trang chủ</a></li>
-			<li><a href="https://sdt.com.vn/download">Download</a></li-->
-			<!--li class="nav-style2"><a href="https://sdt.com.vn/article">Hỗ trợ kỹ thuật</a></li>
-			<li class="nav-style2"><a href="https://sdt.com.vn/gallery">Dự án đã thực hiện</a></li>
 
 		</ul>
 	</div>
@@ -571,5 +567,6 @@ $(document).ready(function(){
   gtag('js', new Date());
 
   gtag('config', 'G-6WLR2C53MV');
-</script>
+</scrip
+t>
 </html>

@@ -91,10 +91,6 @@ $(document).ready(function(){
 <div id="wraper">
 	<div class="top-menu-mobile">
 		<ul>
-			<!--li><a href="https://sdt.com.vn/">Trang chủ</a></li>
-			<li><a href="https://sdt.com.vn/download">Download</a></li-->
-			<!--li class="nav-style2"><a href="https://sdt.com.vn/article">Hỗ trợ kỹ thuật</a></li>
-			<li class="nav-style2"><a href="https://sdt.com.vn/gallery">Dự án đã thực hiện</a></li>
 
 		</ul>
 	</div>
@@ -261,6 +257,8 @@ $(document).ready(function(){
 					<div class="small-product-image">
 						<a href="/product/view/149-bo-dieu-khien-da-thong-so-gf-signet-8900"><img src="/files/products/2012-07-018900.jpg" width="129" height="129" alt="" /></a>
 					</div>
+
+					
 					<div class="small-product-name"><a href="https://sdt.com.vn/product/view/149-bo-dieu-khien-da-thong-so-gf-signet-8900">Bộ điều khiển đa thông số GF SIGNET 8900</a></div>
 				</div>
 							

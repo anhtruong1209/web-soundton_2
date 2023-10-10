@@ -2271,7 +2271,7 @@ if ( typeof jQuery.fn.owlCarousel == 'function' ) {
 	}
 } ).apply( this, [window.theme, jQuery] );
 
-// Read More
+// Đọc Thêm
 ( function( theme, $ ) {
 
 	theme = theme || {};
@@ -2283,7 +2283,7 @@ if ( typeof jQuery.fn.owlCarousel == 'function' ) {
 	};
 
 	PluginReadMore.defaults = {
-		buttonOpenLabel: 'Read More <i class="fas fa-chevron-down text-2 ms-1"></i>',
+		buttonOpenLabel: 'Đọc Thêm <i class="fas fa-chevron-down text-2 ms-1"></i>',
 		buttonCloseLabel: 'Read Less <i class="fas fa-chevron-up text-2 ms-1"></i>',
 		enableToggle: true,
 		maxHeight: 300,
@@ -2351,7 +2351,7 @@ if ( typeof jQuery.fn.owlCarousel == 'function' ) {
 				'z-index': 1
 			} );
 
-			// Read More Button
+			// Đọc Thêm Button
 			self.options.wrapper.find( '.readmore-button-wrapper' ).removeClass( 'd-none' ).css( {
 				position: 'absolute',
 				bottom: 0,
@@ -2391,7 +2391,7 @@ if ( typeof jQuery.fn.owlCarousel == 'function' ) {
 		events: function() {
 			var self = this;
 
-			// Read More
+			// Đọc Thêm
 			self.readMore = function() {
 				self.options.wrapper.find( '.readmore-button-wrapper > button:not(.readless)' ).on( 'click', function( e ) {
 					e.preventDefault();

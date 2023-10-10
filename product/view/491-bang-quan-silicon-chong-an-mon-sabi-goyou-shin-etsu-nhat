@@ -1,0 +1,740 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Băng Quấn Silicon Chống Ăn Mòn "Sabi Goyou" - Shin-Etsu (Nhật)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="keywords" content="meta name="keywords" content="chong an mon, bao ve ren, chong ri, silicon, shin-etsu, Sabi goyou, bang silicon, anti-corrosion, anti-rust, chong an mon duong ong"" />
+<meta name="description" content="meta name="description" content="Băng trong suốt bảo vệ chống ăn mòn tự dính "Sabi Goyou" là dạng băng quấn bằng silicon, được sản xuất để bọc bảo vệ chống ăn mòn cho các mối nối đường ống. Các đường ống kim loại ngoài trời hoặc các mối nối kim loại có th" />
+<meta name="google-site-verification" content="h2z7O0zbke4ypMbXLwYUvDR4ajBDvKAmN-uhe7P6xgo" />
+<link href="css/css/style.css" rel="stylesheet" type="text/css" />
+<link href="https://sdt.com.vn/css/css/responsive.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+
+
+<link href="css/css/menu.css" rel="stylesheet" type="text/css" />
+<link href="https://sdt.com.vn/css/css/wowslider.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/wowslider.js"></script>
+
+<link rel="stylesheet" href="js/nivo/theme/default/default.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="js/nivo/themes/pascal/pascal.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="js/nivo/themes/orman/orman.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="js/nivo/nivo-slider.css" type="text/css" media="screen" />
+<script type="text/javascript" src="https://sdt.com.vn/js/nivo/jquery.nivo.slider.pack.js"></script>
+
+<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+    <script type="text/javascript" src="js/jquery.bxslider/jquery.bxslider.js"></script>
+    <link rel="stylesheet" href="https://sdt.com.vn/js/jquery.bxslider/jquery.bxslider.css" type="text/css" media="screen" />
+	
+	
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+	
+<script type="text/javascript">
+$(document).ready(function(){
+	//$('.product-item-box').each(function(){
+		
+		$('.product-item-box').click(function(){
+                    url=$(this).attr('url');
+			document.location=url;
+		})
+	//})
+})
+</script>
+
+ <script type="text/javascript">
+        jQuery('document').ready(function(){
+            jQuery('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = jQuery(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        jQuery("html, body").animate({
+                            scrollTop: target.offset().top-(jQuery('.site-header').height())
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        })
+    </script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var ctrlDown = false,
+				ctrlKey = 17,
+				cmdKey = 91,
+				vKey = 86,
+				cKey = 67;
+
+			$(document).keydown(function(e) {
+				if (e.keyCode == ctrlKey || e.keyCode == cmdKey) ctrlDown = true;
+			}).keyup(function(e) {
+				if (e.keyCode == ctrlKey || e.keyCode == cmdKey) ctrlDown = false;
+			});
+
+			$("body").keydown(function(e) {
+				if (ctrlDown && (e.keyCode == vKey || e.keyCode == cKey)) return false;
+			});
+
+		});
+	</script>
+</head>
+
+<body>
+
+<div id="wraper">
+	<div class="top-menu-mobile">
+		<ul>
+			<!--li><a href="https://sdt.com.vn/">Trang chủ</a></li>
+			<li><a href="https://sdt.com.vn/download">Download</a></li-->
+			<!--li class="nav-style2"><a href="https://sdt.com.vn/article">Hỗ trợ kỹ thuật</a></li>
+			<li class="nav-style2"><a href="https://sdt.com.vn/gallery">Dự án đã thực hiện</a></li>
+
+		</ul>
+	</div>
+	<header> 
+    	<div class="logo fl"> 
+        	<a href="https://sdt.com.vn/"><img src="https://sdt.com.vn/css/images/logo.png" width="218" height="55"></a>
+            <div class="logo-hotline">
+				<div class="lphone"><label>Email:</label> support@sdt.com.vn</div>
+            	<div class="lphone"><label>Hanoi H.O:</label> 024 37921548</div>
+				<div class="lphone"><label>CN Hồ Chí Minh:</label> 028 3620 0949 </label></div>
+				<div class="lphone"><label>Hotline:</label> 0903 255 331</label></div>
+            </div>
+        </div>
+        <div class="banner fl"> 
+        	<div class="ruled1">
+				<div class="slider-wrapper theme-default">
+					<div class="ribbon"></div>
+					<div id="slider" class="nivoSlider" style="border:0px solid #ccc; width:750px; height:150px;">
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/GF_Signet.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Pipe_Fitting.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Sheets.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Shieyu_Valves_-_Banner1.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Pipe_Fitting_1.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Spears_Valves_-_Banner_21.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Lining.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Shieyu_Valves_-_Banner_31.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Pipe_Fitting_2.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Shieyu_Valves_-_Banner_41.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/GF_Signet_Instrument1.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Spears_Valves_-_Banner1.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Shieyu_Valves_-_Banner_21.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Spears_actuated_valve_-_Banner1.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Air_Release_Valve_-_POM.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Banner_Instruments.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Agru_PE_Gas_Electrofusion_-_Banner1.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Asahi_AV_Valve_Banner_11.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Ritmo_Welder_-_Banner1.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Weld-on_Cement_-_Banner.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/REED_Deburring_Chamfering_Tools1.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Asahi_AV_Valve_Banner_22.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Asahi_AV_Valve_Banner_10.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Rotameter_-_Variable_Area_Flow_Meter1.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/Spears_PVC_-_Banner1.jpg" alt=""/>
+										<img width="750" height="150"  src="https://sdt.com.vn/files/banner/REED_Tools_for_plastic_pipes1.jpg" alt=""/>
+										</div>	
+				</div>
+			</div>
+        </div> 
+    </header>
+
+
+
+<style type="text/css">
+	.gsc-control-cse {
+    	padding: 0;
+		height: 26px;
+		border: 0;
+  }
+	.gsc-input-box{
+		border: 0;
+		background: none;
+	}
+
+</style>
+<div class="menu_top"> 
+    	<div class="search fl"> 
+		<div id="cse-search-form" style="width: 100%;">
+			<script async src="https://cse.google.com/cse.js?cx=782af67a3e456dc50"></script>
+			<div class="gcse-search" data-resultsUrl="https://sdt.com.vn"></div>
+		</div>
+        </div>
+		<div class="menu-mobile-icon"><a href="javascript:void(0)"><img src="https://sdt.com.vn/css/images/menu-icon.png" height="27" /></a></div>
+        <nav> 
+        	<ul> 
+				
+				<li><a href="https://sdt.com.vn/">Trang chủ</a></li>
+				<li style="width: 80px;"><a class="dropdown-icon" href="javascript:void(0)">Sản phẩm</a>
+					<ul class="drop1">
+										<li><a href="https://sdt.com.vn/product/category/5-duong-ong-va-phu-kien-nhua">ĐƯỜNG ỐNG VÀ PHỤ KIỆN NHỰA</a></li>
+										<li><a href="https://sdt.com.vn/product/category/6-van-nhua-tay-van">VAN NHỰA TAY VẶN</a></li>
+										<li><a href="https://sdt.com.vn/product/category/269-van-nhua-dieu-khien">VAN NHỰA ĐIỀU KHIỂN</a></li>
+										<li><a href="https://sdt.com.vn/product/category/39-van-nhua-chiu-hoa-chat-khac">VAN NHỰA CHỊU HÓA CHẤT KHÁC</a></li>
+										<li><a href="https://sdt.com.vn/product/category/7-thiet-bi-do-luong-dieu-khien">THIẾT BỊ ĐO LƯỜNG - ĐIỀU KHIỂN</a></li>
+										<li><a href="https://sdt.com.vn/product/category/282-nhua-lot-be-tong-nhua-lot-be-thep-chong-an-mon">NHỰA LÓT BÊ TÔNG, NHỰA LÓT BỂ THÉP CHỐNG ĂN MÒN</a></li>
+										<li><a href="https://sdt.com.vn/product/category/283-chong-ro-ri-chong-an-mon-bao-ve-duong-ong">CHỐNG RÒ RỈ, CHỐNG ĂN MÒN - BẢO VỆ ĐƯỜNG ỐNG</a></li>
+										<li><a href="https://sdt.com.vn/product/category/270-agru-austria-plastic-piping-systems">AGRU (AUSTRIA) - PLASTIC PIPING SYSTEMS</a></li>
+										<li><a href="https://sdt.com.vn/product/category/272-spears-usa-plastic-piping-systems">SPEARS (USA) - PLASTIC PIPING SYSTEMS</a></li>
+										<li><a href="https://sdt.com.vn/product/category/273-asahi-av-japan-plastic-piping-systems">ASAHI AV (JAPAN) - PLASTIC PIPING SYSTEMS</a></li>
+										<li><a href="https://sdt.com.vn/product/category/274-keo-dan-ong-primer-cac-loai-keo-dan-khac">KEO DÁN ỐNG - PRIMER & CÁC LOẠI KEO DÁN KHÁC</a></li>
+										<li><a href="https://sdt.com.vn/product/category/43-dao-cat-ong-reed-cong-cu-thi-cong-duong-ong">DAO CẮT ỐNG REED - CÔNG CỤ THI CÔNG ĐƯỜNG ỐNG</a></li>
+										<li><a href="https://sdt.com.vn/product/category/268-shieyu-taiwan-plastic-piping-systems">SHIEYU (TAIWAN) - PLASTIC PIPING SYSTEMS</a></li>
+										<li><a href="https://sdt.com.vn/product/category/275-ritmo-italy-may-han-ong">RITMO (Italy) - Máy Hàn Ống</a></li>
+										<li><a href="https://sdt.com.vn/product/category/284-luu-luong-ke-zyia-kingtai">LƯU LƯỢNG KẾ ZYIA (KINGTAI)</a></li>
+										</ul>
+				</li>
+				<li><a href="https://sdt.com.vn/download">Download</a></li>
+				<li class="nav-style2"><a href="https://sdt.com.vn/article">Hỗ trợ</a></li>
+				<li class="nav-style2"><a href="https://sdt.com.vn/gallery">Dự án</a></li>
+				<li class="nav-style2"><a href="https://sdt.com.vn/aboutus">Giới thiệu</a></li>
+				<li><a href="https://sdt.com.vn/contact">Liên hệ</a></li>
+                	
+					<a class="flag-lang" href="https://sdt.com.vn/home/en"><img src="https://sdt.com.vn/css/images/en.png" /></a>
+					
+					<a class="flag-lang"  href="https://sdt.com.vn/home/vi"><img src="https://sdt.com.vn/css/images/vn.png" /></a>
+					
+            </ul>
+        </nav>
+    </div> <!-- end menu top -->
+	
+	<div class="main fl"> 
+    	<div class="left fl"> 
+        	<div class="left1">			
+			<div class="left-vertical-menu"><a title="ĐƯỜNG ỐNG VÀ PHỤ KIỆN NHỰA" class="level-0" href="https://sdt.com.vn/product/category/5-duong-ong-va-phu-kien-nhua"><span>ĐƯỜNG ỐNG VÀ PHỤ KIỆN NHỰA</span></a> <a title="VAN NHỰA TAY VẶN" class="level-0" href="https://sdt.com.vn/product/category/6-van-nhua-tay-van"><span>VAN NHỰA TAY VẶN</span></a> <a title="VAN NHỰA ĐIỀU KHIỂN" class="level-0" href="https://sdt.com.vn/product/category/269-van-nhua-dieu-khien"><span>VAN NHỰA ĐIỀU KHIỂN</span></a> <a title="VAN NHỰA CHỊU HÓA CHẤT KHÁC" class="level-0" href="https://sdt.com.vn/product/category/39-van-nhua-chiu-hoa-chat-khac"><span>VAN NHỰA CHỊU HÓA CHẤT KHÁC</span></a> <a title="THIẾT BỊ ĐO LƯỜNG - ĐIỀU KHIỂN" class="level-0" href="https://sdt.com.vn/product/category/7-thiet-bi-do-luong-dieu-khien"><span>THIẾT BỊ ĐO LƯỜNG - ĐIỀU KHIỂN</span></a> <a title="NHỰA LÓT BÊ TÔNG, NHỰA LÓT BỂ THÉP CHỐNG ĂN MÒN" class="level-0" href="https://sdt.com.vn/product/category/282-nhua-lot-be-tong-nhua-lot-be-thep-chong-an-mon"><span>NHỰA LÓT BÊ TÔNG, NHỰA LÓT BỂ THÉP CHỐNG ĂN MÒN</span></a> <a title="CHỐNG RÒ RỈ, CHỐNG ĂN MÒN - BẢO VỆ ĐƯỜNG ỐNG" class="level-0" href="https://sdt.com.vn/product/category/283-chong-ro-ri-chong-an-mon-bao-ve-duong-ong"><span>CHỐNG RÒ RỈ, CHỐNG ĂN MÒN - BẢO VỆ ĐƯỜNG ỐNG</span></a> <a title="AGRU (AUSTRIA) - PLASTIC PIPING SYSTEMS" class="level-0" href="https://sdt.com.vn/product/category/270-agru-austria-plastic-piping-systems"><span>AGRU (AUSTRIA) - PLASTIC PIPING SYSTEMS</span></a> <a title="SPEARS (USA) - PLASTIC PIPING SYSTEMS" class="level-0" href="https://sdt.com.vn/product/category/272-spears-usa-plastic-piping-systems"><span>SPEARS (USA) - PLASTIC PIPING SYSTEMS</span></a> <a title="ASAHI AV (JAPAN) - PLASTIC PIPING SYSTEMS" class="level-0" href="https://sdt.com.vn/product/category/273-asahi-av-japan-plastic-piping-systems"><span>ASAHI AV (JAPAN) - PLASTIC PIPING SYSTEMS</span></a> <a title="KEO DÁN ỐNG - PRIMER & CÁC LOẠI KEO DÁN KHÁC" class="level-0" href="https://sdt.com.vn/product/category/274-keo-dan-ong-primer-cac-loai-keo-dan-khac"><span>KEO DÁN ỐNG - PRIMER & CÁC LOẠI KEO DÁN KHÁC</span></a> <a title="DAO CẮT ỐNG REED - CÔNG CỤ THI CÔNG ĐƯỜNG ỐNG" class="level-0" href="https://sdt.com.vn/product/category/43-dao-cat-ong-reed-cong-cu-thi-cong-duong-ong"><span>DAO CẮT ỐNG REED - CÔNG CỤ THI CÔNG ĐƯỜNG ỐNG</span></a> <a title="SHIEYU (TAIWAN) - PLASTIC PIPING SYSTEMS" class="level-0" href="https://sdt.com.vn/product/category/268-shieyu-taiwan-plastic-piping-systems"><span>SHIEYU (TAIWAN) - PLASTIC PIPING SYSTEMS</span></a> <a title="RITMO (Italy) - Máy Hàn Ống" class="level-0" href="https://sdt.com.vn/product/category/275-ritmo-italy-may-han-ong"><span>RITMO (Italy) - Máy Hàn Ống</span></a> <a title="LƯU LƯỢNG KẾ ZYIA (KINGTAI)" class="level-0" href="https://sdt.com.vn/product/category/284-luu-luong-ke-zyia-kingtai"><span>LƯU LƯỢNG KẾ ZYIA (KINGTAI)</span></a> </div>			</div>		
+									            <div class="article-block">
+    <h3 class="title">Hỗ trợ kỹ thuật</h3>
+    <div class="content-block">
+        <ul>
+                        <li><a href="https://sdt.com.vn/article/view/8-lap-dat-nhua-lot-bon-frp">LẮP ĐẶT NHỰA LÓT BỒN FRP</a> </li>
+                        <li><a href="https://sdt.com.vn/article/view/7-lap-dat-nhua-lot-bon-thep-kieu-gan-diem-co-dinh-fix-point">LẮP ĐẶT NHỰA LÓT BỒN THÉP KIỂU GẮN ĐIỂM CỐ ĐỊNH (FIX POINT)</a> </li>
+                        <li><a href="https://sdt.com.vn/article/view/6-lap-dat-nhua-lot-bon-thep">LẮP ĐẶT NHỰA LÓT BỒN THÉP</a> </li>
+                        <li><a href="https://sdt.com.vn/article/view/5-giai-phap-nhua-lot-bon-be">GIẢI PHÁP NHỰA LÓT BỒN BỂ</a> </li>
+                        <li><a href="https://sdt.com.vn/article/view/3-boc-lot-nhua-bon-be-tank-plastic-lining-chong-an-mon">BỌC LÓT NHỰA BỒN, BỂ (TANK PLASTIC LINING) - CHỐNG ĂN MÒN</a> </li>
+                    </ul>
+    </div>
+</div>		</div>
+	
+    <script type="text/javascript">
+	jQuery('document').ready(function($){
+		$('.menu-mobile-icon').click(function(){
+			if($('nav').hasClass('active')){
+				$('nav').removeClass('active');
+			}else{
+				$('nav').addClass('active');
+			}
+		})
+	});
+</script><script type="text/javascript">
+    
+    
+    $(document).ready(function() {
+        $(".p-tabLink").each(function(){
+            $(this).click(function(){
+                tabeId = $(this).attr('id');
+                $(".p-tabLink").removeClass("p-activeLink");
+                $(this).addClass("p-activeLink");
+                $(".p-tabcontent").addClass("p-hide");
+                $("#"+tabeId+"-form").removeClass("p-hide");
+                return false;
+            });
+        });
+        
+        $('.gallery-show').fancybox({
+            'overlayShow'	: false,
+            'transitionIn'	: 'elastic',
+            'transitionOut'	: 'elastic'
+        });
+        $(".video-show").fancybox({
+				
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+    }); 
+    
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=471918719529723";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+ <div class="right fl"> 
+        	<div class="duongdan">
+            	<a href="https://sdt.com.vn/">Trang chủ </a>
+                <a class="left-arrow">Băng Quấn Silicon Chống Ăn Mòn "Sabi Goyou" - Shin-Etsu (Nhật)</a>
+            </div>
+            <div class="content2" oncontextmenu="return false;">
+				<h3>Băng Quấn Silicon Chống Ăn Mòn "Sabi Goyou" - Shin-Etsu (Nhật)</h3>
+				<div class="fb-like-box" style="padding-top: 4px;">					
+					<div class="fb-like" data-href="https://sdt.com.vn/product/view/491-bang-quan-silicon-chong-an-mon-sabi-goyou-shin-etsu-nhat" data-send="false" data-width="450" data-show-faces="true"></div>
+				</div>
+            	<div class="content1"> 
+					<div class="image-detail"><img src="https://sdt.com.vn/files/products/Shin-Etsu_Silicone_Ruber_for_anti_Corrosion_180px.jpg" alt="Băng Quấn Silicon Chống Ăn Mòn "Sabi Goyou" - Shin-Etsu (Nhật)" width="180" style="float:left; padding-right:10px; padding-bottom:10px;" />
+						<div>Băng trong suốt bảo vệ chống ăn mòn tự dính "Sabi Goyou" là dạng băng quấn bằng silicon, được sản xuất để bọc bảo vệ chống ăn mòn cho các mối nối đường ống. (phát minh bởi công ty đường sắt phía đông Nhật Bản) Các đường ống kim loại ngoài trời hoặc các mối nối kim loại có thể sử dụng để bảo vệ chống ăn mòn dài hạn.</div>
+<div> </div>
+<div>Băng "Sabi Goyou" được làm từ vật liệu silicon, có thể kéo dài hoặc gấp, băng sẽ tự dính với nhau. Không cần sử dụng keo, chất hóa dẻo, không để lại vết dính trên bề mặt kim loại sau khi tháo ra.</div>
+<div> </div>
+<div>Silicone là vật liệu có độ bền thời tiết và khả năng sử dụng lâu dài.</div>
+<div> </div>
+<div>Bảo vệ ăn mòn cho mọi thiết bị có đường ống kim loại nối ren, nối hàn.</div>
+<div> </div>
+<div><strong>Đặc điểm:</strong></div>
+<div> </div>
+<div>- Chặn đứng ăn mòn: Sử dụng cho các mối nối đường ống kim loại ngoài trời, có thể ngăn chặn ăn mòn chủ động.</div>
+<div>- Giảm bảo trì: Sử dụng với mối nối đường ống ngoài trời khi bạn lo lắng về ăn mòn, giúp kéo dài thời gian bảo trì.</div>
+<div>- Dễ dàng: Băng silicon trong tự dính "Sabi Goyou" dễ dàng để sử dụng. Chỉ cần kéo căng và quấn.</div>
+<div>- Chống cháy: Vật liệu silicon chế tạo có khả năng chống cháy. Lửa sẽ lướt qua rất nhanh.</div>
+<div>- Tác động kép: "Sabi Goyou" kết hợp được khả năng tự kết dính của silicon "Polymer Ace" và khả năng chống ăn mòn.</div>
+<div>- Dễ gia công: Vật liệu silicone không dính tay và không để lại vết dính.</div>
+<div> </div>
+<div>
+<p><strong>Hướng dẫn sử dụng băng silicon "Sabi Goyou"</strong></p>
+<table style="width: 614px;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center;" valign="top" width="350"><img title="Bang quan silicon chong an mon moi noi" src="http://sdt.com.vn/dzung/SHINETSU/Huong_dan_su_dung_bang_silicon_quan_chong_an_mon_moi_noi_1.jpg" alt="Bang quan silicon chong an mon moi noi" width="320" height="240" /></td>
+<td valign="top" width="264"><img title="Bang quan silicon chong an mon moi noi" src="http://sdt.com.vn/dzung/SHINETSU/Huong_dan_su_dung_bang_silicon_quan_chong_an_mon_moi_noi_2.jpg" alt="Bang quan silicon chong an mon moi noi" width="320" height="240" /></td>
+</tr>
+<tr>
+<td valign="top" width="350">
+<p align="center"><strong>Kiểm tra khu vực dùng</strong></p>
+<p align="center">kiểm tra đường kính dây cáp và ống, đảm bảo làm sạch và loại bỏ hết bùn, rác, đất, bụi trước khi sử dụng.</p>
+</td>
+<td valign="top" width="264">
+<p align="center"><strong>Chuẩn bị băng "Sabi</strong><strong>Goyou"</strong></p>
+<p align="center">Quấn băng "Sabi Goyou" trên đối tượng sử dụng và cắt lấy một độ dài phù hợp, cắt góc 45° ở hai đầu băng rồi bóc lớp nylon bảo vệ.</p>
+<p align="center"> </p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="350"><img title="Bang quan silicon chong an mon moi noi" src="http://sdt.com.vn/dzung/SHINETSU/Huong_dan_su_dung_bang_silicon_quan_chong_an_mon_moi_noi_3.jpg" alt="Bang quan silicon chong an mon moi noi" width="320" height="240" /></td>
+<td valign="top" width="264"><img title="Bang quan silicon chong an mon moi noi" src="http://sdt.com.vn/dzung/SHINETSU/Huong_dan_su_dung_bang_silicon_quan_chong_an_mon_moi_noi_4.jpg" alt="Bang quan silicon chong an mon moi noi" width="320" height="240" /></td>
+</tr>
+<tr>
+<td colspan="2" valign="top" width="614">
+<p align="center"><strong>Quấn </strong><strong>băng "Sabi Goyou"</strong></p>
+<p align="center">Kéo căng "Sabi Goyou" tại điểm giữa ống, đảm bảo băng lớp trên đè lên 2/3 lớp dưới (khoảng17mm.) để quấn quanh điểm cần bảo vệ. Quấn băng theo đường xoắn ốc, đè qua vùng bảo vệ khoảng một nửa. Để tăng hiệu quả chống nước, kéo căng qua đoạn cần bảo vệ khoảng 30mm ở cả hai đầu và kéo đầu cuối của băng quấn gần tâm của chỗ cần bảo vệ. Quấn khoảng 2-3 lớp quanh điểm bảo vệ</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>Thử nghiệm chống ăn mòn với lớp "Sabi Goyou" quấn bảo vệ mối nối ren trong nước muối bão hòa</strong></p>
+<div align="center">
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="123">
+<p align="center"> </p>
+</td>
+<td width="255">
+<p align="center">Mối nối được quấn "Sabi Goyou"</p>
+</td>
+<td width="223">
+<p align="center">Mối nối không được quấn</p>
+</td>
+</tr>
+<tr>
+<td width="123">
+<p align="center">Trước khi ngâm nước muối bão hòa</p>
+</td>
+<td width="255"> <img title="Thu nghiem chong an mon bang ngam nuoc muoi" src="http://sdt.com.vn/dzung/SHINETSU/Thu_nghiem_quan_Sabi_Goyou_bao_ve_chong_an_mon_trong_nuoc_muoi_1.jpg" alt="Thu nghiem chong an mon bang ngam nuoc muoi" width="240" height="180" /></td>
+<td width="223"><img title="Thu nghiem chong an mon bang ngam nuoc muoi" src="http://sdt.com.vn/dzung/SHINETSU/Thu_nghiem_quan_Sabi_Goyou_bao_ve_chong_an_mon_trong_nuoc_muoi_2.jpg" alt="Thu nghiem chong an mon bang ngam nuoc muoi" width="240" height="180" /></td>
+</tr>
+<tr>
+<td width="123">
+<p align="center">Kết quả sau khi ngâm trong nước muốn sau 20 năm (tương đương)</p>
+</td>
+<td width="255"> <img title="Thu nghiem chong an mon bang ngam nuoc muoi" src="http://sdt.com.vn/dzung/SHINETSU/Thu_nghiem_quan_Sabi_Goyou_bao_ve_chong_an_mon_trong_nuoc_muoi_3.jpg" alt="Thu nghiem chong an mon bang ngam nuoc muoi" width="240" height="180" /></td>
+<td width="223"><img title="Thu nghiem chong an mon bang ngam nuoc muoi" src="http://sdt.com.vn/dzung/SHINETSU/Thu_nghiem_quan_Sabi_Goyou_bao_ve_chong_an_mon_trong_nuoc_muoi_4.jpg" alt="Thu nghiem chong an mon bang ngam nuoc muoi" width="240" height="180" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p> </p>
+</div>					</div>
+					<div class="clear"></div>
+
+            	
+                    <div class="more-info-product">
+                        <h3 class="field-name">Thông số kỹ thuật</h3>
+                        <div class="more-content"><table style="width: 723px;" border="0" cellspacing="0" cellpadding="0"><colgroup><col width="119" /> <col width="171" /> <col width="70" /> <col width="167" /> <col width="196" /> </colgroup>
+<tbody>
+<tr>
+<td class="xl66" style="text-align: center;" colspan="2" width="290" height="35"><strong>THÔNG SỐ KỸ THUẬT SẢN PHẨM</strong></td>
+<td class="xl67" style="text-align: center;" width="70"><strong> </strong></td>
+<td class="xl66" style="text-align: center;" colspan="2" width="363"><strong>TÍNH CHẤT VẬT LÝ SẢN PHẨM</strong></td>
+</tr>
+<tr>
+<td class="xl68" height="26">Tên sản phẩm:</td>
+<td class="xl69" style="text-align: center;">"Sabi Goyou"</td>
+<td class="xl68"> </td>
+<td class="xl66" style="text-align: center;"><em>Tính chất</em></td>
+<td class="xl66" style="text-align: center;"><em>Giá trị</em></td>
+</tr>
+<tr>
+<td class="xl68" height="26">Mã sản phẩm:</td>
+<td class="xl69" style="text-align: center;"> </td>
+<td class="xl68"> </td>
+<td class="xl68">Khối lượng riêng:</td>
+<td class="xl69" style="text-align: center;">1.2g/cm3</td>
+</tr>
+<tr>
+<td class="xl70" style="text-align: right;" height="26"><em>cuộn 2m:</em></td>
+<td class="xl71" style="text-align: center;"><em>SLB-SG-25W-2M</em></td>
+<td class="xl68"> </td>
+<td class="xl68">Độ bền kéo:</td>
+<td class="xl69" style="text-align: center;">50N/10mm</td>
+</tr>
+<tr>
+<td class="xl70" style="text-align: right;" height="26"><em>cuộn 5m:</em></td>
+<td class="xl71" style="text-align: center;"><em>SLB-SG-25W-5M</em></td>
+<td class="xl68"> </td>
+<td class="xl68">Độ dãn dài:</td>
+<td class="xl72" style="text-align: center;">600%</td>
+</tr>
+<tr>
+<td class="xl68" height="26">Vật liệu:</td>
+<td class="xl69" style="text-align: center;">Cao su Silicone</td>
+<td class="xl68"> </td>
+<td class="xl68">Độ cứng:</td>
+<td class="xl69" style="text-align: center;">40IRHD</td>
+</tr>
+<tr>
+<td class="xl68" height="26">Màu sắc:</td>
+<td class="xl69" style="text-align: center;">Trong suốt</td>
+<td class="xl68"> </td>
+<td class="xl68">Bền thời tiết:</td>
+<td class="xl69" style="text-align: center;">không thay đổi hình dạng</td>
+</tr>
+<tr>
+<td class="xl68" height="26">Kiểu dạng:</td>
+<td class="xl69" style="text-align: center;">Dạng cuộn</td>
+<td class="xl68"> </td>
+<td class="xl68">Độ bền nhiệt:</td>
+<td class="xl69" style="text-align: center;">-50～200°C</td>
+</tr>
+<tr>
+<td class="xl68" height="26">Độ rộng:</td>
+<td class="xl69" style="text-align: center;">25mm</td>
+<td class="xl68"> </td>
+<td class="xl68">Chống chịu hóa chất:</td>
+<td class="xl69" style="text-align: center;">axit và bazơ yếu</td>
+</tr>
+<tr>
+<td class="xl68" height="26">Độ dày:</td>
+<td class="xl69" style="text-align: center;">1.0mm</td>
+<td class="xl68"> </td>
+<td class="xl68">Cách điện:</td>
+<td class="xl69" style="text-align: center;">25kV/mm</td>
+</tr>
+<tr>
+<td class="xl68" height="26">Màng bảo vệ:</td>
+<td class="xl69" style="text-align: center;">Màu hồng</td>
+<td class="xl68"> </td>
+<td class="xl68">Khả năng chống ăn mòn:</td>
+<td class="xl69" style="text-align: center;">không thay đổi hình dạng</td>
+</tr>
+<tr>
+<td class="xl68" height="26"> </td>
+<td class="xl68"> </td>
+<td class="xl68"> </td>
+<td class="xl68">Khả năng chống lửa:</td>
+<td class="xl69" style="text-align: center;">chống được lửa</td>
+</tr>
+<tr>
+<td class="xl68" height="26"> </td>
+<td class="xl68"> </td>
+<td class="xl68"> </td>
+<td class="xl68">An toàn tiếp xúc thực phẩm:</td>
+<td class="xl69" style="text-align: center;">được chứng nhận ở Nhật</td>
+</tr>
+<tr>
+<td class="xl68" height="26"> </td>
+<td class="xl68"> </td>
+<td class="xl68"> </td>
+<td class="xl68">Dùng với nước sạch:</td>
+<td class="xl69" style="text-align: center;">an toàn với nước tắm</td>
+</tr>
+</tbody>
+</table></div>
+                    </div>
+                    <div class="more-info-product">
+                        <h3 class="field-name">Download</h3>
+                        <div class="more-content">
+                            
+
+                                <div><a href="http://sdt.com.vn/dzung/SHINETSU/Shin-Etsu Anti-Rust (Protect metal from Corrosion) - Self-Adhesive Anticorrosive Clear Tape (EN).pdf">Catalog - Bang quan Silicon chong an mon Sabi Goyou - Shin-Etsu (English)</a></div>
+                            
+
+                                <div><a href="http://sdt.com.vn/dzung/SHINETSU/Shin-Etsu Anti-Rust (Protect metal from Corrosion) - Self-Adhesive Anticorrosive Clear Tape (JP).pdf">Catalog - Bang quan Silicon chong an mon Sabi Goyou - Shin-Etsu (Japanese)</a></div>
+                            
+
+                                <div><a href="http://sdt.com.vn/dzung/SHINETSU/Shin-Etsu Anti-Rust (Protect metal from Corrosion) - Self-Adhesive Anticorrosive Clear Tape (VN).pdf">Catalog - Bang quan Silicon chong an mon Sabi Goyou - Shin-Etsu (Tieng Viet)</a></div>
+                                                    </div>
+                    </div>
+                                        <div class="more-info-product">
+                        <h3 class="field-name">Video</h3>
+                        <div class="more-content">
+                                                            <div class="video-item">
+                                    <div><a class="video-show" href="https://www.youtube.com/embed/7PLw5KY9Tw4"><img src="https://sdt.com.vn/css/images/player-icon.png" width="90" heigth="70" /></a></div>
+                                    <div class="video-title"><a class="video-show" href="https://www.youtube.com/embed/7PLw5KY9Tw4">Hướng dẫn sử dụng băng quấn ống chống ăn mòn Sabi Goyou - Shin-Etsu (Nhật)</a></div>
+                                </div>
+                                                    </div>
+                    </div>
+                    
+                                        <div class="more-info-product gallery-list">
+                        <h3 class="field-name">Thư viện ảnh</h3>
+                        <div class="more-content">
+                                                            <div class="img-item"><a class="gallery-show" href="https://sdt.com.vn/files/products/Shin-Etsu_Silicone_Ruber_for_anti_Corrosion_1.jpg"><img src="https://sdt.com.vn/files/products/Shin-Etsu_Silicone_Ruber_for_anti_Corrosion_1.jpg" width="130" height="130" alt="" /></a></div>
+                                                            <div class="img-item"><a class="gallery-show" href="https://sdt.com.vn/files/products/Shin-Etsu_Silicone_Ruber_for_anti_Corrosion_2.jpg"><img src="https://sdt.com.vn/files/products/Shin-Etsu_Silicone_Ruber_for_anti_Corrosion_2.jpg" width="130" height="130" alt="" /></a></div>
+                                                    </div>
+                    </div>
+                    
+
+                    <div class="maker-box">
+                        <h3 class="heading-box">Hãng sản xuất</h3>
+                        <div class="maker-content">
+                            <ul class="maker bxslider">
+                                                                    <li class="item">
+                                        <a title="Agru Plastic Piping Systems" href="https://sdt.com.vn/product/manufacturer/40-agru-plastic-piping-systems">
+                                            <img src="https://sdt.com.vn/files/manufacturer/AGRU_Logo_horizontal_Claim_RGB.jpg"  alt="Agru Plastic Piping Systems" />
+                                        </a>
+                                    </li>
+                                                                    <li class="item">
+                                        <a title="ASAHI AV (Japan) - Van, Ống, Phụ Kiện Nhựa Công Nghiệp" href="https://sdt.com.vn/product/manufacturer/10-asahi-av-japan-van-ong-phu-kien-nhua-cong-nghiep">
+                                            <img src="https://sdt.com.vn/files/manufacturer/Asahi_AV_Logo2.jpg"  alt="ASAHI AV (Japan) - Van, Ống, Phụ Kiện Nhựa Công Nghiệp" />
+                                        </a>
+                                    </li>
+                                                                    <li class="item">
+                                        <a title="Dura Flow Pipe" href="https://sdt.com.vn/product/manufacturer/13-dura-flow-pipe">
+                                            <img src="https://sdt.com.vn/files/manufacturer/DFP_Logo.png"  alt="Dura Flow Pipe" />
+                                        </a>
+                                    </li>
+                                                                    <li class="item">
+                                        <a title="GF Signet Instrument" href="https://sdt.com.vn/product/manufacturer/45-gf-signet-instrument">
+                                            <img src="https://sdt.com.vn/files/manufacturer/GF_Logo1.png"  alt="GF Signet Instrument" />
+                                        </a>
+                                    </li>
+                                                                    <li class="item">
+                                        <a title="Kingtai Zyia" href="https://sdt.com.vn/product/manufacturer/42-kingtai-zyia">
+                                            <img src="https://sdt.com.vn/files/manufacturer/Kingtai_Zyia_Logo.jpg"  alt="Kingtai Zyia" />
+                                        </a>
+                                    </li>
+                                                                    <li class="item">
+                                        <a title="Plast-O-Matic" href="https://sdt.com.vn/product/manufacturer/41-plast-o-matic">
+                                            <img src="https://sdt.com.vn/files/manufacturer/Plast_O_Matic_logo.jpg"  alt="Plast-O-Matic" />
+                                        </a>
+                                    </li>
+                                                                    <li class="item">
+                                        <a title="Primary Fluid" href="https://sdt.com.vn/product/manufacturer/48-primary-fluid">
+                                            <img src="https://sdt.com.vn/files/manufacturer/primary_fluid_logo.gif"  alt="Primary Fluid" />
+                                        </a>
+                                    </li>
+                                                                    <li class="item">
+                                        <a title="REED Tools" href="https://sdt.com.vn/product/manufacturer/47-reed-tools">
+                                            <img src="https://sdt.com.vn/files/manufacturer/Reed_logo.png"  alt="REED Tools" />
+                                        </a>
+                                    </li>
+                                                                    <li class="item">
+                                        <a title="Ritmo - Italy" href="https://sdt.com.vn/product/manufacturer/44-ritmo-italy">
+                                            <img src="https://sdt.com.vn/files/manufacturer/Ritmo_Logo1.jpg"  alt="Ritmo - Italy" />
+                                        </a>
+                                    </li>
+                                                                    <li class="item">
+                                        <a title="SANKING" href="https://sdt.com.vn/product/manufacturer/51-sanking">
+                                            <img src="https://sdt.com.vn/files/manufacturer/sanking_logo.jpg"  alt="SANKING" />
+                                        </a>
+                                    </li>
+                                                                    <li class="item">
+                                        <a title="Schubert&Salzer Positioner" href="https://sdt.com.vn/product/manufacturer/46-schubertsalzer-positioner">
+                                            <img src="https://sdt.com.vn/files/manufacturer/SchubertSalzer_Logo.png"  alt="Schubert&Salzer Positioner" />
+                                        </a>
+                                    </li>
+                                                                    <li class="item">
+                                        <a title="SHIEYU (DFP)" href="https://sdt.com.vn/product/manufacturer/50-shieyu-dfp">
+                                            <img src="https://sdt.com.vn/files/manufacturer/SH-DFP.jpg"  alt="SHIEYU (DFP)" />
+                                        </a>
+                                    </li>
+                                                                    <li class="item">
+                                        <a title="Shieyu Valves" href="https://sdt.com.vn/product/manufacturer/16-shieyu-valves">
+                                            <img src="https://sdt.com.vn/files/manufacturer/SH_Logo2.gif"  alt="Shieyu Valves" />
+                                        </a>
+                                    </li>
+                                                                    <li class="item">
+                                        <a title="Shin-Etsu" href="https://sdt.com.vn/product/manufacturer/49-shin-etsu">
+                                            <img src="https://sdt.com.vn/files/manufacturer/Shin-Etsu_logo.jpg"  alt="Shin-Etsu" />
+                                        </a>
+                                    </li>
+                                                                    <li class="item">
+                                        <a title="Spears Manufacturing" href="https://sdt.com.vn/product/manufacturer/15-spears-manufacturing">
+                                            <img src="https://sdt.com.vn/files/manufacturer/Spears-Logo2.jpeg"  alt="Spears Manufacturing" />
+                                        </a>
+                                    </li>
+                                                                    <li class="item">
+                                        <a title="Weld-on logo" href="https://sdt.com.vn/product/manufacturer/43-weld-on-logo">
+                                            <img src="https://sdt.com.vn/files/manufacturer/Weldon-Logo.jpg"  alt="Weld-on logo" />
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+
+                        //<![CDATA[
+                        jQuery(document).ready(function(){
+
+                            jQuery('.maker.bxslider').bxSlider(
+                                {
+                                    speed: 1000,
+                                    pause: 300,
+                                    minSlides: 1,
+                                    maxSlides: 5,
+                                    slideWidth: 162,
+                                    slideMargin: 10,
+                                    pager:false,
+                                    controls: true,
+                                    moveSlides:2
+                                    //nextSelector: '#brand-next',
+                                    //prevSelector: '#brand-prev'
+                                }
+                            );
+                        });
+                        //]]>
+                    </script>
+
+                </div> <!-- end inFo contend -->
+            </div> <!-- end contend -->
+        </div> <!-- end Right -->
+    </div> <!-- end main-->
+</div>
+<div class="footer-menu-mobile">
+		<ul>
+			<li><a href="https://sdt.com.vn/">Trang chủ</a></li>
+			<li><a href="https://sdt.com.vn/download">Download</a></li>
+			<li><a href="https://sdt.com.vn/article">Hỗ trợ kỹ thuật</a></li>
+			
+		</ul>
+		<ul>
+			
+			<li class="nav-style2"><a href="https://sdt.com.vn/gallery">Dự án đã thực hiện</a></li>
+			<li class="nav-style2"><a href="https://sdt.com.vn/aboutus">Vê chúng tôi</a></li>
+			<li><a href="https://sdt.com.vn/contact">Liên hệ</a></li>
+		</ul>
+	</div>
+<footer>
+   		<div class="footer-content">
+			<div class="f-box cty-box">
+				<h4> SDT Technology Development Support Co., Ltd </h4>
+				<p><strong>Trụ sở:</strong> Tầng 2, Green Office - MECO Complex, Ngõ 102 Trường Chinh, Đống Đa, Hà Nội<br>ĐT: 0903-255-331</p>
+				<p><strong>Hà Nội:</strong> Kho F, Trung tâm dịch vụ Cơ Điện, km12 Đường Ngọc Hồi, Thanh Trì, Hà Nội<br>ĐT: 024-3792-1548 - 024-6291-9459</p>
+				<p><strong>TP. HCM:</strong> D13/38N Đường Phạm Văn Sáng, Ấp 4A, Vĩnh Lộc A, Bình Chánh, TP HCM<br>ĐT: 028-3620-0949</p>
+				<p>Hotline:  0903-255-331<br>Email: support@sdt.com.vn<br>Web: www.sdt.com.vn</p>
+			</div>
+			<div class="f-box">
+				<h4>Về chúng tôi</h4>
+				<div class="f-content">
+					<ul class="f-links">
+						<li><a  href="https://sdt.com.vn/aboutus">Giới thiệu</a></li>
+						<li><a  href="https://sdt.com.vn/download">Download</a></li>
+					</ul>			
+					
+				</div>
+			</div>
+			<div class="f-box">
+				<h4>Thông tin giao dịch</h4>
+				<ul class="f-links">
+					<ul class="f-links">
+					<li><a href="https://sdt.com.vn/chinh-sach-bao-mat-thong-tin-ca-nhan">Chính sách bảo mật</a></li>
+					<li><a href="https://sdt.com.vn/chinh-sach-doi-tra">Chính sách đổi trả</a></li>
+					<li><a href="https://sdt.com.vn/dieu-khoan-dich-vu">Điều khoản dịch vụ</a></li>
+				</ul>
+			</div>
+			<div class="f-box mxh-box">
+				<h4>Kết nối với chúng tôi</h4>
+				<div class="f-content">
+					<ul class="f-links">
+						<li><a class="facebook-icon" target="_blank" href="https://www.facebook.com/Plastic.Piping.Systems/">Facebook</a></li>
+						<li><a class="youtube-icon" target="_blank" href="https://www.youtube.com/channel/UC2kCXxpCUhKB4EExISvNiWw">Youtube</a></li>
+						<li><a href="http://online.gov.vn/Home/WebDetails/81214" target="_blank"><img src="http://online.gov.vn/Content/EndUser/LogoCCDVSaleNoti/logoSaleNoti.png" width="158" height="60"></a></li>
+					</ul>			
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-content-2">
+			<h4>Công ty TNHH Hỗ trợ phát triển công nghệ SDT - MST: 0102705369 - Ngày thành lập: 02/04/2008 - Nơi cấp ĐKKD: Phòng Đăng ký Kinh doanh, Sở Kế hoạch và Đầu tư Thành phố Hà Nội</h4>
+				<p>Trụ sở chính: Kho F, Trung tâm dịch vụ cơ điện, Km 12 QL1A, Xã Tứ Hiệp, Huyện Thanh Trì, Hà Nội, Vietnam</p>
+				<p>Điện thoại: <a href="tel:0903255331">0903255331 </a></p>
+				<p>Email: <a href="mailto:support@sdt.com.vn">support@sdt.com.vn</a></p>
+		</div>
+ 
+
+    </footer>
+	
+	<div id="q-support">
+		<div class="q-support-btn">Button</div>
+		<div class="support-list">
+			<ul>
+				<li><a class="q-messenger" target="_blank" href="https://www.facebook.com/SDTGroup.vn">Messenger</a></li>
+				<li><a class="q-zalo"  target="_blank"   href="https://zalo.me/0903255331">Zalo Chat</a></li>
+				<li><a class="q-mail"  href="mailto:support@sdt.com.vn">Gửi E-mail</a></li>
+				<li><a  class="q-call" href="tel:0903255331">Call 0903-255-331</a></li>
+			
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		jQuery(function($){
+			$(".q-support-btn").click(function(){				
+				if ($(".support-list").hasClass('active')){
+					$(".support-list").removeClass("active");
+				} else {
+					$(".support-list").addClass("active");
+				}
+				if ($(this).hasClass('active')){
+					$(this).removeClass("active");
+				} else {
+					$(this).addClass("active");
+				}
+			})
+		});
+	</script>
+</body>
+<script type="text/javascript">
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-159209329-1']);
+  _gaq.push(['_setDomainName', 'sdt.com.vn']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6WLR2C53MV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6WLR2C53MV');
+</script>
+</html>

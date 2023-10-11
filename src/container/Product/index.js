@@ -6,7 +6,7 @@ import {Autocomplete, FormControlLabel, TextField} from "@mui/material";
 import axios from "axios";
 import {useLocation, useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
-
+import {listProductData , menuPro} from '../../data';
 
 const Product = () => {
     const {t} = useTranslation()
@@ -18,99 +18,147 @@ const Product = () => {
 
     const [listProduct, setListProduct] = useState([])
     const [listSearch, setListSearch] = useState([])
-    const [menu, setMenu] = useState([])
+    // const [menu, setMenu] = useState([])
     const [listType, setListType] = useState([])
     const [inputValue, setInputValue] = useState(textSearch ? (textSearch !== 'empty' ? textSearch : '') : '');
     const [isSearchFirst, setIsSearchFirst] = useState(false)
 
-    useEffect(() => {
-        axios.get(`${window.SystemConfig.URL}/api/categories/types`)
-            .then((res) => {
-                setMenu(res.data.data)
-            })
-            .catch((error) => {
-                console.log(error)
-            })
-    }, [])
+
+   
+
+
+  
+
+    // useEffect(() => {
+    //     axios.get(`https://api.trepax.vn/api/categories/types`)
+    //         .then((res) => {
+    //             setMenu(res.data.data)
+    //         })
+    //         .catch((error) => {
+    //             console.log(error)
+    //         })
+    // }, [])
 
     useEffect(() => {
-        console.log(textSearch)
+       
         if (textSearch) {
-            axios.post(`${window.SystemConfig.URL}/api/products/search-results`,
-                {
-                    types: null,
-                    name: textSearch,
-                    // path: "weir-minerals-horizontal-pump"
-                }
-            )
-                .then((res) => {
-                    setListProduct(res.data.data)
-                })
-                .catch((error) => {
-                    setListProduct([])
-                    console.log(error)
-                })
+           
+            setListProduct(listProductData.filter(product =>
+                product.name.toLowerCase().includes(textSearch.toLowerCase())
+            ))
         } else {
-            axios.get(`${window.SystemConfig.URL}/api/products`)
-                .then((res) => {
-                    setListProduct(res.data.data)
-                })
-                .catch((error) => {
-                    setListProduct([])
-                    console.log(error)
-                })
+            setListProduct(listProductData)
         }
         setIsSearchFirst(true)
     }, [textSearch])
 
 
-    useEffect(() => {
-        if (isSearchFirst) {
-            onSearch()
-        }
-    }, [listType])
+        useEffect(() => {
+            if (isSearchFirst) {
+                onSearch()
+            }
+        }, [listType])
 
     const handleChangeInput = (e, newInputValue) => {
+
         setInputValue(newInputValue)
-        axios.post(`${window.SystemConfig.URL}/api/products/search-results`,
-            {
-                types: listType,
-                name: newInputValue,
-            }
-        )
-            .then((res) => {
-                setListSearch(res.data.data.map((item) => {
-                    return {label: item.name, value: item.slug}
-                }))
-            })
-            .catch((error) => {
-                setListSearch([])
-                console.log(error)
-            })
+        // axios.post(`https://api.trepax.vn/api/products/search-results`,
+        //     {
+        //         types: listType,
+        //         name: newInputValue,
+        //     }
+        // )
+        //     .then((res) => {
+        //         setListSearch(res.data.data.map((item) => {
+        //             return {label: item.name, value: item.slug}
+        //         }))
+        //     })
+        //     .catch((error) => {
+        //         setListSearch([])
+        //         console.log(error)
+        //     })
+
+
+            const listProductFilter = listProductData.filter(product =>
+                product.name.toLowerCase().includes(newInputValue.toLowerCase())
+            );
+        
+            setListSearch(listProductFilter)
     }
 
+    // const onSearch = () => {
+    //     axios.post(`https://api.trepax.vn/api/products/search-results`,
+    //         {
+    //             types: listType,
+    //             name: inputValue,
+    //             // path: "weir-minerals-horizontal-pump"
+    //         }
+    //     )
+    //         .then((res) => {
+    //             setListProduct(res.data.data)
+    //         })
+    //         .catch((error) => {
+    //             setListProduct([])
+    //             console.log(error)
+    //         })
+    // }
+
     const onSearch = () => {
-        axios.post(`${window.SystemConfig.URL}/api/products/search-results`,
-            {
-                types: listType,
-                name: inputValue,
-                // path: "weir-minerals-horizontal-pump"
-            }
-        )
-            .then((res) => {
-                setListProduct(res.data.data)
-            })
-            .catch((error) => {
-                setListProduct([])
-                console.log(error)
-            })
-    }
+        const listProductFilter = listProductData.filter(product =>
+            product.name.toLowerCase().includes(inputValue.toLowerCase())
+        );
+    
+        setListProduct(listProductFilter)
+    };
+    const onCheck = (value) => {
+       
+    
+        let filterKeyword = '';
+    
+        switch (value) {
+            case 'horizontal-pump':
+                filterKeyword = 'horizontal';
+                break;
+            case 'vertical-pump':
+                filterKeyword = 'vertical';
+                break;
+            case 'slurry-valves':
+                filterKeyword = 'valves';
+                break;
+            case 'knife-gate-valves':
+                filterKeyword = 'knife gate valves';
+                break;
+            case 'cavex-cyclone-canisters-and-clusters':
+                filterKeyword = 'cavex';
+                break;
+            case 'submersible-borehole-pumps':
+                filterKeyword = 'sxb';
+                break;
+            case 'single-stage-double-suction-split-casing-centrifug':
+                filterKeyword = 'hsc';
+                break;
+            case 'submersible-sewage-pumps':
+                filterKeyword = 'wdroo';
+                break;
+            default:
+                
+                break;
+        }
+    
+        if (filterKeyword) {
+            const filteredList = listProductData.filter(product =>
+                product.name.toLowerCase().includes(filterKeyword)
+            );
+            setListProduct(filteredList);
+        }
+    };
+
 
     return (
         <Container>
             <div className={"row"}>
                 <div className="search">
-                    <div className="title">{t('text.our_product')}</div>
+                    <div className="title">{t('Sản phẩm của chúng tôi')}</div>
                     <Autocomplete
                         freeSolo
                         disablePortal
@@ -120,6 +168,7 @@ const Product = () => {
                         options={listSearch}
                         inputValue={inputValue}
                         onInputChange={handleChangeInput}
+                        getOptionLabel={(option) => option.name}
                         onChange={(event, newValue) => {
                             history(`/product-catalogue/product/${newValue.value}`)
                         }}
@@ -140,22 +189,25 @@ const Product = () => {
                         </div>}
                     />
                     <div className="icon_search">
-                        <MdSearch onClick={onSearch} size={32} color={"#0A69C5"}/>
+                        <MdSearch 
+                        onClick={onSearch} 
+                        size={32} color={"#0A69C5"}/>
                     </div>
                 </div>
 
                 <div className="list">
                     <div className="left">
-                        <h1>{t('text.type')}</h1>
+                        <h1>{t('LOẠI')}</h1>
                         <div className="list_check_box">
                             <div className="row_list_check_box">
-                                {menu.map((item) => {
+                                {menuPro.map((item) => {
                                     return (
                                         <FormControlLabel control={<Checkbox onChange={(e) => {
                                             if (e.target.checked) {
-                                                let array = [...listType]
-                                                array.push(item.value)
-                                                setListType(array)
+                                                onCheck(item.value)
+                                                // let array = [...listType]
+                                                // array.push(item.value)
+                                                // setListType(array)
                                             } else {
                                                 const arr = [...listType];
                                                 const elementToRemove = item.value;
@@ -173,8 +225,9 @@ const Product = () => {
                     <div className="right">
                         <div className="row_right">
                             {listProduct.length > 0 && listProduct.map((item) => {
+                                // console.log(item )
                                 return (
-                                    <div className="item_product" onClick={() => {
+                                    <div className="item_product"  key={item.id} onClick={() => {
                                         history(`/product-catalogue/product/${item.slug}`)
                                     }}>
                                         <div className="photo_product">
@@ -199,7 +252,7 @@ const Product = () => {
                                     textAlign: "center",
                                     width: "100%"
                                 }}>
-                                    {t('text.no_product')}
+                                    {t('Sản phẩm cần tìm không có')}
                                 </div>}
                         </div>
                     </div>

@@ -38,7 +38,7 @@ const ProductMockData = () => {
         ]
 
         useEffect(() => {
-            axios.get(`${window.SystemConfig.URL}/api/products/${id}`)
+            axios.get(`https://api.trepax.vn/api/products/${id}`)
                 .then((res) => {
                     if (res.data.data && res.data.data.length > 0) {
                         setDataProduct(res.data.data.pop())
@@ -66,11 +66,11 @@ const ProductMockData = () => {
                                         <img src={item.img} alt=""/>
                                     </div>
                                     <div style={{display: "flex", justifyContent: "center"}}>
-                                        <div onClick={() => {
+                                        {/* <div onClick={() => {
                                             window.open(item.url)
                                         }} className={"button"} style={{textAlign: "center", backgroundColor: "#0A69C5"}}>
-                                            {t('text.detailProduct')}
-                                        </div>
+                                            {t('Chi tiết sản phẩm')}
+                                        </div> */}
                                     </div>
                                 </div>
                             )

@@ -256,7 +256,7 @@ const HomePage = () => {
 
             <div style={{margin: "auto", display: "flex", flexDirection: "column", alignItems: "center"}}>
                 <div className="title_content" style={{textAlign: "center", color: "#0A69C5"}}>
-                    Trepax Việt Nam
+                VINATECH
                 </div>
                 <img src={IMAGE_TRAPAX} style={{width: "100%", marginTop: "32px"}} alt=""/>
                 <div style={{

@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import {Container} from "./style";
 import axios from "axios";
 import {useLocation} from 'react-router-dom';
+import {listProductData} from '../../data';
+
 
 const ProductDetail = () => {
     let location = useLocation();
@@ -9,6 +11,7 @@ const ProductDetail = () => {
     const lastIndex = asPath.lastIndexOf('/');
     const id = asPath.substring(lastIndex + 1, asPath.length);
     const [dataProduct, setDataProduct] = useState(null)
+
 
     const Menu = [
         {
@@ -63,18 +66,26 @@ const ProductDetail = () => {
         }
     ]
 
-    useEffect(() => {
-        axios.get(`${window.SystemConfig.URL}/api/products/${id}`)
-            .then((res) => {
-                if (res.data.data && res.data.data.length > 0) {
-                    setDataProduct(res.data.data.pop())
-                }
-            })
-            .catch((error) => {
-                console.log(error)
-            })
-    }, [id])
+  
 
+    // useEffect(() => {
+    //     axios.get(`https://api.trepax.vn/api/products/${id}`)
+    //         .then((res) => {
+    //             if (res.data.data && res.data.data.length > 0) {
+    //                 setDataProduct(res.data.data.pop())
+    //             }
+    //         })
+    //         .catch((error) => {
+    //             console.log(error)
+    //         })
+    // }, [id])
+
+    useEffect(() => {
+        const product = listProductData.find((product) => product.slug === id);
+        if (product) {
+            setDataProduct(product);
+        }
+    }, [id]);
 
     const handleClick = (e) => {
         e.preventDefault(); // Chặn sự kiện click

@@ -5,6 +5,7 @@ import {MdSearch} from "react-icons/md";
 import axios from "axios";
 import {useLocation, useNavigate} from 'react-router-dom';
 import {useTranslation} from "react-i18next";
+import {listProductData , Menu} from '../../data';
 
 const ProductType = () => {
     let location = useLocation();
@@ -17,76 +18,83 @@ const ProductType = () => {
     const [listProduct, setListProduct] = useState([])
     const [listSearch, setListSearch] = useState([])
 
-    const Menu = [
-        {
-            "id": "1",
-            "name": "Horizontal pump",
-            "path": "weir-minerals-horizontal-pump"
-        },
-        {
-            "id": "2",
-            "name": "Vertical Pump",
-            "path": "weir-minerals-vertical-pump"
-        },
-        {
-            "id": "3",
-            "name": "Slurry Valves",
-            "path": "weir-minerals-slurry-valves"
-        },
-        {
-            "id": "4",
-            "name": "Knife Gate Valves",
-            "path": "weir-minerals-knife-gate-valves"
-        },
-        {
-            "id": "5",
-            "name": "Cavex® Cyclone Canisters and Clusters",
-            "path": "weir-minerals-cavex-cyclone-canisters-and-clusters"
-        },
-        {
-            "id": "6",
-            "name": "Horizontal pump",
-            "path": "hydroo-horizontal-pump"
-        },
-        {
-            "id": "7",
-            "name": "Vertical Pump",
-            "path": "hydroo-vertical-pump"
-        },
-        {
-            "id": "8",
-            "name": "Submersible borehole pumps",
-            "path": "hydroo-submersible-borehole-pumps"
-        },
-        {
-            "id": "9",
-            "name": "Single stage double suction split casing centrifug",
-            "path": "hydroo-single-stage-double-suction-split-casing-centrifugal-pumps"
-        },
-        {
-            "id": "10",
-            "name": "Submersible sewage pumps",
-            "path": "hydroo-submersible-sewage-pumps"
-        }
-    ]
+
 
     const [inputValue, setInputValue] = useState('');
 
+  
 
     useEffect(() => {
-        axios.get(`${window.SystemConfig.URL}/api/products/categories/${id}`)
-            .then((res) => {
-                setListProduct(res.data.data)
-            })
-            .catch((error) => {
-                console.log(error)
-                setListProduct([])
-            })
+        // axios.get(`https://api.trepax.vn/api/products/categories/${id}`)
+        //     .then((res) => {
+        //         setListProduct(res.data.data)
+        //     })
+        //     .catch((error) => {
+        //         console.log(error)
+        //         setListProduct([])
+        //     })
+
+        
+        let filterKeyword = '';
+    
+        switch (id) {
+            case 'weir-minerals-horizontal-pump':
+                filterKeyword = 'horizontal';
+                break;
+            case 'weir-minerals-vertical-pump':
+                filterKeyword = 'vertical';
+                break;
+            case 'weir-minerals-slurry-valves':
+                filterKeyword = 'valves';
+                break;
+            case 'weir-minerals-knife-gate-valves':
+                filterKeyword = 'knife gate valves';
+                break;
+            case 'weir-minerals-cavex-cyclone-canisters-and-clusters':
+                filterKeyword = 'cavex';
+                break;
+            case 'weir-minerals-submersible-borehole-pumps':
+                filterKeyword = 'sxb';
+                break;
+            case 'weir-minerals-single-stage-double-suction-split-casing-centrifug':
+                filterKeyword = 'hsc';
+                break;
+            case 'weir-minerals-submersible-sewage-pumps':
+                filterKeyword = 'wdroo';
+                break;
+            case 'hydroo-horizontal-pump':
+                filterKeyword = 'nsx';
+                break;
+            case 'hydroo-vertical-pump':
+                filterKeyword = 'vdroo ';
+                break;
+            case 'hydroo-submersible-borehole-pumps':
+                filterKeyword = 'sxb';   
+                break;   
+                case 'hydroo-single-stage-double-suction-split-casing-centrifugal-pumps':
+                    filterKeyword = 'hsc';
+                    break;   
+                    case 'hydroo-submersible-sewage-pumps':
+                        filterKeyword = 'wup';
+                        break;       
+            default:
+                
+                break;
+        }
+    
+        if (filterKeyword) {
+            const filteredList = listProductData.filter(product =>
+                product.name.toLowerCase().includes(filterKeyword)
+            );
+            setListProduct(filteredList);
+        }
+
+      
     }, [id])
 
     const handleChangeInput = (e, newInputValue) => {
         setInputValue(newInputValue)
-        axios.post(`${window.SystemConfig.URL}/api/products/search-results`,
+        axios.post(`https://api.trepax.vn/api/products/search-results`,
             {
                 name: newInputValue,
                 path: id
@@ -104,7 +112,7 @@ const ProductType = () => {
     }
 
     const onSearch = () => {
-        axios.post(`${window.SystemConfig.URL}/api/products/search-results`,
+        axios.post(`https://api.trepax.vn/api/products/search-results`,
             {
                 // types: listType,
                 name: inputValue,
@@ -184,7 +192,7 @@ const ProductType = () => {
 
                             {listProduct.length === 0 &&
                                 <div style={{margin: "20px 30px", fontSize: "32px", fontStyle: "italic"}}>
-                                    {t('text.no_product')}
+                                    {t('Sản phẩm cần tìm không có')}
                                 </div>}
                         </div>
                     </div>

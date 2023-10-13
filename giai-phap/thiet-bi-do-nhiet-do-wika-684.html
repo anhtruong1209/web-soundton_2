@@ -1,0 +1,467 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Thiết bị đo nhiệt độ
+</title><meta name="description" content="Thiết bị đo nhiệt độ" /><meta name="keywords" content="Thiết bị đo nhiệt độ wika" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicons -->
+    <script src="/js/jquery-1.9.0.js"></script>
+    <link rel="shortcut icon" href="/images/img_icon.jpg" type="image/x-icon" />
+    <!-- jQuery library (served from Google) -->
+
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Documentation extras -->
+    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700i,800,800i&amp;subset=cyrillic-ext,latin-ext,vietnamese" rel="stylesheet" /><link href="/css/style.css" rel="stylesheet" type="text/css" /><link href="/css/font-awesome.min.css" rel="stylesheet" /><link rel="stylesheet" href="SlickNav/slicknav.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <script src="bxslider/plugins/jquery.easing.1.3.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="/bxslider/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/bxslider/jquery.bxslider.css" rel="stylesheet" />
+
+    <style>
+        ul.proSli li { width: auto !important; }
+        .footer .bx-controls-direction { display: none !important; }
+    </style>
+    <style>
+        .bx-wrapper { margin-bottom: 0 !important; }
+        .bx-wrapper .bx-viewport { box-shadow: 0 0 1px #ccc !important; }
+        .bx-wrapper .bx-controls-direction a { height: 40px !important; width: 36px !important; }
+        .bx-wrapper .bx-prev { background-position: -40px -33px !important; left: 0; transition: all 0.3s ease 0s; opacity: 0 !important; }
+        .bx-wrapper .bx-next { background-position: 0 -32px !important; right: 0; transition: all 0.3s ease 0s; opacity: 0 !important; }
+        .bx-wrapper:hover .bx-prev { opacity: 1 !important; transition: all 0.3s ease 0s; }
+        .bx-wrapper:hover .bx-next { opacity: 1 !important; transition: all 0.3s ease 0s; }
+        .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto { display: none !important; }
+    </style>
+    <style>
+        .bx-wrapper .bx-viewport { border: none !important; background: none !important; box-shadow: none !important; left: 0 !important; }
+        div.commentForm { display: none; float: left; margin: 0 0 20px; position: relative; text-align: justify; width: 100%; }
+        div.commentForm p { font-size: 13px; text-align: justify; }
+        div.section:nth-child(2n+1) { }
+        div.quote { padding: 5px 0; width: 100%; text-align: left; font-size: 12px; float: left; }
+        div.commentForm .about-page ul li { padding-top: 0; padding-bottom: 0; }
+
+
+        input:focus{
+    outline: none !important;
+}
+
+        .breadcrumb li[data-id="2"],.breadcrumb li[data-id="3"],.breadcrumb li[data-id="576"],.breadcrumb li[data-id="577"]{display: none}
+    </style>
+    
+</head>
+<body class="">
+    <form name="aspnetForm" method="post" action="/giai-phap/thiet-bi-do-nhiet-do-wika-684.html" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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aS1kby1uaGlldC1kby13aWthL2NhbS1iaWVuLW5oaWV0LWRvLTI2OC5hc3B4QC9VcGxvYWQvaW1hZ2UvMjAxOS8wNi8yOC9jYW0tYmllbi1uaGlldC1kb18yMDE5LTA2LTI4LTE2MzQ0Ny5qcGdkAgEPFQM1L3RoaWV0LWJpLWRvLW5oaWV0LWRvLXdpa2EvY2FtLWJpZW4tbmhpZXQtZG8tMjY4LmFzcHgaQ+G6o20gYmnhur9uIG5oaeG7h3QgxJHhu5mcATxwPkPhuqNtIGJp4bq/biBuaGnhu4d0IMSR4buZIFdJS0EgYmFvIGfhu5NtIGhhaSBuaCZvYWN1dGU7bTo8L3A+DQoNCjxwPi0gTmhp4buHdCDEkWnhu4duIHRy4bufIChSVEQpPC9wPg0KDQo8cD4tIEPhurdwIG5oaeG7h3QgxJFp4buHbiAoVGhlcm1vY291cGxlKTwvcD4NCmQCAg8VATUvdGhpZXQtYmktZG8tbmhpZXQtZG8td2lrYS9jYW0tYmllbi1uaGlldC1kby0yNjguYXNweGQCAg9kFgZmDxUCOC90aGlldC1iaS1kby1uaGlldC1kby13aWthL2JpZW4tdHJ1eWVuLW5oaWV0LWRvLTI3MC5hc3B4Qy9VcGxvYWQvaW1hZ2UvMjAxOS8wNi8yOC90cmFuc21pdHRlci1uaGlldC1kb18yMDE5LTA2LTI4LTE3MDQ1NC5qcGdkAgEPFQM4L3RoaWV0LWJpLWRvLW5oaWV0LWRvLXdpa2EvYmllbi10cnV5ZW4tbmhpZXQtZG8tMjcwLmFzcHgdQmnhur9uIHRydXnhu4FuIG5oaeG7h3QgxJHhu5mZBDxwPkJp4bq/biB0cnV54buBbiBuaGnhu4d0IMSR4buZICh0ZW1wZXJhdHVyZSB0cmFuc21pdHRlcikgY2h1eeG7g24gxJHhu5VpIHQmaWFjdXRlO24gaGnhu4d1IMSR4bqndSB2JmFncmF2ZTtvIHThu6sgbmhp4buBdSBsb+G6oWkgY+G6o20gYmnhur9uIGtoJmFhY3V0ZTtjIG5oYXUgbmjGsCBuaGnhu4d0IMSRaeG7h24gdHLhu58sIGPhurdwIG5oaeG7h3QgxJFp4buHbiB0aCZhZ3JhdmU7bmggdCZpYWN1dGU7biBoaeG7h3UgxJHhuqd1IHJhIHRp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AQ9kFgYCAQ8PFgIeC05hdmlnYXRlVXJsBRNqYXZhc2NyaXB0OnZvaWQoMCk7FgIeA3JlbAUIbm9mb2xsb3dkAgMPFgIfAAIBFgJmD2QWAmYPFQMGYWN0aXZlJi92bi90aGlldC1iaS1kby1uaGlldC1kby13aWthLTY4NC5hc3B4ATFkAgUPDxYCHwEFE2phdmFzY3JpcHQ6dm9pZCgwKTsWAh8CBQhub2ZvbGxvd2QCAg9kFgICAQ9kFgJmDxYCHwACAhYEZg9kFgJmDxUJAAAALTIwMTkvMDcvMjQvd2lrYV9wZ19hdGV4XzIwMTktMDctMjQtMTcxMzIyLnBuZzpIeWdpZW5pYyBkaWFwaHJhZ20gcHJlc3N1cmUgZ2F1Z2VzLCBhbHNvIHdpdGggQVRFWCB2ZXJzaW9uAAAAAGQCAQ9kFgJmDxUJYWh0dHBzOi8vZW4ud2lrYS5jb20vbmV3c2NvbnRlbnRnZW5lcmljLldJS0E/QXhJRD02MjE0JnRhYk5ld3M9MSZ0YWJQYWdlPTEmaXRlbVNpemU9NSZjdXJZZWFyPTIwMTgyaHR0cHM6Ly9lbi53aWthLmNvbS9uZXdzY29udGVudGdlbmVyaWMuV0lLQT9BeElEPTYAKDIwMTkvMDcvMjQvd2lrYV90Z18yMDE5LTA3LTI0LTE3MTgzNS5wbmdCQmltZXRhbCB0aGVybW9tZXRlcnMgcXVhbGlmaWVkIGluIGFjY29yZGFuY2Ugd2l0aCBib3RoIEFTTUUgYW5kIEVOAGFodHRwczovL2VuLndpa2EuY29tL25ld3Njb250ZW50Z2VuZXJpYy5XSUtBP0F4SUQ9NjIxNCZ0YWJOZXdzPTEmdGFiUGFnZT0xJml0ZW1TaXplPTUmY3VyWWVhcj0yMDE4Mmh0dHBzOi8vZW4ud2lrYS5jb20vbmV3c2NvbnRlbnRnZW5lcmljLldJS0E/QXhJRD02AGQCBA9kFgJmDxYCHgRUZXh0BT3CoMKpIDIwMDkgLSAyMDIywqBC4bqjbiBxdXnhu4FuIHRodeG7mWMgduG7gSBWQVRDT00gQ28uLEx0ZA0KZGRHTxFmTNfo2Q3m2b2nBUqLjspQPg==" />
+</div>
+
+        <header class="" id="header" role="" lang="vn">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container-1004 container-full">
+                        <div class="col-md-12 col-sm-12 col-lg-3 col-xs-12">
+                            <div class="header-top">
+                                <div class="header_logo">
+                                    <a class="logo" href="/?lang=vn">
+                                        <img src="/images/logo.jpg" />
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-lg-9 col-xs-12">
+                            <div class="header-search">
+                                
+                                <input onkeypress="searchKeyPress(event)" id="txtSearch" class="input-text has-icon" type="text" value="" />
+                                <a style="cursor: pointer" id="btSearch" onclick="do_search()"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                            <script type="text/javascript">
+                                var do_search = function () {
+                                    var e = document.getElementById("txtSearch");
+                                    if (e.value == "") {
+                                        e.value = "Tìm kiếm";
+                                        return false;
+                                    }
+                                    else {
+                                        if (e.value != "Tìm kiếm")
+                                            window.location = "/san-pham.html?key=" + e.value;
+                                            }
+                                            }
+                                        var sfocus = function () {
+
+                                            var e = document.getElementById("txtSearch");
+                                            if (e.value == "Tìm kiếm") {
+                                                e.value = "";
+                                            }
+                                        }
+                                        var sblur = function () {
+                                            var e = document.getElementById("txtSearch");
+                                            if (e.value == "") {
+                                                e.value = "Tìm kiếm";
+                                            }
+                                        }
+                                        function searchKeyPress(e) {
+                                            e.stopPropagation();
+                                            // look for window.event in case event isn't passed in
+                                            if (typeof e == 'undefined' && window.event) { e = window.event; }
+                                            if (e.keyCode == 13) {
+                                                do_search();
+                                                e.preventDefault();
+                                            }
+
+
+                                        }
+                            </script>
+                            <div class="header-menu">
+                                <label for="drop" class="toggle">
+                                    <p>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </p>
+                                </label>
+                                <input type="checkbox" id="drop" />
+                                <ul class="menu" style="font-weight:bold">
+                                    
+                                    <li><a id="a1" href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                                    <li><a id="a578" href="/he-thong-dich-vu-578.html">Hệ thống & Dịch vụ </a>
+                                        <ul>
+                                            
+                                                    <li><a href="/he-thong-dich-vu/he-thong-dieu-khien-qua-trinh-pcs-190.html">Hệ thống điều khiển quá trình (PCS)</a></li>
+                                                
+                                                    <li><a href="/he-thong-dich-vu/he-thong-thiet-bi-truong-an-toan-sis-188.html">Hệ thống thiết bị trường an toàn (SIS)</a></li>
+                                                
+                                                    <li><a href="/he-thong-dich-vu/he-thong-quan-trac-khi-thai-lien-tuc-cems-371.html">Hệ thống quan trắc khí thải liên tục (CEMS)</a></li>
+                                                
+                                                    <li><a href="/he-thong-dich-vu/dich-vu-bao-tri-phong-ngua-180.html">Dịch vụ bảo trì phòng ngừa</a></li>
+                                                
+                                        </ul>
+                                    </li>
+                                    <li><a id="a665" href="/giai-phap/san-pham-665.html">Sản phẩm</a>
+                                         <ul>
+                                            
+                                                    <li><a href="/giai-phap/san-pham-700.html">Thiết bị đo lường hãng WIKA</a></li>
+                                                
+                                                    <li><a href="/giai-phap/san-pham-701.html">Thiết bị đo lường nhãn hiệu Foxboro (Schneider Electric)</a></li>
+                                                
+                                                    <li><a href="/giai-phap/san-pham-714.html">Thiết bị đo lường hãng ABB</a></li>
+                                                
+                                                    <li><a href="/giai-phap/san-pham-715.html">Thiết đo bụi và lưu lượng hãng ENVEA (PCME)</a></li>
+                                                
+                                        </ul>
+
+                                    </li>
+                                    <li><a id="a666" href="/du-an-666.html">Dự án</a></li>
+                                    <li><a id="a5" href="/san-pham/hang-sankho-678.html">Hàng sẵn kho</a>
+                                        <ul>
+                                            
+                                                    <li><a href="/san-pham/wika-681.html">Wika</a>
+
+
+
+
+                                                    </li>
+                                                
+                                                    <li><a href="/san-pham/foxboro-682.html">Foxboro</a>
+
+
+
+
+                                                    </li>
+                                                
+
+                                        </ul>
+                                    </li>
+
+                                    <li><a id="a6" href="/lien-he.html">LIÊN HỆ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+    <banner>
+        <div class="home-slider">
+            <ul class="bxslider">
+                <li><img onerror="$(this).remove()" style="width: 100%" src="/upload/image/" /></li>
+            </ul>
+            <div style="background: #f5f5f5">
+                <div class="container-1004 container-full">
+                    <ol class="breadcrumb">
+                        <li><a href="/?lang=vn">Trang chủ</a></li>
+                      
+                        
+                        
+                        <li data-id="2"><a href="/giai-phap/san-pham-2.html">Bài viết</a></li>
+                        
+                        <li data-id="576"><a href="/giai-phap/san-pham-576.html">VN</a></li>
+                        
+                        <li data-id="665"><a href="/giai-phap/san-pham-665.html">Sản phẩm</a></li>
+                        
+                        <li data-id="700"><a href="/giai-phap/san-pham-700.html">Thiết bị đo lường hãng WIKA</a></li>
+                        
+                        <li data-id="684"><a href="/giai-phap/thiet-bi-do-nhiet-do-wika-684.html">Thiết bị đo nhiệt độ WIKA</a></li>
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </banner>
+    <main class="" id="content" role="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="about-page products-page">
+                    <div class="container-1004 container-full">
+
+                        <div class="col-md-9 col-sm-9 col-lg-9 col-xs-12 ">
+                            <div class="art-title-cate">
+                                <h3>Thiết bị đo nhiệt độ WIKA</h3>
+                            </div>
+                            <div class="prods-desc">
+                                <p>
+                                    <p>WIKA cung cấp tất cả c&aacute;c loại thiết bị đo nhiệt độ, bao gồm: đồng hồ đo nhiệt độ, cảm biến, biến truyền, c&ocirc;ng tắc nhiệt độ, giếng nhiệt (thermowell)&nbsp;c&ugrave;ng tất cả c&aacute;c loại phụ kiện gi&uacute;p đ&aacute;p ứng mọi y&ecirc;u cầu của kh&aacute;ch h&agrave;ng</p>
+
+                                </p>
+                            </div>
+                            <div class="prods-cate-items">
+                                
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/thiet-bi-do-nhiet-do-wika/dong-ho-do-nhiet-do-267.html">
+                                                    <img src="/Upload/image/2019/06/28/dong-ho-do-nhiet-do_2019-06-28-162547.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/thiet-bi-do-nhiet-do-wika/dong-ho-do-nhiet-do-267.html">Đồng hồ đo nhiệt độ</a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>Đồng hồ đo nhiệt độ WIKA hoạt động theo c&aacute;c nguy&ecirc;n l&yacute; bimetal, liquid expansion v&agrave; gas-actuation. Dải đo từ -200 tới +700 &deg;C với nhiều cấp ch&iacute;nh x&aacute;c, thời gian phản hồi kh&aacute;c nhau. Thiết kế kết nối, đường k&iacute;nh v&agrave; chiều d&agrave;i th&acirc;n đo đa dạng gi&uacute;p đ&aacute;p ứng mọi y&ecirc;u cầu của kh&aacute;ch h&agrave;ng. Tất cả c&aacute;c đồng hồ đo nhiệt độ đều c&oacute; thể lắp đặt k&egrave;m giếng nhiệt.</p>
+
+                                                
+                                                <a href="/giai-phap/thiet-bi-do-nhiet-do-wika/dong-ho-do-nhiet-do-267.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/thiet-bi-do-nhiet-do-wika/cam-bien-nhiet-do-268.html">
+                                                    <img src="/Upload/image/2019/06/28/cam-bien-nhiet-do_2019-06-28-163447.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/thiet-bi-do-nhiet-do-wika/cam-bien-nhiet-do-268.html">Cảm biến nhiệt độ</a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>Cảm biến nhiệt độ WIKA bao gồm hai nh&oacute;m:</p>
+
+<p>- Nhiệt điện trở (RTD)</p>
+
+<p>- Cặp nhiệt điện (Thermocouple)</p>
+
+                                                
+                                                <a href="/giai-phap/thiet-bi-do-nhiet-do-wika/cam-bien-nhiet-do-268.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/thiet-bi-do-nhiet-do-wika/bien-truyen-nhiet-do-270.html">
+                                                    <img src="/Upload/image/2019/06/28/transmitter-nhiet-do_2019-06-28-170454.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/thiet-bi-do-nhiet-do-wika/bien-truyen-nhiet-do-270.html">Biến truyền nhiệt độ</a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>Biến truyền nhiệt độ (temperature transmitter) chuyển đổi t&iacute;n hiệu đầu v&agrave;o từ nhiều loại cảm biến kh&aacute;c nhau như nhiệt điện trở, cặp nhiệt điện th&agrave;nh t&iacute;n hiệu đầu ra ti&ecirc;u chuẩn (0 ... 10 V hoặc 4 ... 20 mA). Với c&aacute;c biến truyền nhiệt độ WIKA, kh&aacute;ch h&agrave;ng c&oacute; thể t&ugrave;y chọn cấu h&igrave;nh cảm biến, dải đo v&agrave; c&aacute;c chức năng kh&aacute;c theo y&ecirc;u cầu.&nbsp;</p>
+
+                                                
+                                                <a href="/giai-phap/thiet-bi-do-nhiet-do-wika/bien-truyen-nhiet-do-270.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/thiet-bi-do-nhiet-do-wika/cong-tac-nhiet-do-269.html">
+                                                    <img src="/Upload/image/2019/06/28/cong-tac-nhiet-do_2019-06-28-164711.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/thiet-bi-do-nhiet-do-wika/cong-tac-nhiet-do-269.html">Công tắc nhiệt độ</a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>C&ocirc;ng tắc nhiệt độ (temperature switch) được sử dụng trong rất nhiều c&aacute;c qu&aacute; tr&igrave;nh trong c&ocirc;ng nghiệp. Khi nhiệt độ đạt tới gi&aacute; trị đặt trước, c&ocirc;ng tắc sẽ đ&oacute;ng hoặc mở mạch. T&ugrave;y thuộc v&agrave;o y&ecirc;u cầu của kh&aacute;ch h&agrave;ng m&agrave; c&oacute; thể sử dụng tiếp điểm loại cơ kh&iacute; hoặc điện tử. WIKA c&oacute; dải sản phẩm đa dạng, đ&aacute;p ứng được mọi y&ecirc;u cầu của kh&aacute;ch h&agrave;ng.</p>
+
+                                                
+                                                <a href="/giai-phap/thiet-bi-do-nhiet-do-wika/cong-tac-nhiet-do-269.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/thiet-bi-do-nhiet-do-wika/gieng-nhiet-271.html">
+                                                    <img src="/Upload/image/2019/06/28/thermowell_2019-06-28-172802.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/thiet-bi-do-nhiet-do-wika/gieng-nhiet-271.html">Giếng nhiệt</a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>Giếng nhiệt (thermowell) của WIKA được sử dụng để bảo vệ cảm biến v&agrave; dễ d&agrave;ng thay thế cảm biến m&agrave; kh&ocirc;ng phải dừng qu&aacute; tr&igrave;nh. WIKA cung cấp dải sản phẩm giếng nhiệt hết sức đa dạng, gồm phi&ecirc;n bản solid-machine (đặc) v&agrave; phi&ecirc;n bản fabricated (chế tạo) với thiết kế dạng ống, loại vật liệu v&agrave; kết nối đa dạng (ren, b&iacute;ch, h&agrave;n) gi&uacute;p đ&aacute;p ứng mọi điều kiện đo. Giếng nhiệt của WIKA được chế tạo với k&iacute;ch thước theo y&ecirc;u cầu của kh&aacute;ch h&agrave;ng v&agrave; c&aacute;c ti&ecirc;u chuẩn quốc tế.</p>
+
+                                                
+                                                <a href="/giai-phap/thiet-bi-do-nhiet-do-wika/gieng-nhiet-271.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/thiet-bi-do-nhiet-do-wika/phu-kien-272.html">
+                                                    <img src="/Upload/image/2019/06/28/phu-kien_2019-06-28-173332.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/thiet-bi-do-nhiet-do-wika/phu-kien-272.html">Phụ kiện</a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>WIKA cung cấp c&aacute;c loại phụ kiện đa dạng d&ugrave;ng cho thiết bị đo nhiệt độ gi&uacute;p đảm bảo an to&agrave;n khi vận h&agrave;nh, dễ d&agrave;ng thay mới v&agrave; tối ưu h&oacute;a ứng dụng của kh&aacute;ch h&agrave;ng.</p>
+
+                                                
+                                                <a href="/giai-phap/thiet-bi-do-nhiet-do-wika/phu-kien-272.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                            </div>
+                            
+
+<div class="pgs">
+ 
+  <a id="ctl00_ContentPlaceHolder1_Pager_lblPrev" rel="nofollow" href="javascript:void(0);">&laquo; </a>
+   
+        <a class="ipage active"  href="/thiet-bi-do-nhiet-do-wika-684.html">
+            1
+        </a>
+    
+    <a id="ctl00_ContentPlaceHolder1_Pager_lblNext" rel="nofollow" href="javascript:void(0);">&raquo;</a>
+ 
+</div>
+
+
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-lg-3 hidden-xs">
+                            <div class="art-title-cate hidden-xs" style="border-color: #FFF">
+                                <h3>&nbsp;&nbsp;</h3>
+                            </div>
+                            
+<div class="product-right">
+    <div class="adv-item">
+        
+                <a class="-c-thumb" href="" target="" rel="">
+                    <img onerror="$(this).remove()" class="img" src="/Upload/image/2019/07/24/wika_pg_atex_2019-07-24-171322.png" /></a>
+                <div class="widget-container subscribe">
+                    <h4>Hygienic diaphragm pressure gauges, also with ATEX version</h4>
+                    <div class="-c-desc"></div>
+                    <a class="-c-more" href="" target="" rel="">Xem tiếp >
+                    </a>
+                </div>
+            
+                <a class="-c-thumb" href="https://en.wika.com/newscontentgeneric.WIKA?AxID=6214&tabNews=1&tabPage=1&itemSize=5&curYear=2018" target="https://en.wika.com/newscontentgeneric.WIKA?AxID=6" rel="">
+                    <img onerror="$(this).remove()" class="img" src="/Upload/image/2019/07/24/wika_tg_2019-07-24-171835.png" /></a>
+                <div class="widget-container subscribe">
+                    <h4>Bimetal thermometers qualified in accordance with both ASME and EN</h4>
+                    <div class="-c-desc"></div>
+                    <a class="-c-more" href="https://en.wika.com/newscontentgeneric.WIKA?AxID=6214&tabNews=1&tabPage=1&itemSize=5&curYear=2018" target="https://en.wika.com/newscontentgeneric.WIKA?AxID=6" rel="">Xem tiếp >
+                    </a>
+                </div>
+            
+    </div>
+</div>
+
+                            <div class="cate-right">
+                                
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        $('#a684').addClass('active');
+        $('#a700').addClass('active');
+    </script>
+
+        <!-- Footer ================================================== -->
+        <footer class="" id="footer" role="">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container-1004 container-full">
+                        <div class="footer">
+                            <ul style="text-transform: uppercase">
+           
+                                <li><a href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                                <li><a href="/he-thong-dich-vu-578.html">Hệ thống & Dịch vụ </a>
+
+                                </li>
+                                <li><a href="#">Sản phẩm</a></li>
+                                <li><a href="/du-an-666.html">Dự án</a></li>
+                                <li><a href="/san-pham/hang-sankho-678.html">Hàng sẵn kho</a>
+
+                                </li>
+
+                                <li><a href="/lien-he.html">LIÊN HỆ</a></li>
+
+                                <li class="lang">
+                                    <a href="/?lang=en">
+                                        <img src="/images/btn_langEN.jpg" />
+                                    </a>
+                                    <a href="/?lang=vn">
+                                        <img src="/images/btn_langVN.jpg" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="copyright">
+
+                                 © 2009 - 2022 Bản quyền thuộc về VATCOM Co.,Ltd
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JavaScript ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/jquery.js"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-89740908-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
+
+
+
+
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="986F59E2" />
+</div></form>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,476 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Bộ phân tích khí liên tục
+</title><meta name="description" /><meta name="keywords" content="Bộ phân tích khí liên tục" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicons -->
+    <script src="/js/jquery-1.9.0.js"></script>
+    <link rel="shortcut icon" href="/images/img_icon.jpg" type="image/x-icon" />
+    <!-- jQuery library (served from Google) -->
+
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Documentation extras -->
+    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700i,800,800i&amp;subset=cyrillic-ext,latin-ext,vietnamese" rel="stylesheet" /><link href="/css/style.css" rel="stylesheet" type="text/css" /><link href="/css/font-awesome.min.css" rel="stylesheet" /><link rel="stylesheet" href="SlickNav/slicknav.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <script src="bxslider/plugins/jquery.easing.1.3.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="/bxslider/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/bxslider/jquery.bxslider.css" rel="stylesheet" />
+
+    <style>
+        ul.proSli li { width: auto !important; }
+        .footer .bx-controls-direction { display: none !important; }
+    </style>
+    <style>
+        .bx-wrapper { margin-bottom: 0 !important; }
+        .bx-wrapper .bx-viewport { box-shadow: 0 0 1px #ccc !important; }
+        .bx-wrapper .bx-controls-direction a { height: 40px !important; width: 36px !important; }
+        .bx-wrapper .bx-prev { background-position: -40px -33px !important; left: 0; transition: all 0.3s ease 0s; opacity: 0 !important; }
+        .bx-wrapper .bx-next { background-position: 0 -32px !important; right: 0; transition: all 0.3s ease 0s; opacity: 0 !important; }
+        .bx-wrapper:hover .bx-prev { opacity: 1 !important; transition: all 0.3s ease 0s; }
+        .bx-wrapper:hover .bx-next { opacity: 1 !important; transition: all 0.3s ease 0s; }
+        .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto { display: none !important; }
+    </style>
+    <style>
+        .bx-wrapper .bx-viewport { border: none !important; background: none !important; box-shadow: none !important; left: 0 !important; }
+        div.commentForm { display: none; float: left; margin: 0 0 20px; position: relative; text-align: justify; width: 100%; }
+        div.commentForm p { font-size: 13px; text-align: justify; }
+        div.section:nth-child(2n+1) { }
+        div.quote { padding: 5px 0; width: 100%; text-align: left; font-size: 12px; float: left; }
+        div.commentForm .about-page ul li { padding-top: 0; padding-bottom: 0; }
+
+
+        input:focus{
+    outline: none !important;
+}
+
+        .breadcrumb li[data-id="2"],.breadcrumb li[data-id="3"],.breadcrumb li[data-id="576"],.breadcrumb li[data-id="577"]{display: none}
+    </style>
+    
+</head>
+<body class="">
+    <form name="aspnetForm" method="post" action="/giai-phap/bo-phan-tich-khi-lien-tuc-751.html" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTgwMDg0Mjg2OQ9kFgJmD2QWAgIDD2QWCmYPFgIeC18hSXRlbUNvdW50AgQWCGYPZBYCZg8VAjwvaGUtdGhvbmctZGljaC12dS9oZS10aG9uZy1kaWV1LWtoaWVuLXF1YS10cmluaC1wY3MtMTkwLmFzcHguSOG7hyB0aOG7kW5nIMSRaeG7gXUga2hp4buDbiBxdcOhIHRyw6xuaCAoUENTKWQCAQ9kFgJmDxUCPy9oZS10aG9uZy1kaWNoLXZ1L2hlLXRob25nLXRoaWV0LWJpLXRydW9uZy1hbi10b2FuLXNpcy0xODguYXNweDJI4buHIHRo4buRbmcgdGhp4bq/dCBi4buLIHRyxrDhu51uZyBhbiB0b8OgbiAoU0lTKWQCAg9kFgJmDxUCRC9oZS10aG9uZy1kaWNoLXZ1L2hlLXRob25nLXF1YW4tdHJhYy1raGktdGhhaS1saWVuLXR1Yy1jZW1zLTM3MS5hc3B4N0jhu4cgdGjhu5FuZyBxdWFuIHRy4bqvYyBraMOtIHRo4bqjaSBsacOqbiB04bulYyAoQ0VNUylkAgMPZBYCZg8VAjUvaGUtdGhvbmctZGljaC12dS9kaWNoLXZ1LWJhby10cmktcGhvbmctbmd1YS0xODAuYXNweCRE4buLY2ggduG7pSBi4bqjbyB0csOsIHBow7JuZyBuZ+G7q2FkAgEPFgIfAAIEFghmD2QWAmYPFQIDNzAwJFRoaeG6v3QgYuG7iyDEkW8gbMaw4budbmcgaMOjbmcgV0lLQWQCAQ9kFgJmDxUCAzcwMUNUaGnhur90IGLhu4sgxJFvIGzGsOG7nW5nIG5ow6NuIGhp4buHdSBGb3hib3JvIChTY2huZWlkZXIgRWxlY3RyaWMpZAICD2QWAmYPFQIDNzE0I1RoaeG6v3QgYuG7iyDEkW8gbMaw4budbmcgaMOjbmcgQUJCZAIDD2QWAmYPFQIDNzE1NlRoaeG6v3QgxJFvIGLhu6VpIHbDoCBsxrB1IGzGsOG7o25nIGjDo25nIEVOVkVBIChQQ01FKWQCAg8WAh8AAgIWBGYPZBYCZg8VAhcvc2FuLXBoYW0vd2lrYS02ODEuYXNweARXaWthZAIBD2QWAmYPFQIaL3Nhbi1waGFtL2ZveGJvcm8tNjgyLmFzcHgHRm94Ym9yb2QCAw9kFgZmDxYCHwACBxYOZg9kFgZmDxUCUi9iby1waGFuLXRpY2gta2hpLWxpZW4tdHVjL2JvLXBoYW4tdGljaC1raGktbGllbi10dWMtZG9uZy1lYXN5bGluZS1lbDMwMDAtMzQ2LmFzcHhdL1VwbG9hZC9pbWFnZS8yMDE5LzA3LzI0L2JvLXBoYW4tdGljaC1raGktbGllbi10dWMtZG9uZy1lYXN5bGluZS1lbDMwMDBfMjAxOS0wNy0yNC0yMTQ0MTAuanBnZAIBDxUDUi9iby1waGFuLXRpY2gta2hpLWxpZW4tdHVjL2JvLXBoYW4tdGljaC1raGktbGllbi10dWMtZG9uZy1lYXN5bGluZS1lbDMwMDAtMzQ2LmFzcHg4QuG7mSBwaMOibiB0w61jaCBraMOtIGxpw6puIHThu6VjIGTDsm5nIEVhc3lMaW5lIEVMMzAwMCDYATxwPkVhc3lMaW5lIGwmYWdyYXZlOyBkJm9ncmF2ZTtuZyB0aGnhur90IGLhu4sgY2jhuqV0IGzGsOG7o25nIGNhbyB24bubaSBnaSZhYWN1dGU7IGPhuqMgcGjhuqNpIGNoxINuZyBkJnVncmF2ZTtuZyDEkeG7gyBnaSZhYWN1dGU7bSBzJmFhY3V0ZTt0IG7hu5NuZyDEkeG7mSBraCZpYWN1dGU7IGNobyBuaGnhu4F1IOG7qW5nIGThu6VuZyBraCZhYWN1dGU7YyBuaGF1LjwvcD4NCmQCAg8VAVIvYm8tcGhhbi10aWNoLWtoaS1saWVuLXR1Yy9iby1waGFuLXRpY2gta2hpLWxpZW4tdHVjLWRvbmctZWFzeWxpbmUtZWwzMDAwLTM0Ni5hc3B4ZAIBD2QWBmYPFQJKL2JvLXBoYW4tdGljaC1raGktbGllbi10dWMvYm8tcGhhbi10aWNoLWtoaS1hZHZhbmNlLW9wdGltYS1hbzIwMDAtMzQ3LmFzcHhaL1VwbG9hZC9pbWFnZS8yMDE5LzA3LzI0L2JvLXBoYW4tdGljaC10aWNoLWhvcC1hZHZhbmNlLW9wdGltYS1hbzIwMDBfMjAxOS0wNy0yNC0yMTQ2NDguanBnZAIBDxUDSi9iby1waGFuLXRpY2gta2hpLWxpZW4tdHVjL2JvLXBoYW4tdGljaC1raGktYWR2YW5jZS1vcHRpbWEtYW8yMDAwLTM0Ny5hc3B4K0Lhu5kgcGjDom4gdMOtY2gga2jDrSBBZHZhbmNlIE9wdGltYSBBTzIwMDCLBDxwPkQmb2dyYXZlO25nIHBoJmFjaXJjO24gdCZpYWN1dGU7Y2gga2gmaWFjdXRlOyBBZHZhbmNlIE9wdGltYSBjJm9hY3V0ZTsgdGhp4bq/dCBr4bq/IGThuqFuZyBtJm9jaXJjOy3EkXVuLiBE4bqjaSBjJm9jaXJjO25nIG5naOG7hyBwaCZhY2lyYztuIHQmaWFjdXRlO2NoIMSRYSBk4bqhbmcsIHThu6sgYyZhYWN1dGU7YyBxdWFuZyBr4bq/IHF1JmFhY3V0ZTsgdHImaWdyYXZlO25oIMSR4bq3YyBiaeG7h3QgdOG7m2kgdGhp4bq/dCBi4buLIMSRbyBwaCZhY2lyYztuIHQmaWFjdXRlO2NoIHThuqFpIGNo4buXIGtp4buDdSBsYXNlci4gQyZvYWN1dGU7IHRo4buDIHbhuq1uIGgmYWdyYXZlO25oIHThuqFpIHRydW5nIHQmYWNpcmM7bSDEkWnhu4F1IGtoaeG7g24gaG/hurdjIHThu6sgeGEgcXVhIHRoJm9jaXJjO25nIHF1YSBt4bqhbmcgRXRoZXJuZXQuIMSQxrDhu6NjIHRoaeG6v3Qga+G6vyDEkeG7gyBz4butIGThu6VuZyB0cm9uZyBtJm9jaXJjO2kgdHLGsOG7nW5nIGThu4UgY2gmYWFjdXRlO3kgbuG7lS48L3A+DQpkAgIPFQFKL2JvLXBoYW4tdGljaC1raGktbGllbi10dWMvYm8tcGhhbi10aWNoLWtoaS1hZHZhbmNlLW9wdGltYS1hbzIwMDAtMzQ3LmFzcHhkAgIPZBYGZg8VAlAvYm8tcGhhbi10aWNoLWtoaS1saWVuLXR1Yy9oZS10aG9uZy1waGFuLXRpY2gta2hpLXRyb24tYm8tYW8yMDAwLXN5c3RlbS0zNDguYXNweFsvVXBsb2FkL2ltYWdlLzIwMjEvMTIvMTEvaGUtdGhvbmctcGhhbi10aWNoLWtoaS10cm9uLWJvLWFvMjAwMC1zeXN0ZW1fMjAyMS0xMi0xMS0xNDUyMTQuanBnZAIBDxUDUC9iby1waGFuLXRpY2gta2hpLWxpZW4tdHVjL2hlLXRob25nLXBoYW4tdGljaC1raGktdHJvbi1iby1hbzIwMDAtc3lzdGVtLTM0OC5hc3B4N0jhu4cgdGjhu5FuZyBwaMOibiB0w61jaCBraMOtIHRy4buNbiBi4buZIEFPMjAwMCBzeXN0ZW2SAzxwPkjhu4cgdGjhu5FuZyBwaCZhY2lyYztuIHQmaWFjdXRlO2NoIGtoJmlhY3V0ZTsgQU8yMDAwIHN5c3RlbSBiYW8gZ+G7k20gdOG6pXQgY+G6oyBt4buNaSB0aGnhur90IGLhu4sgdOG7qyDEkeG6p3UgZCZvZ3JhdmU7LCDhu5FuZyBk4bqrbiBraCZpYWN1dGU7IG3huqt1IGdpYSBuaGnhu4d0LCBo4buHIHRo4buRbmcgeOG7rSBsJnlhY3V0ZTsga2gmaWFjdXRlOyBt4bqrdSB04bubaSBjJmFhY3V0ZTtjIGLhu5kgcGgmYWNpcmM7biB0JmlhY3V0ZTtjaCB0aHXhu5ljIGQmb2dyYXZlO25nIEFkdmFuY2UgT3B0aW1hLiBBTy0yMDAwIHN5c3RlbSBjJm9hY3V0ZTsgdGjhu4MgduG6rW4gaCZhZ3JhdmU7bmggaG8mYWdyYXZlO24gdG8mYWdyYXZlO24gdOG7qyBiJmVjaXJjO24gbmdvJmFncmF2ZTtpLjwvcD4NCmQCAg8VAVAvYm8tcGhhbi10aWNoLWtoaS1saWVuLXR1Yy9oZS10aG9uZy1waGFuLXRpY2gta2hpLXRyb24tYm8tYW8yMDAwLXN5c3RlbS0zNDguYXNweGQCAw9kFgZmDxUCUi9iby1waGFuLXRpY2gta2hpLWxpZW4tdHVjL2hlLXRob25nLXBoYW4tdGljaC1raGktbGF5LW1hdS1ob3Qtd2V0LWFjZjUwMDAtMzQ5LmFzcHhZL1VwbG9hZC9pbWFnZS8yMDE5LzA3LzI0L2hlLXRob25nLWdpYW0tc2F0LWtoaS10aGFpLWxpZW4tdHVjLWFjZi1udF8yMDE5LTA3LTI0LTIxNTQwOS5qcGdkAgEPFQNSL2JvLXBoYW4tdGljaC1raGktbGllbi10dWMvaGUtdGhvbmctcGhhbi10aWNoLWtoaS1sYXktbWF1LWhvdC13ZXQtYWNmNTAwMC0zNDkuYXNweDpI4buHIHRo4buRbmcgcGjDom4gdMOtY2gga2jDrSBs4bqleSBt4bqrdSBob3Qvd2V0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IGImYWFjdXRlO28gY+G7p2EgaOG7hyB0aOG7kW5nIHjhu60gbCZ5YWN1dGU7IGtoJmlhY3V0ZTsgbeG6q3UuPC9wPg0KZAICDxUBNC9iby1waGFuLXRpY2gta2hpLWxpZW4tdHVjL2JvLWNhcC1raGktc2NjLWYtMzUxLmFzcHhkAgYPZBYGZg8VAj4vYm8tcGhhbi10aWNoLWtoaS1saWVuLXR1Yy9iby1jaHV5ZW4tZG9pLW5vMi1uby1zY2Mtay0zNTIuYXNweEkvVXBsb2FkL2ltYWdlLzIwMTkvMDcvMjQvYm8tY2h1eWVuLWRvaS1ubzItbm8tc2NjLWtfMjAxOS0wNy0yNC0yMjAxMjcuanBnZAIBDxUDPi9iby1waGFuLXRpY2gta2hpLWxpZW4tdHVjL2JvLWNodXllbi1kb2ktbm8yLW5vLXNjYy1rLTM1Mi5hc3B4IkLhu5kgY2h1eeG7g24gxJHhu5VpIE5PMi9OTyBTQ0MtSyDgATxwPkLhu5kgY2h1eeG7g24gxJHhu5VpIFNDQy1LIHPhu60gZOG7pW5nIGtoaSDEkW8gTk9YICho4buXbiBo4bujcCBOTyB2JmFncmF2ZTsgTk8yKSB0cm9uZyBo4buHIHRo4buRbmcgZ2kmYWFjdXRlO20gcyZhYWN1dGU7dCBraCZpYWN1dGU7IHRo4bqjaS4gVGhp4bq/dCBi4buLIG4mYWdyYXZlO3kgZ2kmdWFjdXRlO3AgY2h1eeG7g24gxJHhu5VpIE5PMiB0aCZhZ3JhdmU7bmggTk8uPC9wPg0KZAICDxUBPi9iby1waGFuLXRpY2gta2hpLWxpZW4tdHVjL2JvLWNodXllbi1kb2ktbm8yLW5vLXNjYy1rLTM1Mi5hc3B4ZAIBD2QWBgIBDw8WAh4LTmF2aWdhdGVVcmwFE2phdmFzY3JpcHQ6dm9pZCgwKTsWAh4DcmVsBQhub2ZvbGxvd2QCAw8WAh8AAgEWAmYPZBYCZg8VAwZhY3RpdmUmL3ZuL2JvLXBoYW4tdGljaC1raGktbGllbi10dWMtNzUxLmFzcHgBMWQCBQ8PFgIfAQUTamF2YXNjcmlwdDp2b2lkKDApOxYCHwIFCG5vZm9sbG93ZAICD2QWAgIBD2QWAmYPFgIfAAICFgRmD2QWAmYPFQkAAAAtMjAxOS8wNy8yNC93aWthX3BnX2F0ZXhfMjAxOS0wNy0yNC0xNzEzMjIucG5nOkh5Z2llbmljIGRpYXBocmFnbSBwcmVzc3VyZSBnYXVnZXMsIGFsc28gd2l0aCBBVEVYIHZlcnNpb24AAAAAZAIBD2QWAmYPFQlhaHR0cHM6Ly9lbi53aWthLmNvbS9uZXdzY29udGVudGdlbmVyaWMuV0lLQT9BeElEPTYyMTQmdGFiTmV3cz0xJnRhYlBhZ2U9MSZpdGVtU2l6ZT01JmN1clllYXI9MjAxODJodHRwczovL2VuLndpa2EuY29tL25ld3Njb250ZW50Z2VuZXJpYy5XSUtBP0F4SUQ9NgAoMjAxOS8wNy8yNC93aWthX3RnXzIwMTktMDctMjQtMTcxODM1LnBuZ0JCaW1ldGFsIHRoZXJtb21ldGVycyBxdWFsaWZpZWQgaW4gYWNjb3JkYW5jZSB3aXRoIGJvdGggQVNNRSBhbmQgRU4AYWh0dHBzOi8vZW4ud2lrYS5jb20vbmV3c2NvbnRlbnRnZW5lcmljLldJS0E/QXhJRD02MjE0JnRhYk5ld3M9MSZ0YWJQYWdlPTEmaXRlbVNpemU9NSZjdXJZZWFyPTIwMTgyaHR0cHM6Ly9lbi53aWthLmNvbS9uZXdzY29udGVudGdlbmVyaWMuV0lLQT9BeElEPTYAZAIED2QWAmYPFgIeBFRleHQFPcKgwqkgMjAwOSAtIDIwMjLCoELhuqNuIHF1eeG7gW4gdGh14buZYyB24buBIFZBVENPTSBDby4sTHRkDQpkZD9XGIOfrtDb+SIZqoloTK/RhMIi" />
+</div>
+
+        <header class="" id="header" role="" lang="vn">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container-1004 container-full">
+                        <div class="col-md-12 col-sm-12 col-lg-3 col-xs-12">
+                            <div class="header-top">
+                                <div class="header_logo">
+                                    <a class="logo" href="/?lang=vn">
+                                        <img src="/images/logo.jpg" />
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-lg-9 col-xs-12">
+                            <div class="header-search">
+                                
+                                <input onkeypress="searchKeyPress(event)" id="txtSearch" class="input-text has-icon" type="text" value="" />
+                                <a style="cursor: pointer" id="btSearch" onclick="do_search()"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                            <script type="text/javascript">
+                                var do_search = function () {
+                                    var e = document.getElementById("txtSearch");
+                                    if (e.value == "") {
+                                        e.value = "Tìm kiếm";
+                                        return false;
+                                    }
+                                    else {
+                                        if (e.value != "Tìm kiếm")
+                                            window.location = "/san-pham.html?key=" + e.value;
+                                            }
+                                            }
+                                        var sfocus = function () {
+
+                                            var e = document.getElementById("txtSearch");
+                                            if (e.value == "Tìm kiếm") {
+                                                e.value = "";
+                                            }
+                                        }
+                                        var sblur = function () {
+                                            var e = document.getElementById("txtSearch");
+                                            if (e.value == "") {
+                                                e.value = "Tìm kiếm";
+                                            }
+                                        }
+                                        function searchKeyPress(e) {
+                                            e.stopPropagation();
+                                            // look for window.event in case event isn't passed in
+                                            if (typeof e == 'undefined' && window.event) { e = window.event; }
+                                            if (e.keyCode == 13) {
+                                                do_search();
+                                                e.preventDefault();
+                                            }
+
+
+                                        }
+                            </script>
+                            <div class="header-menu">
+                                <label for="drop" class="toggle">
+                                    <p>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </p>
+                                </label>
+                                <input type="checkbox" id="drop" />
+                                <ul class="menu" style="font-weight:bold">
+                                    
+                                    <li><a id="a1" href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                                    <li><a id="a578" href="/he-thong-dich-vu-578.html">Hệ thống & Dịch vụ </a>
+                                        <ul>
+                                            
+                                                    <li><a href="/he-thong-dich-vu/he-thong-dieu-khien-qua-trinh-pcs-190.html">Hệ thống điều khiển quá trình (PCS)</a></li>
+                                                
+                                                    <li><a href="/he-thong-dich-vu/he-thong-thiet-bi-truong-an-toan-sis-188.html">Hệ thống thiết bị trường an toàn (SIS)</a></li>
+                                                
+                                                    <li><a href="/he-thong-dich-vu/he-thong-quan-trac-khi-thai-lien-tuc-cems-371.html">Hệ thống quan trắc khí thải liên tục (CEMS)</a></li>
+                                                
+                                                    <li><a href="/he-thong-dich-vu/dich-vu-bao-tri-phong-ngua-180.html">Dịch vụ bảo trì phòng ngừa</a></li>
+                                                
+                                        </ul>
+                                    </li>
+                                    <li><a id="a665" href="/giai-phap/san-pham-665.html">Sản phẩm</a>
+                                         <ul>
+                                            
+                                                    <li><a href="/giai-phap/san-pham-700.html">Thiết bị đo lường hãng WIKA</a></li>
+                                                
+                                                    <li><a href="/giai-phap/san-pham-701.html">Thiết bị đo lường nhãn hiệu Foxboro (Schneider Electric)</a></li>
+                                                
+                                                    <li><a href="/giai-phap/san-pham-714.html">Thiết bị đo lường hãng ABB</a></li>
+                                                
+                                                    <li><a href="/giai-phap/san-pham-715.html">Thiết đo bụi và lưu lượng hãng ENVEA (PCME)</a></li>
+                                                
+                                        </ul>
+
+                                    </li>
+                                    <li><a id="a666" href="/du-an-666.html">Dự án</a></li>
+                                    <li><a id="a5" href="/san-pham/hang-sankho-678.html">Hàng sẵn kho</a>
+                                        <ul>
+                                            
+                                                    <li><a href="/san-pham/wika-681.html">Wika</a>
+
+
+
+
+                                                    </li>
+                                                
+                                                    <li><a href="/san-pham/foxboro-682.html">Foxboro</a>
+
+
+
+
+                                                    </li>
+                                                
+
+                                        </ul>
+                                    </li>
+
+                                    <li><a id="a6" href="/lien-he.html">LIÊN HỆ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+    <banner>
+        <div class="home-slider">
+            <ul class="bxslider">
+                <li><img onerror="$(this).remove()" style="width: 100%" src="/upload/image/" /></li>
+            </ul>
+            <div style="background: #f5f5f5">
+                <div class="container-1004 container-full">
+                    <ol class="breadcrumb">
+                        <li><a href="/?lang=vn">Trang chủ</a></li>
+                      
+                        
+                        
+                        <li data-id="2"><a href="/giai-phap/san-pham-2.html">Bài viết</a></li>
+                        
+                        <li data-id="576"><a href="/giai-phap/san-pham-576.html">VN</a></li>
+                        
+                        <li data-id="665"><a href="/giai-phap/san-pham-665.html">Sản phẩm</a></li>
+                        
+                        <li data-id="714"><a href="/giai-phap/san-pham-714.html">Thiết bị đo lường hãng ABB</a></li>
+                        
+                        <li data-id="751"><a href="/giai-phap/bo-phan-tich-khi-lien-tuc-751.html">Bộ phân tích  khí liên tục</a></li>
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </banner>
+    <main class="" id="content" role="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="about-page products-page">
+                    <div class="container-1004 container-full">
+
+                        <div class="col-md-9 col-sm-9 col-lg-9 col-xs-12 ">
+                            <div class="art-title-cate">
+                                <h3>Bộ phân tích  khí liên tục</h3>
+                            </div>
+                            <div class="prods-desc">
+                                <p>
+                                    
+                                </p>
+                            </div>
+                            <div class="prods-cate-items">
+                                
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/bo-phan-tich-khi-lien-tuc/bo-phan-tich-khi-lien-tuc-dong-easyline-el3000-346.html">
+                                                    <img src="/Upload/image/2019/07/24/bo-phan-tich-khi-lien-tuc-dong-easyline-el3000_2019-07-24-214410.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/bo-phan-tich-khi-lien-tuc/bo-phan-tich-khi-lien-tuc-dong-easyline-el3000-346.html">Bộ phân tích khí liên tục dòng EasyLine EL3000 </a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>EasyLine l&agrave; d&ograve;ng thiết bị chất lượng cao với gi&aacute; cả phải chăng d&ugrave;ng để gi&aacute;m s&aacute;t nồng độ kh&iacute; cho nhiều ứng dụng kh&aacute;c nhau.</p>
+
+                                                
+                                                <a href="/giai-phap/bo-phan-tich-khi-lien-tuc/bo-phan-tich-khi-lien-tuc-dong-easyline-el3000-346.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/bo-phan-tich-khi-lien-tuc/bo-phan-tich-khi-advance-optima-ao2000-347.html">
+                                                    <img src="/Upload/image/2019/07/24/bo-phan-tich-tich-hop-advance-optima-ao2000_2019-07-24-214648.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/bo-phan-tich-khi-lien-tuc/bo-phan-tich-khi-advance-optima-ao2000-347.html">Bộ phân tích khí Advance Optima AO2000</a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>D&ograve;ng ph&acirc;n t&iacute;ch kh&iacute; Advance Optima c&oacute; thiết kế dạng m&ocirc;-đun. Dải c&ocirc;ng nghệ ph&acirc;n t&iacute;ch đa dạng, từ c&aacute;c quang kế qu&aacute; tr&igrave;nh đặc biệt tới thiết bị đo ph&acirc;n t&iacute;ch tại chỗ kiểu laser. C&oacute; thể vận h&agrave;nh tại trung t&acirc;m điều khiển hoặc từ xa qua th&ocirc;ng qua mạng Ethernet. Được thiết kế để sử dụng trong m&ocirc;i trường dễ ch&aacute;y nổ.</p>
+
+                                                
+                                                <a href="/giai-phap/bo-phan-tich-khi-lien-tuc/bo-phan-tich-khi-advance-optima-ao2000-347.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/bo-phan-tich-khi-lien-tuc/he-thong-phan-tich-khi-tron-bo-ao2000-system-348.html">
+                                                    <img src="/Upload/image/2021/12/11/he-thong-phan-tich-khi-tron-bo-ao2000-system_2021-12-11-145214.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/bo-phan-tich-khi-lien-tuc/he-thong-phan-tich-khi-tron-bo-ao2000-system-348.html">Hệ thống phân tích khí trọn bộ AO2000 system</a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>Hệ thống ph&acirc;n t&iacute;ch kh&iacute; AO2000 system bao gồm tất cả mọi thiết bị từ đầu d&ograve;, ống dẫn kh&iacute; mẫu gia nhiệt, hệ thống xử l&yacute; kh&iacute; mẫu tới c&aacute;c bộ ph&acirc;n t&iacute;ch thuộc d&ograve;ng Advance Optima. AO-2000 system c&oacute; thể vận h&agrave;nh ho&agrave;n to&agrave;n từ b&ecirc;n ngo&agrave;i.</p>
+
+                                                
+                                                <a href="/giai-phap/bo-phan-tich-khi-lien-tuc/he-thong-phan-tich-khi-tron-bo-ao2000-system-348.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/bo-phan-tich-khi-lien-tuc/he-thong-phan-tich-khi-lay-mau-hot-wet-acf5000-349.html">
+                                                    <img src="/Upload/image/2019/07/24/he-thong-giam-sat-khi-thai-lien-tuc-acf-nt_2019-07-24-215409.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/bo-phan-tich-khi-lien-tuc/he-thong-phan-tich-khi-lay-mau-hot-wet-acf5000-349.html">Hệ thống phân tích khí lấy mẫu hot/wet ACF5000 </a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>ACF 5000 sử dụng để gi&aacute;m s&aacute;t kh&iacute; thải li&ecirc;n tục trong c&aacute;c ứng dụng phức tạp, c&oacute; thể ph&acirc;n t&iacute;ch li&ecirc;n tục tới 15 th&agrave;nh phần kh&iacute; như HCl, CO, NO, SO2, NO2, N2O, NH3, H2O, CO2, HF, TOC v&agrave; O2</p>
+
+                                                
+                                                <a href="/giai-phap/bo-phan-tich-khi-lien-tuc/he-thong-phan-tich-khi-lay-mau-hot-wet-acf5000-349.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/bo-phan-tich-khi-lien-tuc/bo-lam-lanh-khi-mau-scc-c-350.html">
+                                                    <img src="/Upload/image/2019/07/24/bo-lam-lanh-khi-mau-scc-c_2019-07-24-215753.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/bo-phan-tich-khi-lien-tuc/bo-lam-lanh-khi-mau-scc-c-350.html">Bộ làm lạnh khí mẫu SCC-C </a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>Bộ l&agrave;m lạnh kh&iacute; dạng m&aacute;y n&eacute;n SCC-C d&ugrave;ng để giảm nhiệt độ đến điểm sương của c&aacute;c mẫu kh&iacute; ẩm, nhờ đ&oacute; tr&aacute;nh ngưng tụ kh&iacute; trong c&aacute;c thiết bị ph&acirc;n t&iacute;ch. Nhiệt độ điểm sương thấp v&agrave; ổn định gi&uacute;p hệ thống được vận h&agrave;nh ch&iacute;nh x&aacute;c.</p>
+
+                                                
+                                                <a href="/giai-phap/bo-phan-tich-khi-lien-tuc/bo-lam-lanh-khi-mau-scc-c-350.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/bo-phan-tich-khi-lien-tuc/bo-cap-khi-scc-f-351.html">
+                                                    <img src="/Upload/image/2019/07/24/bo-cap-khi-scc-f_2019-07-24-215935.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/bo-phan-tich-khi-lien-tuc/bo-cap-khi-scc-f-351.html">Bộ cấp khí SCC-F </a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>Bộ cấp kh&iacute; SCC-F gi&uacute;p vận chuyển kh&iacute; tới bộ ph&acirc;n t&iacute;ch, kiểm so&aacute;t lưu lượng v&agrave; ngưng tụ trong hai đường dẫn kh&iacute; ri&ecirc;ng biệt. Bao gồm cổng truyền th&ocirc;ng kết nối với bảng điều khiển của bộ ph&acirc;n t&iacute;ch kh&iacute; Advance Optima để t&iacute;ch hợp c&aacute;c t&iacute;n hiệu trạng th&aacute;i v&agrave; cảnh b&aacute;o của hệ thống xử l&yacute; kh&iacute; mẫu.</p>
+
+                                                
+                                                <a href="/giai-phap/bo-phan-tich-khi-lien-tuc/bo-cap-khi-scc-f-351.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/bo-phan-tich-khi-lien-tuc/bo-chuyen-doi-no2-no-scc-k-352.html">
+                                                    <img src="/Upload/image/2019/07/24/bo-chuyen-doi-no2-no-scc-k_2019-07-24-220127.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/bo-phan-tich-khi-lien-tuc/bo-chuyen-doi-no2-no-scc-k-352.html">Bộ chuyển đổi NO2/NO SCC-K </a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>Bộ chuyển đổi SCC-K sử dụng khi đo NOX (hỗn hợp NO v&agrave; NO2) trong hệ thống gi&aacute;m s&aacute;t kh&iacute; thải. Thiết bị n&agrave;y gi&uacute;p chuyển đổi NO2 th&agrave;nh NO.</p>
+
+                                                
+                                                <a href="/giai-phap/bo-phan-tich-khi-lien-tuc/bo-chuyen-doi-no2-no-scc-k-352.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                            </div>
+                            
+
+<div class="pgs">
+ 
+  <a id="ctl00_ContentPlaceHolder1_Pager_lblPrev" rel="nofollow" href="javascript:void(0);">&laquo; </a>
+   
+        <a class="ipage active"  href="/bo-phan-tich-khi-lien-tuc-751.html">
+            1
+        </a>
+    
+    <a id="ctl00_ContentPlaceHolder1_Pager_lblNext" rel="nofollow" href="javascript:void(0);">&raquo;</a>
+ 
+</div>
+
+
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-lg-3 hidden-xs">
+                            <div class="art-title-cate hidden-xs" style="border-color: #FFF">
+                                <h3>&nbsp;&nbsp;</h3>
+                            </div>
+                            
+<div class="product-right">
+    <div class="adv-item">
+        
+                <a class="-c-thumb" href="" target="" rel="">
+                    <img onerror="$(this).remove()" class="img" src="/Upload/image/2019/07/24/wika_pg_atex_2019-07-24-171322.png" /></a>
+                <div class="widget-container subscribe">
+                    <h4>Hygienic diaphragm pressure gauges, also with ATEX version</h4>
+                    <div class="-c-desc"></div>
+                    <a class="-c-more" href="" target="" rel="">Xem tiếp >
+                    </a>
+                </div>
+            
+                <a class="-c-thumb" href="https://en.wika.com/newscontentgeneric.WIKA?AxID=6214&tabNews=1&tabPage=1&itemSize=5&curYear=2018" target="https://en.wika.com/newscontentgeneric.WIKA?AxID=6" rel="">
+                    <img onerror="$(this).remove()" class="img" src="/Upload/image/2019/07/24/wika_tg_2019-07-24-171835.png" /></a>
+                <div class="widget-container subscribe">
+                    <h4>Bimetal thermometers qualified in accordance with both ASME and EN</h4>
+                    <div class="-c-desc"></div>
+                    <a class="-c-more" href="https://en.wika.com/newscontentgeneric.WIKA?AxID=6214&tabNews=1&tabPage=1&itemSize=5&curYear=2018" target="https://en.wika.com/newscontentgeneric.WIKA?AxID=6" rel="">Xem tiếp >
+                    </a>
+                </div>
+            
+    </div>
+</div>
+
+                            <div class="cate-right">
+                                
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        $('#a751').addClass('active');
+        $('#a714').addClass('active');
+    </script>
+
+        <!-- Footer ================================================== -->
+        <footer class="" id="footer" role="">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container-1004 container-full">
+                        <div class="footer">
+                            <ul style="text-transform: uppercase">
+           
+                                <li><a href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                                <li><a href="/he-thong-dich-vu-578.html">Hệ thống & Dịch vụ </a>
+
+                                </li>
+                                <li><a href="#">Sản phẩm</a></li>
+                                <li><a href="/du-an-666.html">Dự án</a></li>
+                                <li><a href="/san-pham/hang-sankho-678.html">Hàng sẵn kho</a>
+
+                                </li>
+
+                                <li><a href="/lien-he.html">LIÊN HỆ</a></li>
+
+                                <li class="lang">
+                                    <a href="/?lang=en">
+                                        <img src="/images/btn_langEN.jpg" />
+                                    </a>
+                                    <a href="/?lang=vn">
+                                        <img src="/images/btn_langVN.jpg" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="copyright">
+
+                                 © 2009 - 2022 Bản quyền thuộc về VATCOM Co.,Ltd
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JavaScript ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/jquery.js"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-89740908-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
+
+
+
+
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="986F59E2" />
+</div></form>
+</body>
+</html>
+
+
+
+

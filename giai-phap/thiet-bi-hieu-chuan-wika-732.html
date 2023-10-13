@@ -1,0 +1,505 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Thiết bị hiệu chuẩn WIKA
+</title><meta name="description" /><meta name="keywords" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicons -->
+    <script src="/js/jquery-1.9.0.js"></script>
+    <link rel="shortcut icon" href="/images/img_icon.jpg" type="image/x-icon" />
+    <!-- jQuery library (served from Google) -->
+
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Documentation extras -->
+    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700i,800,800i&amp;subset=cyrillic-ext,latin-ext,vietnamese" rel="stylesheet" /><link href="/css/style.css" rel="stylesheet" type="text/css" /><link href="/css/font-awesome.min.css" rel="stylesheet" /><link rel="stylesheet" href="SlickNav/slicknav.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <script src="bxslider/plugins/jquery.easing.1.3.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="/bxslider/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/bxslider/jquery.bxslider.css" rel="stylesheet" />
+
+    <style>
+        ul.proSli li { width: auto !important; }
+        .footer .bx-controls-direction { display: none !important; }
+    </style>
+    <style>
+        .bx-wrapper { margin-bottom: 0 !important; }
+        .bx-wrapper .bx-viewport { box-shadow: 0 0 1px #ccc !important; }
+        .bx-wrapper .bx-controls-direction a { height: 40px !important; width: 36px !important; }
+        .bx-wrapper .bx-prev { background-position: -40px -33px !important; left: 0; transition: all 0.3s ease 0s; opacity: 0 !important; }
+        .bx-wrapper .bx-next { background-position: 0 -32px !important; right: 0; transition: all 0.3s ease 0s; opacity: 0 !important; }
+        .bx-wrapper:hover .bx-prev { opacity: 1 !important; transition: all 0.3s ease 0s; }
+        .bx-wrapper:hover .bx-next { opacity: 1 !important; transition: all 0.3s ease 0s; }
+        .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto { display: none !important; }
+    </style>
+    <style>
+        .bx-wrapper .bx-viewport { border: none !important; background: none !important; box-shadow: none !important; left: 0 !important; }
+        div.commentForm { display: none; float: left; margin: 0 0 20px; position: relative; text-align: justify; width: 100%; }
+        div.commentForm p { font-size: 13px; text-align: justify; }
+        div.section:nth-child(2n+1) { }
+        div.quote { padding: 5px 0; width: 100%; text-align: left; font-size: 12px; float: left; }
+        div.commentForm .about-page ul li { padding-top: 0; padding-bottom: 0; }
+
+
+        input:focus{
+    outline: none !important;
+}
+
+        .breadcrumb li[data-id="2"],.breadcrumb li[data-id="3"],.breadcrumb li[data-id="576"],.breadcrumb li[data-id="577"]{display: none}
+    </style>
+    
+</head>
+<body class="">
+    <form name="aspnetForm" method="post" action="/giai-phap/thiet-bi-hieu-chuan-wika-732.html" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTgwMDg0Mjg2OQ9kFgJmD2QWAgIDD2QWCmYPFgIeC18hSXRlbUNvdW50AgQWCGYPZBYCZg8VAjwvaGUtdGhvbmctZGljaC12dS9oZS10aG9uZy1kaWV1LWtoaWVuLXF1YS10cmluaC1wY3MtMTkwLmFzcHguSOG7hyB0aOG7kW5nIMSRaeG7gXUga2hp4buDbiBxdcOhIHRyw6xuaCAoUENTKWQCAQ9kFgJmDxUCPy9oZS10aG9uZy1kaWNoLXZ1L2hlLXRob25nLXRoaWV0LWJpLXRydW9uZy1hbi10b2FuLXNpcy0xODguYXNweDJI4buHIHRo4buRbmcgdGhp4bq/dCBi4buLIHRyxrDhu51uZyBhbiB0b8OgbiAoU0lTKWQCAg9kFgJmDxUCRC9oZS10aG9uZy1kaWNoLXZ1L2hlLXRob25nLXF1YW4tdHJhYy1raGktdGhhaS1saWVuLXR1Yy1jZW1zLTM3MS5hc3B4N0jhu4cgdGjhu5FuZyBxdWFuIHRy4bqvYyBraMOtIHRo4bqjaSBsacOqbiB04bulYyAoQ0VNUylkAgMPZBYCZg8VAjUvaGUtdGhvbmctZGljaC12dS9kaWNoLXZ1LWJhby10cmktcGhvbmctbmd1YS0xODAuYXNweCRE4buLY2ggduG7pSBi4bqjbyB0csOsIHBow7JuZyBuZ+G7q2FkAgEPFgIfAAIEFghmD2QWAmYPFQIDNzAwJFRoaeG6v3QgYuG7iyDEkW8gbMaw4budbmcgaMOjbmcgV0lLQWQCAQ9kFgJmDxUCAzcwMUNUaGnhur90IGLhu4sgxJFvIGzGsOG7nW5nIG5ow6NuIGhp4buHdSBGb3hib3JvIChTY2huZWlkZXIgRWxlY3RyaWMpZAICD2QWAmYPFQIDNzE0I1RoaeG6v3QgYuG7iyDEkW8gbMaw4budbmcgaMOjbmcgQUJCZAIDD2QWAmYPFQIDNzE1NlRoaeG6v3QgxJFvIGLhu6VpIHbDoCBsxrB1IGzGsOG7o25nIGjDo25nIEVOVkVBIChQQ01FKWQCAg8WAh8AAgIWBGYPZBYCZg8VAhcvc2FuLXBoYW0vd2lrYS02ODEuYXNweARXaWthZAIBD2QWAmYPFQIaL3Nhbi1waGFtL2ZveGJvcm8tNjgyLmFzcHgHRm94Ym9yb2QCAw9kFgZmDxYCHwACCRYSZg9kFgZmDxUCPS90aGlldC1iaS1oaWV1LWNodWFuLXdpa2EvZG9uZy1oby1hcC1zdWF0LWNoaS10aGktc28tMzM2LmFzcHhJL1VwbG9hZC9pbWFnZS8yMDE5LzA3LzI0L2RvbmctaG8tYXAtc3VhdC1jaGktdGhpLXNvXzIwMTktMDctMjQtMTYxNTQyLmpwZ2QCAQ8VAz0vdGhpZXQtYmktaGlldS1jaHVhbi13aWthL2RvbmctaG8tYXAtc3VhdC1jaGktdGhpLXNvLTMzNi5hc3B4KMSQ4buTbmcgaOG7kyDDoXAgc3XhuqV0IGNo4buJIHRo4buLIHPhu5GeBDxwPsSQ4buTbmcgaOG7kyAmYWFjdXRlO3Agc3XhuqV0IGNo4buJIHRo4buLIHPhu5EgxJHhu5kgY2gmaWFjdXRlO25oIHgmYWFjdXRlO2MgY2FvIENQRzE1MDAgbWFuZyBkJmFhY3V0ZTtuZyB24bq7IGPhu6dhIG3hu5l0IGNoaeG6v2MgxJHhu5NuZyBo4buTIMSRbyAmYWFjdXRlO3AgaGnhu4NuIHRo4buLIHPhu5EgdGgmb2NpcmM7bmcgdGjGsOG7nW5nIG5oxrBuZyBsJmFncmF2ZTsgdGhp4bq/dCBi4buLIHMmYWFjdXRlO25oIG5nYW5nIHbhu5tpIGMmYWFjdXRlO2MgYuG7mSBoaeG7h3UgY2h14bqpbiBz4buRLiBW4bubaSDEkeG7mSBjaCZpYWN1dGU7bmggeCZhYWN1dGU7YyBj4bunYSBjJm9jaXJjO25nIG5naOG7hyDEkW8gbMaw4budbmcgxJFp4buHbiB04butIHYmYWdyYXZlOyB0aGnhur90IGvhur8gxJHGoW4gZ2nhuqNuLCBDUEcxNTAwIGwmYWdyYXZlOyB2Jm9jaXJjOyBzb25nIHbhu4EgxJHhurdjIMSRaeG7g20sIGMmb2NpcmM7bmcgbsSDbmcgdiZhZ3JhdmU7IHQmaWFjdXRlO25oIGThu4UgZCZhZ3JhdmU7bmcgc+G7rSBk4bulbmcuPC9wPg0KZAICDxUBPS90aGlldC1iaS1oaWV1LWNodWFuLXdpa2EvZG9uZy1oby1hcC1zdWF0LWNoaS10aGktc28tMzM2LmFzcHhkAgEPZBYGZg8VAjwvdGhpZXQtYmktaGlldS1jaHVhbi13aWthL2JvLXRhby1hcC1raGktbmVuLWNhbS10YXktMzM3LmFzcHhIL1VwbG9hZC9pbWFnZS8yMDE5LzA3LzI0L2JvLXRhby1hcC1raGktbmVuLWNhbS10YXlfMjAxOS0wNy0yNC0xNjE3MjkuanBnZAIBDxUDPC90aGlldC1iaS1oaWV1LWNodWFuLXdpa2EvYm8tdGFvLWFwLWtoaS1uZW4tY2FtLXRheS0zMzcuYXNweCJC4buZIHThuqFvIMOhcCBraMOtIG7DqW4gY+G6p20gdGF5sAY8cD5C4buZIHThuqFvICZhYWN1dGU7cCBraCZpYWN1dGU7IG4mZWFjdXRlO24gY+G6p20gdGF5IENQRy1LSVRQIGwmYWdyYXZlOyBi4buZIGThu6VuZyBj4bulIGwmeWFjdXRlOyB0xrDhu59uZyDEkeG7gyBraeG7g20gdHJhIHRoaeG6v3QgYuG7iyBraCZpYWN1dGU7IG4mZWFjdXRlO24sIMSRaeG7gXUgY2jhu4luaCB2JmFncmF2ZTsgaGnhu4d1IGNodeG6qW4gYyZhYWN1dGU7YyB0aGnhur90IGLhu4sgxJFvICZhYWN1dGU7cCBzdeG6pXQgY8ahIGtoJmlhY3V0ZTsgdiZhZ3JhdmU7IMSRaeG7h24gdOG7rSBoYXkgdGhp4bq/dCBs4bqtcCDEkWnhu4NtIMSR4bq3dCBjaG8gYyZvY2lyYztuZyB04bqvYyAmYWFjdXRlO3Agc3XhuqV0LiBUaGnhur90IGLhu4sgbiZhZ3JhdmU7eSBnaSZ1YWN1dGU7cCB0aOG7sWMgaGnhu4duIGMmYWFjdXRlO2MgdCZhYWN1dGU7YyB24bulIHRyJmVjaXJjO24gbeG7mXQgYyZhYWN1dGU7Y2ggbmhhbmggY2gmb2FjdXRlO25nIHYmYWdyYXZlOyDEkSZhYWN1dGU7bmcgdGluIGPhuq15IG5nYXkgdOG6oWkgcGgmb2dyYXZlO25nIHRoJmlhY3V0ZTsgbmdoaeG7h20sIHjGsOG7n25nIGLhuqNvIHRyJmlncmF2ZTsgaG/hurdjIHThuqFpIGhp4buHbiB0csaw4budbmcuIELhu5kgZOG7pW5nIGPhu6UgdOG6oW8gJmFhY3V0ZTtwIHN14bqldCBuJmFncmF2ZTt5IGdp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YyZvYWN1dGU7IHRo4buDIG1hbmcgdGhp4bq/dCBi4buLIG4mYWdyYXZlO3kgxJFpIHPhu60gZOG7pW5nIOG7nyBi4bqldCBj4bupIMSRJmFjaXJjO3UuPC9wPg0KZAICDxUBRi90aGlldC1iaS1oaWV1LWNodWFuLXdpa2EvYm8taGlldS1jaHVhbi1uaGlldC1kby1jdGQ5MTAwLTExMDAtMzQwLmFzcHhkAgUPZBYGZg8VAkUvdGhpZXQtYmktaGlldS1jaHVhbi13aWthL2JvLWhpZXUtY2h1YW4tbmhpZXQtZG8tY3RkOTEwMC0zNzUtMzQxLmFzcHhRL1VwbG9hZC9pbWFnZS8yMDE5LzA3LzI0L2JvLWhpZXUtY2h1YW4tbmhpZXQtZG8tY3RkOTEwMC0zNzVfMjAxOS0wNy0yNC0xNjIzMzUuanBnZAIBDxUDRS90aGlldC1iaS1oaWV1LWNodWFuLXdpa2EvYm8taGlldS1jaHVhbi1uaGlldC1kby1jdGQ5MTAwLTM3NS0zNDEuYXNweC1C4buZIGhp4buHdSBjaHXhuqluIG5oaeG7h3QgxJHhu5kgQ1REOTEwMC0zNzXrAjxwPkMmYWFjdXRlO2MgYuG7mSBoaeG7h3UgY2h14bqpbiBuaGnhu4d0IMSR4buZIGPhuqdtIHRheSB0aHXhu5ljIGQmb2dyYXZlO25nIENUeDkxMDAgxJHhurdjIGJp4buHdCB0aCZpYWN1dGU7Y2ggaOG7o3AgY2hvIGhp4buHdSBjaHXhuqluIHThuqFpIGNo4buXIHYmYWdyYXZlOyB2Jm9jaXJjOyBjJnVncmF2ZTtuZyBk4buFIHPhu60gZOG7pW5nLiBOaOG7nSB0aGnhur90IGvhur8gZ+G7jW4gbmjhurksIGLhu4FuIGNo4bqvYywga2gmYWFjdXRlO2NoIGgmYWdyYXZlO25nIGMmb2FjdXRlOyB0aOG7gyBtYW5nIHRoaeG6v3QgYuG7iyBuJmFncmF2ZTt5IMSRaSBz4butIGThu6VuZyDhu58gYuG6pXQgY+G7qSDEkSZhY2lyYzt1LjwvcD4NCmQCAg8VAUUvdGhpZXQtYmktaGlldS1jaHVhbi13aWthL2JvLWhpZXUtY2h1YW4tbmhpZXQtZG8tY3RkOTEwMC0zNzUtMzQxLmFzcHhkAgYPZBYGZg8VAkovdGhpZXQtYmktaGlldS1jaHVhbi13aWthL2JvLWhpZXUtY2h1YW4tZGEtbmFuZy1jYW0tdGF5LXBhc2NhbC1ldC0zNDIuYXNweFYvVXBsb2FkL2ltYWdlLzIwMTkvMDcvMjQvYm8taGlldS1jaHVhbi1kYS1uYW5nLWNhbS10YXktcGFzY2FsLWV0XzIwMTktMDctMjQtMTYyNTA4LmpwZ2QCAQ8VA0ovdGhpZXQtYmktaGlldS1jaHVhbi13aWthL2JvLWhpZXUtY2h1YW4tZGEtbmFuZy1jYW0tdGF5LXBhc2NhbC1ldC0zNDIuYXNweDJC4buZIGhp4buHdSBjaHXhuqluIMSRYSBuxINuZyBj4bqnbSB0YXkgUGFzY2FsIEVUILwEPHA+UGFzY2FsIEVUIGwmYWdyYXZlOyBi4buZIGhp4buHdSBjaHXhuqluIMSRYSBuxINuZyBj4bqnbSB0YXkgdCZhY2lyYztuIHRp4bq/biBuaOG6pXQgZCZ1Z3JhdmU7bmcgY2hvIMSRbyBsxrDhu51uZyB2JmFncmF2ZTsgbSZvY2lyYzsgcGjhu49uZyBjJmFhY3V0ZTtjIHRoJm9jaXJjO25nIHPhu5E6ICZhYWN1dGU7cCBzdeG6pXQgdMawxqFuZyDEkeG7kWkgdiZhZ3JhdmU7IHR1eeG7h3QgxJHhu5FpLCB0JmlhY3V0ZTtuIGhp4buHdSDEkWnhu4duIChtQSwgbVYsIFYsICZPbWVnYTspLCBj4bqjbSBiaeG6v24gbmhp4buHdCDEkeG7mSAoVEMsIFJURCksIHThuqduIHPhu5EgdiZhZ3JhdmU7IHh1bmcuIEjGoW4gbuG7r2EsIHRoaeG6v3QgYuG7iyBuJmFncmF2ZTt5IGMmb2dyYXZlO24gYyZvYWN1dGU7IHRo4buDIHQmdWdyYXZlO3kgY2jhu41uIHQmaWFjdXRlO2NoIGjhu6NwIG1vZHVsZSBIQVJUJnJlZzsmbmJzcDvEkeG7gyBjJm9hY3V0ZTsgdGjhu4MgZ2lhbyB0aeG6v3AgduG7m2kgYyZhYWN1dGU7YyB0aGnhur90IGLhu4sgxJFvIGjhu5cgdHLhu6MgY2h14bqpbiBIQVJUJnJlZzsmbmJzcDs8L3A+DQpkAgIPFQFKL3RoaWV0LWJpLWhpZXUtY2h1YW4td2lrYS9iby1oaWV1LWNodWFuLWRhLW5hbmctY2FtLXRheS1wYXNjYWwtZXQtMzQyLmFzcHhkAgcPZBYGZg8VAkAvdGhpZXQtYmktaGlldS1jaHVhbi13aWthL2JvLWhpZXUtY2h1YW4tY2FtLXRheS1jcGg3MDAwLTM0My5hc3B4TC9VcGxvYWQvaW1hZ2UvMjAxOS8wNy8yNC9iby1oaWV1LWNodWFuLWNhbS10YXktY3BoNzAwMF8yMDE5LTA3LTI0LTE2MjYxNS5qcGdkAgEPFQNAL3RoaWV0LWJpLWhpZXUtY2h1YW4td2lrYS9iby1oaWV1LWNodWFuLWNhbS10YXktY3BoNzAwMC0zNDMuYXNweCZC4buZIGhp4buHdSBjaHXhuqluIGPhuqdtIHRheSBDUEg3MDAwIMIDPHA+Q1BINzAwMCBsJmFncmF2ZTsgdGhp4bq/dCBi4buLIGhp4buHdSBjaHXhuqluIGPhuqdtIHRheSBkJnVncmF2ZTtuZyDEkeG7gyBoaeG7h3UgY2h14bqpbiB2JmFncmF2ZTsga2nhu4NtIHRyYSBjJmFhY3V0ZTtjIHRoaeG6v3QgYuG7iyDEkW8gJmFhY3V0ZTtwIHN14bqldCwgY+G6o20gYmnhur9uICZhYWN1dGU7cCBzdeG6pXQgdiZhZ3JhdmU7IGJp4bq/biB0cnV54buBbiAmYWFjdXRlO3Agc3XhuqV0LiBNb2RlbCBDUEg3MDAwIGMmb2FjdXRlOyBj4bqjIHBoaSZlY2lyYztuIGLhuqNuIHBoJm9ncmF2ZTtuZyBu4buVLiBUaGnhur90IGLhu4sgbiZhZ3JhdmU7eSBjJm9hY3V0ZTsgdGjhu4Mga2nhu4NtIHRyYSB2JmFncmF2ZTsgeCZhYWN1dGU7YyDEkeG7i25oIMSRaeG7g20gdCZhYWN1dGU7YyDEkeG7mW5nIGNobyBjJm9jaXJjO25nIHThuq9jICZhYWN1dGU7cCBzdeG6pXQuPC9wPg0KZAICDxUBQC90aGlldC1iaS1oaWV1LWNodWFuLXdpa2EvYm8taGlldS1jaHVhbi1jYW0tdGF5LWNwaDcwMDAtMzQzLmFzcHhkAggPZBYGZg8VAkAvdGhpZXQtYmktaGlldS1jaHVhbi13aWthL2JvLWhpZXUtY2h1YW4tY2FtLXRheS1jcGg2MDAwLTM0NC5hc3B4TC9VcGxvYWQvaW1hZ2UvMjAxOS8wNy8yNC9iby1oaWV1LWNodWFuLWNhbS10YXktY3BoNjAwMF8yMDE5LTA3LTI0LTE2Mjc0MC5qcGdkAgEPFQNAL3RoaWV0LWJpLWhpZXUtY2h1YW4td2lrYS9iby1oaWV1LWNodWFuLWNhbS10YXktY3BoNjAwMC0zNDQuYXNweCVC4buZIGhp4buHdSBjaHXhuqluIGPhuqdtIHRheSBDUEg2MDAwuwU8cD5N4buZdCBnaeG6o2kgcGgmYWFjdXRlO3AgaGnhu4d1IGNodeG6qW4gJmFhY3V0ZTtwIHN14bqldCBsdSZvY2lyYztuIGx1Jm9jaXJjO24gcGgmdWdyYXZlOyBo4bujcCB24bubaSBt4buNaSDhu6luZyBk4bulbmcuIFQmaWFjdXRlO2NoIGjhu6NwIGPhuqNtIGJp4bq/biBraeG7g20gdHJhLCBs4buxYSBjaOG7jW4gY+G6o20gYmnhur9uIMSRYSBk4bqhbmcgduG7m2kgY+G6pXAgY2gmaWFjdXRlO25oIHgmYWFjdXRlO2MgbCZlY2lyYztuIHThu5tpIDAuMDI1JSB2JmFncmF2ZTsgZOG6o2kgxJFvIGwmZWNpcmM7biB04bubaSA2LDAwMCBiYXIsIGMmb2FjdXRlOyB0aOG7gyB0aGF5IHRo4bq/IG5oYW5oIGNoJm9hY3V0ZTtuZyB2JmFncmF2ZTsga2gmb2NpcmM7bmcgY+G6p24gZCZ1Z3JhdmU7bmcgZOG7pW5nIGPhu6UuIEMmb2FjdXRlOyB0aOG7gyBr4bq/dCBu4buRaSBj4bqjbSBiaeG6v24gdOG7m2kgYuG7mSBoaeG7h3UgY2h14bqpbiBi4bqxbmcgZCZhY2lyYzt5IGMmYWFjdXRlO3AuIEtoaSB0aGF5IMSR4buVaSBj4bqjbSBiaeG6v24sIGLhu5kgaGnhu4NuIHRo4buLIHPhu5Egc+G6vSB04buxIMSR4buZbmcgbmjhuq1uIGRp4buHbiBk4bqjaSDEkW8gbeG7m2kgbSZhZ3JhdmU7IGtoJm9jaXJjO25nIGPhuqduIG5nxrDhu51pIHbhuq1uIGgmYWdyYXZlO25oIHBo4bqjaSBj4bqldSBoJmlncmF2ZTtuaCBs4bqhaS48L3A+DQpkAgIPFQFAL3RoaWV0LWJpLWhpZXUtY2h1YW4td2lrYS9iby1oaWV1LWNodWFuLWNhbS10YXktY3BoNjAwMC0zNDQuYXNweGQCAQ9kFgYCAQ8PFgIeC05hdmlnYXRlVXJsBRNqYXZhc2NyaXB0OnZvaWQoMCk7FgIeA3JlbAUIbm9mb2xsb3dkAgMPFgIfAAIBFgJmD2QWAmYPFQMGYWN0aXZlJS92bi90aGlldC1iaS1oaWV1LWNodWFuLXdpa2EtNzMyLmFzcHgBMWQCBQ8PFgIfAQUTamF2YXNjcmlwdDp2b2lkKDApOxYCHwIFCG5vZm9sbG93ZAICD2QWAgIBD2QWAmYPFgIfAAICFgRmD2QWAmYPFQkAAAAtMjAxOS8wNy8yNC93aWthX3BnX2F0ZXhfMjAxOS0wNy0yNC0xNzEzMjIucG5nOkh5Z2llbmljIGRpYXBocmFnbSBwcmVzc3VyZSBnYXVnZXMsIGFsc28gd2l0aCBBVEVYIHZlcnNpb24AAAAAZAIBD2QWAmYPFQlhaHR0cHM6Ly9lbi53aWthLmNvbS9uZXdzY29udGVudGdlbmVyaWMuV0lLQT9BeElEPTYyMTQmdGFiTmV3cz0xJnRhYlBhZ2U9MSZpdGVtU2l6ZT01JmN1clllYXI9MjAxODJodHRwczovL2VuLndpa2EuY29tL25ld3Njb250ZW50Z2VuZXJpYy5XSUtBP0F4SUQ9NgAoMjAxOS8wNy8yNC93aWthX3RnXzIwMTktMDctMjQtMTcxODM1LnBuZ0JCaW1ldGFsIHRoZXJtb21ldGVycyBxdWFsaWZpZWQgaW4gYWNjb3JkYW5jZSB3aXRoIGJvdGggQVNNRSBhbmQgRU4AYWh0dHBzOi8vZW4ud2lrYS5jb20vbmV3c2NvbnRlbnRnZW5lcmljLldJS0E/QXhJRD02MjE0JnRhYk5ld3M9MSZ0YWJQYWdlPTEmaXRlbVNpemU9NSZjdXJZZWFyPTIwMTgyaHR0cHM6Ly9lbi53aWthLmNvbS9uZXdzY29udGVudGdlbmVyaWMuV0lLQT9BeElEPTYAZAIED2QWAmYPFgIeBFRleHQFPcKgwqkgMjAwOSAtIDIwMjLCoELhuqNuIHF1eeG7gW4gdGh14buZYyB24buBIFZBVENPTSBDby4sTHRkDQpkZARoubC9QBRsz0Ndr+Nu+GavLbpE" />
+</div>
+
+        <header class="" id="header" role="" lang="vn">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container-1004 container-full">
+                        <div class="col-md-12 col-sm-12 col-lg-3 col-xs-12">
+                            <div class="header-top">
+                                <div class="header_logo">
+                                    <a class="logo" href="/?lang=vn">
+                                        <img src="/images/logo.jpg" />
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-lg-9 col-xs-12">
+                            <div class="header-search">
+                                
+                                <input onkeypress="searchKeyPress(event)" id="txtSearch" class="input-text has-icon" type="text" value="" />
+                                <a style="cursor: pointer" id="btSearch" onclick="do_search()"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                            <script type="text/javascript">
+                                var do_search = function () {
+                                    var e = document.getElementById("txtSearch");
+                                    if (e.value == "") {
+                                        e.value = "Tìm kiếm";
+                                        return false;
+                                    }
+                                    else {
+                                        if (e.value != "Tìm kiếm")
+                                            window.location = "/san-pham.html?key=" + e.value;
+                                            }
+                                            }
+                                        var sfocus = function () {
+
+                                            var e = document.getElementById("txtSearch");
+                                            if (e.value == "Tìm kiếm") {
+                                                e.value = "";
+                                            }
+                                        }
+                                        var sblur = function () {
+                                            var e = document.getElementById("txtSearch");
+                                            if (e.value == "") {
+                                                e.value = "Tìm kiếm";
+                                            }
+                                        }
+                                        function searchKeyPress(e) {
+                                            e.stopPropagation();
+                                            // look for window.event in case event isn't passed in
+                                            if (typeof e == 'undefined' && window.event) { e = window.event; }
+                                            if (e.keyCode == 13) {
+                                                do_search();
+                                                e.preventDefault();
+                                            }
+
+
+                                        }
+                            </script>
+                            <div class="header-menu">
+                                <label for="drop" class="toggle">
+                                    <p>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </p>
+                                </label>
+                                <input type="checkbox" id="drop" />
+                                <ul class="menu" style="font-weight:bold">
+                                    
+                                    <li><a id="a1" href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                                    <li><a id="a578" href="/he-thong-dich-vu-578.html">Hệ thống & Dịch vụ </a>
+                                        <ul>
+                                            
+                                                    <li><a href="/he-thong-dich-vu/he-thong-dieu-khien-qua-trinh-pcs-190.html">Hệ thống điều khiển quá trình (PCS)</a></li>
+                                                
+                                                    <li><a href="/he-thong-dich-vu/he-thong-thiet-bi-truong-an-toan-sis-188.html">Hệ thống thiết bị trường an toàn (SIS)</a></li>
+                                                
+                                                    <li><a href="/he-thong-dich-vu/he-thong-quan-trac-khi-thai-lien-tuc-cems-371.html">Hệ thống quan trắc khí thải liên tục (CEMS)</a></li>
+                                                
+                                                    <li><a href="/he-thong-dich-vu/dich-vu-bao-tri-phong-ngua-180.html">Dịch vụ bảo trì phòng ngừa</a></li>
+                                                
+                                        </ul>
+                                    </li>
+                                    <li><a id="a665" href="/giai-phap/san-pham-665.html">Sản phẩm</a>
+                                         <ul>
+                                            
+                                                    <li><a href="/giai-phap/san-pham-700.html">Thiết bị đo lường hãng WIKA</a></li>
+                                                
+                                                    <li><a href="/giai-phap/san-pham-701.html">Thiết bị đo lường nhãn hiệu Foxboro (Schneider Electric)</a></li>
+                                                
+                                                    <li><a href="/giai-phap/san-pham-714.html">Thiết bị đo lường hãng ABB</a></li>
+                                                
+                                                    <li><a href="/giai-phap/san-pham-715.html">Thiết đo bụi và lưu lượng hãng ENVEA (PCME)</a></li>
+                                                
+                                        </ul>
+
+                                    </li>
+                                    <li><a id="a666" href="/du-an-666.html">Dự án</a></li>
+                                    <li><a id="a5" href="/san-pham/hang-sankho-678.html">Hàng sẵn kho</a>
+                                        <ul>
+                                            
+                                                    <li><a href="/san-pham/wika-681.html">Wika</a>
+
+
+
+
+                                                    </li>
+                                                
+                                                    <li><a href="/san-pham/foxboro-682.html">Foxboro</a>
+
+
+
+
+                                                    </li>
+                                                
+
+                                        </ul>
+                                    </li>
+
+                                    <li><a id="a6" href="/lien-he.html">LIÊN HỆ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+    <banner>
+        <div class="home-slider">
+            <ul class="bxslider">
+                <li><img onerror="$(this).remove()" style="width: 100%" src="/upload/image/" /></li>
+            </ul>
+            <div style="background: #f5f5f5">
+                <div class="container-1004 container-full">
+                    <ol class="breadcrumb">
+                        <li><a href="/?lang=vn">Trang chủ</a></li>
+                      
+                        
+                        
+                        <li data-id="2"><a href="/giai-phap/san-pham-2.html">Bài viết</a></li>
+                        
+                        <li data-id="576"><a href="/giai-phap/san-pham-576.html">VN</a></li>
+                        
+                        <li data-id="665"><a href="/giai-phap/san-pham-665.html">Sản phẩm</a></li>
+                        
+                        <li data-id="700"><a href="/giai-phap/san-pham-700.html">Thiết bị đo lường hãng WIKA</a></li>
+                        
+                        <li data-id="732"><a href="/giai-phap/thiet-bi-hieu-chuan-wika-732.html">Thiết bị hiệu chuẩn WIKA</a></li>
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </banner>
+    <main class="" id="content" role="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="about-page products-page">
+                    <div class="container-1004 container-full">
+
+                        <div class="col-md-9 col-sm-9 col-lg-9 col-xs-12 ">
+                            <div class="art-title-cate">
+                                <h3>Thiết bị hiệu chuẩn WIKA</h3>
+                            </div>
+                            <div class="prods-desc">
+                                <p>
+                                    <p>WIKA cung cấp dải sản phẩm hiệu chuẩn đa dạng đ&aacute;p ứng mọi nhu cầu về hiệu chuẩn của kh&aacute;ch h&agrave;ng.</p>
+
+                                </p>
+                            </div>
+                            <div class="prods-cate-items">
+                                
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/dong-ho-ap-suat-chi-thi-so-336.html">
+                                                    <img src="/Upload/image/2019/07/24/dong-ho-ap-suat-chi-thi-so_2019-07-24-161542.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/thiet-bi-hieu-chuan-wika/dong-ho-ap-suat-chi-thi-so-336.html">Đồng hồ áp suất chỉ thị số</a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>Đồng hồ &aacute;p suất chỉ thị số độ ch&iacute;nh x&aacute;c cao CPG1500 mang d&aacute;ng vẻ của một chiếc đồng hồ đo &aacute;p hiển thị số th&ocirc;ng thường nhưng l&agrave; thiết bị s&aacute;nh ngang với c&aacute;c bộ hiệu chuẩn số. Với độ ch&iacute;nh x&aacute;c của c&ocirc;ng nghệ đo lường điện tử v&agrave; thiết kế đơn giản, CPG1500 l&agrave; v&ocirc; song về đặc điểm, c&ocirc;ng năng v&agrave; t&iacute;nh dễ d&agrave;ng sử dụng.</p>
+
+                                                
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/dong-ho-ap-suat-chi-thi-so-336.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-tao-ap-khi-nen-cam-tay-337.html">
+                                                    <img src="/Upload/image/2019/07/24/bo-tao-ap-khi-nen-cam-tay_2019-07-24-161729.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-tao-ap-khi-nen-cam-tay-337.html">Bộ tạo áp khí nén cầm tay</a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>Bộ tạo &aacute;p kh&iacute; n&eacute;n cầm tay CPG-KITP l&agrave; bộ dụng cụ l&yacute; tưởng để kiểm tra thiết bị kh&iacute; n&eacute;n, điều chỉnh v&agrave; hiệu chuẩn c&aacute;c thiết bị đo &aacute;p suất cơ kh&iacute; v&agrave; điện tử hay thiết lập điểm đặt cho c&ocirc;ng tắc &aacute;p suất. Thiết bị n&agrave;y gi&uacute;p thực hiện c&aacute;c t&aacute;c vụ tr&ecirc;n một c&aacute;ch nhanh ch&oacute;ng v&agrave; đ&aacute;ng tin cậy ngay tại ph&ograve;ng th&iacute; nghiệm, xưởng bảo tr&igrave; hoặc tại hiện trường. Bộ dụng cụ tạo &aacute;p suất n&agrave;y gi&uacute;p việc bảo dưỡng, bảo tr&igrave; trở n&ecirc;n đơn giản, an to&agrave;n v&agrave; linh động hơn rất nhiều.</p>
+
+                                                
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-tao-ap-khi-nen-cam-tay-337.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-tao-ap-thuy-luc-cam-tay-338.html">
+                                                    <img src="/Upload/image/2019/07/24/bo-tao-ap-thuy-luc-cam-tay_2019-07-24-161918.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-tao-ap-thuy-luc-cam-tay-338.html">Bộ tạo áp thủy lực cầm tay</a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>Bộ tạo &aacute;p thủy lực cầm tay CPG-KITH l&agrave; bộ dụng cụ l&yacute; tưởng để kiểm tra thiết bị thủy lực, điều chỉnh v&agrave; hiệu chuẩn c&aacute;c thiết bị đo &aacute;p suất cơ kh&iacute; v&agrave; điện tử hay thiết lập điểm đặt cho c&ocirc;ng tắc &aacute;p suất. Thiết bị n&agrave;y gi&uacute;p thực hiện c&aacute;c t&aacute;c vụ tr&ecirc;n một c&aacute;ch nhanh ch&oacute;ng v&agrave; đ&aacute;ng tin cậy ngay tại ph&ograve;ng th&iacute; nghiệm, xưởng bảo tr&igrave; hoặc tại hiện trường. Bộ dụng cụ tạo &aacute;p suất n&agrave;y gi&uacute;p việc bảo dưỡng, bảo tr&igrave; trở n&ecirc;n đơn giản, an to&agrave;n v&agrave; linh động hơn rất nhiều.</p>
+
+                                                
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-tao-ap-thuy-luc-cam-tay-338.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-nhiet-do-ctd9300-339.html">
+                                                    <img src="/Upload/image/2019/07/24/bo-hieu-chuan-nhiet-do-ctd9300_2019-07-24-162108.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-nhiet-do-ctd9300-339.html">Bộ hiệu chuẩn nhiệt độ CTD9300 </a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>Bất kỳ nơi đ&acirc;u, trong ph&ograve;ng th&iacute; nghiệm, xưởng sửa chữa hay hiện trường, CTD9300 đều đ&aacute;p ứng được mọi nhu cầu hiệu chuẩn của kh&aacute;ch h&agrave;ng. CTD9300 bao gồm hai model với dải nhiệt độ kh&aacute;c nhau. Model CTD9300-165 d&ugrave;ng cho dải nhiệt độ từ 35 ... +165 &deg;C. Model CTD9300-650 d&ugrave;ng cho dải nhiệt độ từ 40 &deg;C &hellip; 650 &deg;C.</p>
+
+                                                
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-nhiet-do-ctd9300-339.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-nhiet-do-ctd9100-1100-340.html">
+                                                    <img src="/Upload/image/2019/07/24/bo-hieu-chuan-nhiet-do-ctd9100-1100_2019-07-24-162227.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-nhiet-do-ctd9100-1100-340.html">Bộ hiệu chuẩn nhiệt độ CTD9100-1100 </a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>C&aacute;c bộ hiệu chuẩn nhiệt độ cầm tay thuộc d&ograve;ng CTD9100 đặc biệt th&iacute;ch hợp cho hiệu chuẩn tại hiện trường v&agrave; v&ocirc; c&ugrave;ng dễ sử dụng. Nhờ thiết kế gọn nhẹ, kh&aacute;ch h&agrave;ng c&oacute; thể mang thiết bị n&agrave;y đi sử dụng ở bất cứ đ&acirc;u.</p>
+
+                                                
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-nhiet-do-ctd9100-1100-340.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-nhiet-do-ctd9100-375-341.html">
+                                                    <img src="/Upload/image/2019/07/24/bo-hieu-chuan-nhiet-do-ctd9100-375_2019-07-24-162335.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-nhiet-do-ctd9100-375-341.html">Bộ hiệu chuẩn nhiệt độ CTD9100-375</a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>C&aacute;c bộ hiệu chuẩn nhiệt độ cầm tay thuộc d&ograve;ng CTx9100 đặc biệt th&iacute;ch hợp cho hiệu chuẩn tại chỗ v&agrave; v&ocirc; c&ugrave;ng dễ sử dụng. Nhờ thiết kế gọn nhẹ, bền chắc, kh&aacute;ch h&agrave;ng c&oacute; thể mang thiết bị n&agrave;y đi sử dụng ở bất cứ đ&acirc;u.</p>
+
+                                                
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-nhiet-do-ctd9100-375-341.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-da-nang-cam-tay-pascal-et-342.html">
+                                                    <img src="/Upload/image/2019/07/24/bo-hieu-chuan-da-nang-cam-tay-pascal-et_2019-07-24-162508.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-da-nang-cam-tay-pascal-et-342.html">Bộ hiệu chuẩn đa năng cầm tay Pascal ET </a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>Pascal ET l&agrave; bộ hiệu chuẩn đa năng cầm tay t&acirc;n tiến nhất d&ugrave;ng cho đo lường v&agrave; m&ocirc; phỏng c&aacute;c th&ocirc;ng số: &aacute;p suất tương đối v&agrave; tuyệt đối, t&iacute;n hiệu điện (mA, mV, V, &Omega;), cảm biến nhiệt độ (TC, RTD), tần số v&agrave; xung. Hơn nữa, thiết bị n&agrave;y c&ograve;n c&oacute; thể t&ugrave;y chọn t&iacute;ch hợp module HART&reg;&nbsp;để c&oacute; thể giao tiếp với c&aacute;c thiết bị đo hỗ trợ chuẩn HART&reg;&nbsp;</p>
+
+                                                
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-da-nang-cam-tay-pascal-et-342.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-cam-tay-cph7000-343.html">
+                                                    <img src="/Upload/image/2019/07/24/bo-hieu-chuan-cam-tay-cph7000_2019-07-24-162615.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-cam-tay-cph7000-343.html">Bộ hiệu chuẩn cầm tay CPH7000 </a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>CPH7000 l&agrave; thiết bị hiệu chuẩn cầm tay d&ugrave;ng để hiệu chuẩn v&agrave; kiểm tra c&aacute;c thiết bị đo &aacute;p suất, cảm biến &aacute;p suất v&agrave; biến truyền &aacute;p suất. Model CPH7000 c&oacute; cả phi&ecirc;n bản ph&ograve;ng nổ. Thiết bị n&agrave;y c&oacute; thể kiểm tra v&agrave; x&aacute;c định điểm t&aacute;c động cho c&ocirc;ng tắc &aacute;p suất.</p>
+
+                                                
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-cam-tay-cph7000-343.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-cam-tay-cph6000-344.html">
+                                                    <img src="/Upload/image/2019/07/24/bo-hieu-chuan-cam-tay-cph6000_2019-07-24-162740.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-cam-tay-cph6000-344.html">Bộ hiệu chuẩn cầm tay CPH6000</a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>Một giải ph&aacute;p hiệu chuẩn &aacute;p suất lu&ocirc;n lu&ocirc;n ph&ugrave; hợp với mọi ứng dụng. T&iacute;ch hợp cảm biến kiểm tra, lựa chọn cảm biến đa dạng với cấp ch&iacute;nh x&aacute;c l&ecirc;n tới 0.025% v&agrave; dải đo l&ecirc;n tới 6,000 bar, c&oacute; thể thay thế nhanh ch&oacute;ng v&agrave; kh&ocirc;ng cần d&ugrave;ng dụng cụ. C&oacute; thể kết nối cảm biến tới bộ hiệu chuẩn bằng d&acirc;y c&aacute;p. Khi thay đổi cảm biến, bộ hiển thị số sẽ tự động nhận diện dải đo mới m&agrave; kh&ocirc;ng cần người vận h&agrave;nh phải cấu h&igrave;nh lại.</p>
+
+                                                
+                                                <a href="/giai-phap/thiet-bi-hieu-chuan-wika/bo-hieu-chuan-cam-tay-cph6000-344.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                            </div>
+                            
+
+<div class="pgs">
+ 
+  <a id="ctl00_ContentPlaceHolder1_Pager_lblPrev" rel="nofollow" href="javascript:void(0);">&laquo; </a>
+   
+        <a class="ipage active"  href="/thiet-bi-hieu-chuan-wika-732.html">
+            1
+        </a>
+    
+    <a id="ctl00_ContentPlaceHolder1_Pager_lblNext" rel="nofollow" href="javascript:void(0);">&raquo;</a>
+ 
+</div>
+
+
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-lg-3 hidden-xs">
+                            <div class="art-title-cate hidden-xs" style="border-color: #FFF">
+                                <h3>&nbsp;&nbsp;</h3>
+                            </div>
+                            
+<div class="product-right">
+    <div class="adv-item">
+        
+                <a class="-c-thumb" href="" target="" rel="">
+                    <img onerror="$(this).remove()" class="img" src="/Upload/image/2019/07/24/wika_pg_atex_2019-07-24-171322.png" /></a>
+                <div class="widget-container subscribe">
+                    <h4>Hygienic diaphragm pressure gauges, also with ATEX version</h4>
+                    <div class="-c-desc"></div>
+                    <a class="-c-more" href="" target="" rel="">Xem tiếp >
+                    </a>
+                </div>
+            
+                <a class="-c-thumb" href="https://en.wika.com/newscontentgeneric.WIKA?AxID=6214&tabNews=1&tabPage=1&itemSize=5&curYear=2018" target="https://en.wika.com/newscontentgeneric.WIKA?AxID=6" rel="">
+                    <img onerror="$(this).remove()" class="img" src="/Upload/image/2019/07/24/wika_tg_2019-07-24-171835.png" /></a>
+                <div class="widget-container subscribe">
+                    <h4>Bimetal thermometers qualified in accordance with both ASME and EN</h4>
+                    <div class="-c-desc"></div>
+                    <a class="-c-more" href="https://en.wika.com/newscontentgeneric.WIKA?AxID=6214&tabNews=1&tabPage=1&itemSize=5&curYear=2018" target="https://en.wika.com/newscontentgeneric.WIKA?AxID=6" rel="">Xem tiếp >
+                    </a>
+                </div>
+            
+    </div>
+</div>
+
+                            <div class="cate-right">
+                                
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        $('#a732').addClass('active');
+        $('#a700').addClass('active');
+    </script>
+
+        <!-- Footer ================================================== -->
+        <footer class="" id="footer" role="">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container-1004 container-full">
+                        <div class="footer">
+                            <ul style="text-transform: uppercase">
+           
+                                <li><a href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                                <li><a href="/he-thong-dich-vu-578.html">Hệ thống & Dịch vụ </a>
+
+                                </li>
+                                <li><a href="#">Sản phẩm</a></li>
+                                <li><a href="/du-an-666.html">Dự án</a></li>
+                                <li><a href="/san-pham/hang-sankho-678.html">Hàng sẵn kho</a>
+
+                                </li>
+
+                                <li><a href="/lien-he.html">LIÊN HỆ</a></li>
+
+                                <li class="lang">
+                                    <a href="/?lang=en">
+                                        <img src="/images/btn_langEN.jpg" />
+                                    </a>
+                                    <a href="/?lang=vn">
+                                        <img src="/images/btn_langVN.jpg" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="copyright">
+
+                                 © 2009 - 2022 Bản quyền thuộc về VATCOM Co.,Ltd
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JavaScript ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/jquery.js"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-89740908-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
+
+
+
+
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="986F59E2" />
+</div></form>
+</body>
+</html>
+
+
+
+

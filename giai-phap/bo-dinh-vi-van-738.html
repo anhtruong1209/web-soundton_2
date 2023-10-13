@@ -1,0 +1,429 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Bộ định vị van
+</title><meta name="description" /><meta name="keywords" content="Bộ định vị van" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicons -->
+    <script src="/js/jquery-1.9.0.js"></script>
+    <link rel="shortcut icon" href="/images/img_icon.jpg" type="image/x-icon" />
+    <!-- jQuery library (served from Google) -->
+
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Documentation extras -->
+    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700i,800,800i&amp;subset=cyrillic-ext,latin-ext,vietnamese" rel="stylesheet" /><link href="/css/style.css" rel="stylesheet" type="text/css" /><link href="/css/font-awesome.min.css" rel="stylesheet" /><link rel="stylesheet" href="SlickNav/slicknav.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <script src="bxslider/plugins/jquery.easing.1.3.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="/bxslider/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/bxslider/jquery.bxslider.css" rel="stylesheet" />
+
+    <style>
+        ul.proSli li { width: auto !important; }
+        .footer .bx-controls-direction { display: none !important; }
+    </style>
+    <style>
+        .bx-wrapper { margin-bottom: 0 !important; }
+        .bx-wrapper .bx-viewport { box-shadow: 0 0 1px #ccc !important; }
+        .bx-wrapper .bx-controls-direction a { height: 40px !important; width: 36px !important; }
+        .bx-wrapper .bx-prev { background-position: -40px -33px !important; left: 0; transition: all 0.3s ease 0s; opacity: 0 !important; }
+        .bx-wrapper .bx-next { background-position: 0 -32px !important; right: 0; transition: all 0.3s ease 0s; opacity: 0 !important; }
+        .bx-wrapper:hover .bx-prev { opacity: 1 !important; transition: all 0.3s ease 0s; }
+        .bx-wrapper:hover .bx-next { opacity: 1 !important; transition: all 0.3s ease 0s; }
+        .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto { display: none !important; }
+    </style>
+    <style>
+        .bx-wrapper .bx-viewport { border: none !important; background: none !important; box-shadow: none !important; left: 0 !important; }
+        div.commentForm { display: none; float: left; margin: 0 0 20px; position: relative; text-align: justify; width: 100%; }
+        div.commentForm p { font-size: 13px; text-align: justify; }
+        div.section:nth-child(2n+1) { }
+        div.quote { padding: 5px 0; width: 100%; text-align: left; font-size: 12px; float: left; }
+        div.commentForm .about-page ul li { padding-top: 0; padding-bottom: 0; }
+
+
+        input:focus{
+    outline: none !important;
+}
+
+        .breadcrumb li[data-id="2"],.breadcrumb li[data-id="3"],.breadcrumb li[data-id="576"],.breadcrumb li[data-id="577"]{display: none}
+    </style>
+    
+</head>
+<body class="">
+    <form name="aspnetForm" method="post" action="/giai-phap/bo-dinh-vi-van-738.html" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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dWFjdXRlO3AgZ2nhuqNtIMSRJmFhY3V0ZTtuZyBr4buDIHRo4budaSBnaWFuIGNo4bqheSB0aOG7rSB2JmFncmF2ZTsgdOG7lW5nIGNoaSBwaCZpYWN1dGU7IGzhuq9wIMSR4bq3dC48L3A+DQoNCjxwPsSQJmFjaXJjO3kgY8WpbmcgbCZhZ3JhdmU7IHPhuqNuIHBo4bqpbSBjJm9hY3V0ZTsgZOG6o2kg4bupbmcgZOG7pW5nIMSRYSBk4bqhbmcgbmjhuqV0LjwvcD4NCmQCAg8VATIvYm8tZGluaC12aS12YW4vYm8tZGluaC12aS12YW4tdGhvbmctbWluaC0zNjYuYXNweGQCAQ9kFgZmDxUCMC9iby1kaW5oLXZpLXZhbi9iby1kaW5oLXZpLWRpZW4ta2hpLW5lbi0zNjcuYXNweEYvVXBsb2FkL2ltYWdlLzIwMTkvMDcvMjkvYm8tZGluaC12aS1kaWVuLWtoaS1uZW5fMjAxOS0wNy0yOS0yMzIzMDQuanBnZAIBDxUDMC9iby1kaW5oLXZpLXZhbi9iby1kaW5oLXZpLWRpZW4ta2hpLW5lbi0zNjcuYXNweCNC4buZIMSR4buLbmggduG7iyDEkWnhu4duLWtow60gbsOpboUCPHA+QyZhYWN1dGU7YyBi4buZIMSR4buLbmggduG7iyDEkWnhu4duLWtoJmlhY3V0ZTsgbiZlYWN1dGU7biBj4bunYSBGb3hib3JvIGwmYWdyYXZlOyBjJmFhY3V0ZTtjIHRoaeG6v3QgYuG7iyDEkWnhu4F1IGtoaeG7g24gdGkmZWNpcmM7biB0aeG6v24gYyZvYWN1dGU7IMSR4buZIOG7lW4gxJHhu4tuaCBjYW8gZCZ1Z3JhdmU7bmcgY2hvIGMmYWFjdXRlO2MgxJFp4buBdSBraeG7h24gbSZvY2lyYztpIHRyxrDhu51uZyBraOG6r2MgbmdoaeG7h3QuPC9wPg0KZAICDxUBMC9iby1kaW5oLXZpLXZhbi9iby1kaW5oLXZpLWRpZW4ta2hpLW5lbi0zNjcuYXNweGQCAg9kFgZmDxUCQC9iby1kaW5oLXZpLXZhbi9iby1kaW5oLXZpLXZhbi10aG9uZy1taW5oLXBob25nLW5vLWV4LWQtMzY4LmFzcHhWL1VwbG9hZC9pbWFnZS8yMDE5LzA3LzI5L2JvLWRpbmgtdmktdmFuLXRob25nLW1pbmgtcGhvbmctbm8tZXgtZF8yMDE5LTA3LTI5LTIzMjQ0Mi5qcGdkAgEPFQNAL2JvLWRpbmgtdmktdmFuL2JvLWRpbmgtdmktdmFuLXRob25nLW1pbmgtcGhvbmctbm8tZXgtZC0zNjguYXNweDhC4buZIMSR4buLbmggduG7iyB2YW4gdGjDtG5nIG1pbmgg4oCTIFBow7JuZyBu4buVIChFeCBkKc4FPHA+U1JEOTYwICZhYWN1dGU7cCBk4bulbmcgYyZvY2lyYztuZyBuZ2jhu4cgdGkmZWNpcmM7biB0aeG6v24gbmjhuqV0IGhp4buHbiBjJm9hY3V0ZTsgdHImZWNpcmM7biB0aOG7iyB0csaw4budbmcuIFRoaeG6v3QgYuG7iyBjaOG7iSBj4bqnbiBraOG7n2kgxJHhu5luZyB0cm9uZyBoYWkgYsaw4bubYyB2JmFncmF2ZTsgYyZvYWN1dGU7IG0mYWdyYXZlO24gaCZpZ3JhdmU7bmggTENEIMSR4buTIGjhu41hLCDEkWEgbmcmb2NpcmM7biBuZ+G7ryDEkeG7gyBj4bqldSBoJmlncmF2ZTtuaCB2JmFncmF2ZTsgduG6rW4gaCZhZ3JhdmU7bmguIEjhu5cgdHLhu6MgdOG6pXQgY+G6oyBjJmFhY3V0ZTtjIGdpYW8gdGjhu6ljIHRydXnhu4FuIHRoJm9jaXJjO25nIGhp4buHbiBjJm9hY3V0ZTsuPC9wPg0KDQo8cD5TUkQ5NjAgY3VuZyBj4bqlcCBjJmFhY3V0ZTtjIHBo4bqnbiBt4buBbSB2JmFncmF2ZTsgcGjGsMahbmcgcGgmYWFjdXRlO3AgdGkmZWNpcmM7biB0aeG6v24gxJHhu4MgcGgmYWNpcmM7biB0JmlhY3V0ZTtjaCBk4buvIGxp4buHdS4gVOG6pXQgY+G6oyBjJmFhY3V0ZTtjIHQmaWFjdXRlO25oIG7Eg25nIGNo4bqpbiDEkW8mYWFjdXRlO24gYyZvYWN1dGU7IHRo4buDIMSRxrDhu6NjIGPhuqV1IGgmaWdyYXZlO25oIHYmYWdyYXZlOyBoaeG7g24gdGjhu4sgZOG7hSBkJmFncmF2ZTtuZyBxdWEgUG9zaXRpb25lciBEVE0gKFZBTGNhcmUpLiZuYnNwOzwvcD4NCmQCAg8VAUAvYm8tZGluaC12aS12YW4vYm8tZGluaC12aS12YW4tdGhvbmctbWluaC1waG9uZy1uby1leC1kLTM2OC5hc3B4ZAIBD2QWBgIBDw8WAh4LTmF2aWdhdGVVcmwFE2phdmFzY3JpcHQ6dm9pZCgwKTsWAh4DcmVsBQhub2ZvbGxvd2QCAw8WAh8AAgEWAmYPZBYCZg8VAwZhY3RpdmUbL3ZuL2JvLWRpbmgtdmktdmFuLTczOC5hc3B4ATFkAgUPDxYCHwEFE2phdmFzY3JpcHQ6dm9pZCgwKTsWAh8CBQhub2ZvbGxvd2QCAg9kFgICAQ9kFgJmDxYCHwACAhYEZg9kFgJmDxUJAAAALTIwMTkvMDcvMjQvd2lrYV9wZ19hdGV4XzIwMTktMDctMjQtMTcxMzIyLnBuZzpIeWdpZW5pYyBkaWFwaHJhZ20gcHJlc3N1cmUgZ2F1Z2VzLCBhbHNvIHdpdGggQVRFWCB2ZXJzaW9uAAAAAGQCAQ9kFgJmDxUJYWh0dHBzOi8vZW4ud2lrYS5jb20vbmV3c2NvbnRlbnRnZW5lcmljLldJS0E/QXhJRD02MjE0JnRhYk5ld3M9MSZ0YWJQYWdlPTEmaXRlbVNpemU9NSZjdXJZZWFyPTIwMTgyaHR0cHM6Ly9lbi53aWthLmNvbS9uZXdzY29udGVudGdlbmVyaWMuV0lLQT9BeElEPTYAKDIwMTkvMDcvMjQvd2lrYV90Z18yMDE5LTA3LTI0LTE3MTgzNS5wbmdCQmltZXRhbCB0aGVybW9tZXRlcnMgcXVhbGlmaWVkIGluIGFjY29yZGFuY2Ugd2l0aCBib3RoIEFTTUUgYW5kIEVOAGFodHRwczovL2VuLndpa2EuY29tL25ld3Njb250ZW50Z2VuZXJpYy5XSUtBP0F4SUQ9NjIxNCZ0YWJOZXdzPTEmdGFiUGFnZT0xJml0ZW1TaXplPTUmY3VyWWVhcj0yMDE4Mmh0dHBzOi8vZW4ud2lrYS5jb20vbmV3c2NvbnRlbnRnZW5lcmljLldJS0E/QXhJRD02AGQCBA9kFgJmDxYCHgRUZXh0BT3CoMKpIDIwMDkgLSAyMDIywqBC4bqjbiBxdXnhu4FuIHRodeG7mWMgduG7gSBWQVRDT00gQ28uLEx0ZA0KZGT369TcmDmlQ6h2RwDHsi0KqvBV0g==" />
+</div>
+
+        <header class="" id="header" role="" lang="vn">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container-1004 container-full">
+                        <div class="col-md-12 col-sm-12 col-lg-3 col-xs-12">
+                            <div class="header-top">
+                                <div class="header_logo">
+                                    <a class="logo" href="/?lang=vn">
+                                        <img src="/images/logo.jpg" />
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-lg-9 col-xs-12">
+                            <div class="header-search">
+                                
+                                <input onkeypress="searchKeyPress(event)" id="txtSearch" class="input-text has-icon" type="text" value="" />
+                                <a style="cursor: pointer" id="btSearch" onclick="do_search()"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                            <script type="text/javascript">
+                                var do_search = function () {
+                                    var e = document.getElementById("txtSearch");
+                                    if (e.value == "") {
+                                        e.value = "Tìm kiếm";
+                                        return false;
+                                    }
+                                    else {
+                                        if (e.value != "Tìm kiếm")
+                                            window.location = "/san-pham.html?key=" + e.value;
+                                            }
+                                            }
+                                        var sfocus = function () {
+
+                                            var e = document.getElementById("txtSearch");
+                                            if (e.value == "Tìm kiếm") {
+                                                e.value = "";
+                                            }
+                                        }
+                                        var sblur = function () {
+                                            var e = document.getElementById("txtSearch");
+                                            if (e.value == "") {
+                                                e.value = "Tìm kiếm";
+                                            }
+                                        }
+                                        function searchKeyPress(e) {
+                                            e.stopPropagation();
+                                            // look for window.event in case event isn't passed in
+                                            if (typeof e == 'undefined' && window.event) { e = window.event; }
+                                            if (e.keyCode == 13) {
+                                                do_search();
+                                                e.preventDefault();
+                                            }
+
+
+                                        }
+                            </script>
+                            <div class="header-menu">
+                                <label for="drop" class="toggle">
+                                    <p>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </p>
+                                </label>
+                                <input type="checkbox" id="drop" />
+                                <ul class="menu" style="font-weight:bold">
+                                    
+                                    <li><a id="a1" href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                                    <li><a id="a578" href="/he-thong-dich-vu-578.html">Hệ thống & Dịch vụ </a>
+                                        <ul>
+                                            
+                                                    <li><a href="/he-thong-dich-vu/he-thong-dieu-khien-qua-trinh-pcs-190.html">Hệ thống điều khiển quá trình (PCS)</a></li>
+                                                
+                                                    <li><a href="/he-thong-dich-vu/he-thong-thiet-bi-truong-an-toan-sis-188.html">Hệ thống thiết bị trường an toàn (SIS)</a></li>
+                                                
+                                                    <li><a href="/he-thong-dich-vu/he-thong-quan-trac-khi-thai-lien-tuc-cems-371.html">Hệ thống quan trắc khí thải liên tục (CEMS)</a></li>
+                                                
+                                                    <li><a href="/he-thong-dich-vu/dich-vu-bao-tri-phong-ngua-180.html">Dịch vụ bảo trì phòng ngừa</a></li>
+                                                
+                                        </ul>
+                                    </li>
+                                    <li><a id="a665" href="/giai-phap/san-pham-665.html">Sản phẩm</a>
+                                         <ul>
+                                            
+                                                    <li><a href="/giai-phap/san-pham-700.html">Thiết bị đo lường hãng WIKA</a></li>
+                                                
+                                                    <li><a href="/giai-phap/san-pham-701.html">Thiết bị đo lường nhãn hiệu Foxboro (Schneider Electric)</a></li>
+                                                
+                                                    <li><a href="/giai-phap/san-pham-714.html">Thiết bị đo lường hãng ABB</a></li>
+                                                
+                                                    <li><a href="/giai-phap/san-pham-715.html">Thiết đo bụi và lưu lượng hãng ENVEA (PCME)</a></li>
+                                                
+                                        </ul>
+
+                                    </li>
+                                    <li><a id="a666" href="/du-an-666.html">Dự án</a></li>
+                                    <li><a id="a5" href="/san-pham/hang-sankho-678.html">Hàng sẵn kho</a>
+                                        <ul>
+                                            
+                                                    <li><a href="/san-pham/wika-681.html">Wika</a>
+
+
+
+
+                                                    </li>
+                                                
+                                                    <li><a href="/san-pham/foxboro-682.html">Foxboro</a>
+
+
+
+
+                                                    </li>
+                                                
+
+                                        </ul>
+                                    </li>
+
+                                    <li><a id="a6" href="/lien-he.html">LIÊN HỆ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+    <banner>
+        <div class="home-slider">
+            <ul class="bxslider">
+                <li><img onerror="$(this).remove()" style="width: 100%" src="/upload/image/" /></li>
+            </ul>
+            <div style="background: #f5f5f5">
+                <div class="container-1004 container-full">
+                    <ol class="breadcrumb">
+                        <li><a href="/?lang=vn">Trang chủ</a></li>
+                      
+                        
+                        
+                        <li data-id="2"><a href="/giai-phap/san-pham-2.html">Bài viết</a></li>
+                        
+                        <li data-id="576"><a href="/giai-phap/san-pham-576.html">VN</a></li>
+                        
+                        <li data-id="665"><a href="/giai-phap/san-pham-665.html">Sản phẩm</a></li>
+                        
+                        <li data-id="701"><a href="/giai-phap/san-pham-701.html">Thiết bị đo lường nhãn hiệu Foxboro (Schneider Electric)</a></li>
+                        
+                        <li data-id="738"><a href="/giai-phap/bo-dinh-vi-van-738.html">Bộ định vị van</a></li>
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </banner>
+    <main class="" id="content" role="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="about-page products-page">
+                    <div class="container-1004 container-full">
+
+                        <div class="col-md-9 col-sm-9 col-lg-9 col-xs-12 ">
+                            <div class="art-title-cate">
+                                <h3>Bộ định vị van</h3>
+                            </div>
+                            <div class="prods-desc">
+                                <p>
+                                    <p>FOXBORO cung cấp dải sản phẩm định vị van đa dạng gi&uacute;p đ&aacute;p ứng mọi y&ecirc;u cầu của kh&aacute;ch h&agrave;ng</p>
+
+                                </p>
+                            </div>
+                            <div class="prods-cate-items">
+                                
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/bo-dinh-vi-van/bo-dinh-vi-van-thong-minh-366.html">
+                                                    <img src="/Upload/image/2019/07/29/bo-dinh-vi-van-thong-minh_2019-07-29-232129.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/bo-dinh-vi-van/bo-dinh-vi-van-thong-minh-366.html">Bộ định vị van thông minh</a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>Bộ định vị van th&ocirc;ng minh d&ograve;ng SRD được thiết kế cho c&aacute;c bộ truyền động van kh&iacute; n&eacute;n, c&oacute; thể điều khiển từ c&aacute;c hệ thống điều khiển, bộ điều khiển v&agrave; c&aacute;c c&ocirc;ng cụ cấu h&igrave;nh tr&ecirc;n m&aacute;y t&iacute;nh.</p>
+
+<p>Dựa tr&ecirc;n nguy&ecirc;n l&yacute; v&ograve;i phun-bản chắn, c&aacute;c bộ định vị n&agrave;y l&agrave; v&ocirc; song về khả năng điều khiển ch&iacute;nh x&aacute;c v&agrave; ổn định.</p>
+
+<p>Nhờ c&aacute;c chức năng được tăng cường, d&ograve;ng sản phẩm n&agrave;y gi&uacute;p giảm đ&aacute;ng kể thời gian chạy thử v&agrave; tổng chi ph&iacute; lắp đặt.</p>
+
+<p>Đ&acirc;y cũng l&agrave; sản phẩm c&oacute; dải ứng dụng đa dạng nhất.</p>
+
+                                                
+                                                <a href="/giai-phap/bo-dinh-vi-van/bo-dinh-vi-van-thong-minh-366.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/bo-dinh-vi-van/bo-dinh-vi-dien-khi-nen-367.html">
+                                                    <img src="/Upload/image/2019/07/29/bo-dinh-vi-dien-khi-nen_2019-07-29-232304.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/bo-dinh-vi-van/bo-dinh-vi-dien-khi-nen-367.html">Bộ định vị điện-khí nén</a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>C&aacute;c bộ định vị điện-kh&iacute; n&eacute;n của Foxboro l&agrave; c&aacute;c thiết bị điều khiển ti&ecirc;n tiến c&oacute; độ ổn định cao d&ugrave;ng cho c&aacute;c điều kiện m&ocirc;i trường khắc nghiệt.</p>
+
+                                                
+                                                <a href="/giai-phap/bo-dinh-vi-van/bo-dinh-vi-dien-khi-nen-367.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                                        <div class="-item">
+                                            <div class="-item-cthumb">
+                                                <a href="/giai-phap/bo-dinh-vi-van/bo-dinh-vi-van-thong-minh-phong-no-ex-d-368.html">
+                                                    <img src="/Upload/image/2019/07/29/bo-dinh-vi-van-thong-minh-phong-no-ex-d_2019-07-29-232442.jpg" /></a>
+                                            </div>
+                                            <div class="-item-ctitle"><a href="/giai-phap/bo-dinh-vi-van/bo-dinh-vi-van-thong-minh-phong-no-ex-d-368.html">Bộ định vị van thông minh – Phòng nổ (Ex d)</a></div>
+                                            <div class="-item-cdesc" style="font-size: 13px; font-family: 'Open Sans'"><p>SRD960 &aacute;p dụng c&ocirc;ng nghệ ti&ecirc;n tiến nhất hiện c&oacute; tr&ecirc;n thị trường. Thiết bị chỉ cần khởi động trong hai bước v&agrave; c&oacute; m&agrave;n h&igrave;nh LCD đồ họa, đa ng&ocirc;n ngữ để cấu h&igrave;nh v&agrave; vận h&agrave;nh. Hỗ trợ tất cả c&aacute;c giao thức truyền th&ocirc;ng hiện c&oacute;.</p>
+
+<p>SRD960 cung cấp c&aacute;c phần mềm v&agrave; phương ph&aacute;p ti&ecirc;n tiến để ph&acirc;n t&iacute;ch dữ liệu. Tất cả c&aacute;c t&iacute;nh năng chẩn đo&aacute;n c&oacute; thể được cấu h&igrave;nh v&agrave; hiển thị dễ d&agrave;ng qua Positioner DTM (VALcare).&nbsp;</p>
+
+                                                
+                                                <a href="/giai-phap/bo-dinh-vi-van/bo-dinh-vi-van-thong-minh-phong-no-ex-d-368.html" style="color: #b01317">>></a>
+                                            </div>
+
+                                        </div>
+                                    
+                            </div>
+                            
+
+<div class="pgs">
+ 
+  <a id="ctl00_ContentPlaceHolder1_Pager_lblPrev" rel="nofollow" href="javascript:void(0);">&laquo; </a>
+   
+        <a class="ipage active"  href="/bo-dinh-vi-van-738.html">
+            1
+        </a>
+    
+    <a id="ctl00_ContentPlaceHolder1_Pager_lblNext" rel="nofollow" href="javascript:void(0);">&raquo;</a>
+ 
+</div>
+
+
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-lg-3 hidden-xs">
+                            <div class="art-title-cate hidden-xs" style="border-color: #FFF">
+                                <h3>&nbsp;&nbsp;</h3>
+                            </div>
+                            
+<div class="product-right">
+    <div class="adv-item">
+        
+                <a class="-c-thumb" href="" target="" rel="">
+                    <img onerror="$(this).remove()" class="img" src="/Upload/image/2019/07/24/wika_pg_atex_2019-07-24-171322.png" /></a>
+                <div class="widget-container subscribe">
+                    <h4>Hygienic diaphragm pressure gauges, also with ATEX version</h4>
+                    <div class="-c-desc"></div>
+                    <a class="-c-more" href="" target="" rel="">Xem tiếp >
+                    </a>
+                </div>
+            
+                <a class="-c-thumb" href="https://en.wika.com/newscontentgeneric.WIKA?AxID=6214&tabNews=1&tabPage=1&itemSize=5&curYear=2018" target="https://en.wika.com/newscontentgeneric.WIKA?AxID=6" rel="">
+                    <img onerror="$(this).remove()" class="img" src="/Upload/image/2019/07/24/wika_tg_2019-07-24-171835.png" /></a>
+                <div class="widget-container subscribe">
+                    <h4>Bimetal thermometers qualified in accordance with both ASME and EN</h4>
+                    <div class="-c-desc"></div>
+                    <a class="-c-more" href="https://en.wika.com/newscontentgeneric.WIKA?AxID=6214&tabNews=1&tabPage=1&itemSize=5&curYear=2018" target="https://en.wika.com/newscontentgeneric.WIKA?AxID=6" rel="">Xem tiếp >
+                    </a>
+                </div>
+            
+    </div>
+</div>
+
+                            <div class="cate-right">
+                                
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        $('#a738').addClass('active');
+        $('#a701').addClass('active');
+    </script>
+
+        <!-- Footer ================================================== -->
+        <footer class="" id="footer" role="">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container-1004 container-full">
+                        <div class="footer">
+                            <ul style="text-transform: uppercase">
+           
+                                <li><a href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                                <li><a href="/he-thong-dich-vu-578.html">Hệ thống & Dịch vụ </a>
+
+                                </li>
+                                <li><a href="#">Sản phẩm</a></li>
+                                <li><a href="/du-an-666.html">Dự án</a></li>
+                                <li><a href="/san-pham/hang-sankho-678.html">Hàng sẵn kho</a>
+
+                                </li>
+
+                                <li><a href="/lien-he.html">LIÊN HỆ</a></li>
+
+                                <li class="lang">
+                                    <a href="/?lang=en">
+                                        <img src="/images/btn_langEN.jpg" />
+                                    </a>
+                                    <a href="/?lang=vn">
+                                        <img src="/images/btn_langVN.jpg" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="copyright">
+
+                                 © 2009 - 2022 Bản quyền thuộc về VATCOM Co.,Ltd
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JavaScript ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/jquery.js"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-89740908-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
+
+
+
+
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="986F59E2" />
+</div></form>
+</body>
+</html>
+
+
+
+

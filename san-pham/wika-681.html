@@ -1,0 +1,822 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	wika
+</title><meta name="description" content="wika" /><meta name="keywords" content="wika" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicons -->
+    <script src="/js/jquery-1.9.0.js"></script>
+    <link rel="shortcut icon" href="/images/img_icon.jpg" type="image/x-icon" />
+    <!-- jQuery library (served from Google) -->
+
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Documentation extras -->
+    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700i,800,800i&amp;subset=cyrillic-ext,latin-ext,vietnamese" rel="stylesheet" /><link href="/css/style.css" rel="stylesheet" type="text/css" /><link href="/css/font-awesome.min.css" rel="stylesheet" /><link rel="stylesheet" href="SlickNav/slicknav.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <script src="bxslider/plugins/jquery.easing.1.3.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="/bxslider/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/bxslider/jquery.bxslider.css" rel="stylesheet" />
+
+    <style>
+        ul.proSli li { width: auto !important; }
+        .footer .bx-controls-direction { display: none !important; }
+    </style>
+    <style>
+        .bx-wrapper { margin-bottom: 0 !important; }
+        .bx-wrapper .bx-viewport { box-shadow: 0 0 1px #ccc !important; }
+        .bx-wrapper .bx-controls-direction a { height: 40px !important; width: 36px !important; }
+        .bx-wrapper .bx-prev { background-position: -40px -33px !important; left: 0; transition: all 0.3s ease 0s; opacity: 0 !important; }
+        .bx-wrapper .bx-next { background-position: 0 -32px !important; right: 0; transition: all 0.3s ease 0s; opacity: 0 !important; }
+        .bx-wrapper:hover .bx-prev { opacity: 1 !important; transition: all 0.3s ease 0s; }
+        .bx-wrapper:hover .bx-next { opacity: 1 !important; transition: all 0.3s ease 0s; }
+        .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto { display: none !important; }
+    </style>
+    <style>
+        .bx-wrapper .bx-viewport { border: none !important; background: none !important; box-shadow: none !important; left: 0 !important; }
+        div.commentForm { display: none; float: left; margin: 0 0 20px; position: relative; text-align: justify; width: 100%; }
+        div.commentForm p { font-size: 13px; text-align: justify; }
+        div.section:nth-child(2n+1) { }
+        div.quote { padding: 5px 0; width: 100%; text-align: left; font-size: 12px; float: left; }
+        div.commentForm .about-page ul li { padding-top: 0; padding-bottom: 0; }
+
+
+        input:focus{
+    outline: none !important;
+}
+
+        .breadcrumb li[data-id="2"],.breadcrumb li[data-id="3"],.breadcrumb li[data-id="576"],.breadcrumb li[data-id="577"]{display: none}
+    </style>
+    
+</head>
+<body class="">
+    <form name="aspnetForm" method="post" action="/san-pham/wika-681.html" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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IDAsIDApOyBmb250LWZhbWlseTpvcGVuIHNhbnMsc2Fucy1zZXJpZjsgZm9udC1zaXplOjE0cHgiPkPGoSBj4bqldSDEkW86IGLhurFuZyB0aCZlYWN1dGU7cCBraCZvY2lyYztuZyBn4buJPC9zcGFuPjwvbGk+DQoJPGxpPjxzcGFuIHN0eWxlPSJjb2xvcjpyZ2IoMCwgMCwgMCkiPkThuqNpIMSRbzogKC0wLjEpLi4uMC4uLjAuMTUuLi4wLjYuLi4xLi4uMS40Li4uMS42Li4uMi41IE1QYSwmbmJzcDswLi4uMTYwLi4uMjUwLi4uNDAwLi4uNjAwLi4uMTAwMC4uLjE2MDAuLi4yNTAwLi4uNDAwMC4uLjEwMDAwJm5ic3A7a1BhLCZuYnNwOzAuLi4xLi4uMS42Li4uMi41Li4uNC4uLjYuLi4xMC4uLjE2Li4uNDAgYmFyLCZuYnNwOzAgLSA2IGtnL2NtMiwmbmJzcDswIC0gMTYga2cvY20yIChwc2kpPC9zcGFuPjwvbGk+DQoJPGxpPjxzcGFuIHN0eWxlPSJjb2xvcjpyZ2IoMCwgMCwgMCkiPkMmb2FjdXRlOyDEkWnhu4FuIGThuqd1IGNo4buRbmcgcnVuZyB0aGVvIHkmZWNpcmM7dSBj4bqndTwvc3Bhbj48L2xpPg0KPC91bD4NCg0KPHAgc3R5bGU9InRleHQtYWxpZ246anVzdGlmeSI+PHNwYW4gc3R5bGU9ImNvbG9yOnJnYigwLCAwLCAwKSI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxNHB4Ij5DaCZ1YWN1dGU7IHRoJmlhY3V0ZTtjaDogYyZvYWN1dGU7IGImYWFjdXRlO24gYyZhYWN1dGU7YyBsb+G6oWkgxJHhu5NuZyBo4buTIHbhu5tpIGThuqNpIMSRbyB2JmFncmF2ZTsgY2gmYWNpcmM7biBr4bq/dCBu4buRaSBraCZhYWN1dGU7Yzwvc3Bhbj48L3NwYW4+PC9wPg0KDQo8cCBzdHlsZT0idGV4dC1hbGlnbjpqdXN0aWZ5Ij48c3BhbiBzdHlsZT0iY29sb3I6cmdiKDAsIDAsIDApIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjE0cHgiPkgmYXRpbGRlO3kgbGkmZWNpcmM7biBo4buHIHRy4buxYyB0aeG6v3AgduG7m2kgY2gmdWFjdXRlO25nIHQmb2NpcmM7aSDEkeG7gyDEkcaw4bujYyBiJmFhY3V0ZTtvIGdpJmFhY3V0ZTsgdiZhZ3JhdmU7IGjhu5cgdHLhu6Mga+G7uSB0aHXhuq10IHThu5F0IG5o4bqldCE8L3NwYW4+PC9zcGFuPjwvcD4NCmQCAQ9kFgZmDxUGAzE3MwMxNzNyL1VwbG9hZC9pbWFnZS8yMDE5LzEwLzMwLzMyMHgxODgvZG9uZy1oby1kby1hcC1zdWF0LWxvYWktYm91cmRvbi10dWJlLWNvLWRpZW4tZGF1LW1hdC0xMDAtbW1fMjAxOS0xMC0zMC0xMTQ1NTQuanBnUMSQ4buTbmcgaOG7kyDEkW8gw6FwIHN14bqldCBsb+G6oWkgQm91cmRvbiBUdWJlLCBjw7MgxJFp4buBbiBk4bqndSwgbeG6t3QgMTAwIG1tCjIxMy41My4xMDA7PHA+VGhp4bq/dCBr4bq/Jm5ic3A7IHRoZW8gdGkmZWNpcmM7dSBjaHXhuqluIEVOODM3LTE8L3A+DQpkAgIPFQEDMTczZAIDDxUCAzE3M9sLPHAgc3R5bGU9InRleHQtYWxpZ246anVzdGlmeSI+PHNwYW4gc3R5bGU9ImNvbG9yOnJnYigwLCAwLCAwKSI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxNHB4Ij48c3Ryb25nPlRoJm9jaXJjO25nIHPhu5Ega+G7uSB0aHXhuq10PC9zdHJvbmc+PC9zcGFuPjwvc3Bhbj48L3A+DQoNCjx1bD4NCgk8bGkgc3R5bGU9InRleHQtYWxpZ246anVzdGlmeSI+PHNwYW4gc3R5bGU9ImNvbG9yOnJnYigwLCAwLCAwKSI+xJDGsOG7nW5nIGsmaWFjdXRlO25oIG3hurd0IMSR4buTbmcgaOG7kzogMTAwIG1tPC9zcGFuPjwvbGk+DQoJPGxpIHN0eWxlPSJ0ZXh0LWFsaWduOmp1c3RpZnkiPjxzcGFuIHN0eWxlPSJjb2xvcjpyZ2IoMCwgMCwgMCkiPkNoJmFjaXJjO24ga+G6v3QgbuG7kWk6IHJlbiZuYnNwOzwvc3Bhbj48c3BhbiBzdHlsZT0iY29sb3I6cmdiKDAsIDAsIDApIj4xLzIgTlBULCBjaCZhY2lyYztuIMSR4bupbmc8L3NwYW4+PC9saT4NCgk8bGkgc3R5bGU9InRleHQtYWxpZ246anVzdGlmeSI+PHNwYW4gc3R5bGU9ImNvbG9yOnJnYigwLCAwLCAwKSI+Q8ahIGPhuqV1IMSRbzogaOG7o3Aga2ltIMSR4buTbmc8L3NwYW4+PC9saT4NCgk8bGkgc3R5bGU9InRleHQtYWxpZ246anVzdGlmeSI+PHNwYW4gc3R5bGU9ImNvbG9yOnJnYigwLCAwLCAwKSI+ROG6o2kgxJFvOiAwIC0gMjVrZy9jbTIsJm5ic3A7LTEmaGVsbGlwOzAgYmFyLCZuYnNwOy0xJmhlbGxpcDsxNWtnL2NtMiwmbmJzcDstMSZoZWxsaXA7MSBrZy9jbTIsJm5ic3A7MC4uLjE2a2cvY20yLCZuYnNwOzAmaGVsbGlwOzUwMDAgcHNpPC9zcGFuPjwvbGk+DQoJPGxpIHN0eWxlPSJ0ZXh0LWFsaWduOmp1c3RpZnkiPjxzcGFuIHN0eWxlPSJjb2xvcjpyZ2IoMCwgMCwgMCkiPkMmb2FjdXRlOyDEkWnhu4FuIGThuqd1IGNo4buRbmcgcnVuZyAoZ2x5Y2VyaW4pPC9zcGFuPjwvbGk+DQo8L3VsPg0KDQo8cCBzdHlsZT0idGV4dC1hbGlnbjpqdXN0aWZ5Ij48c3BhbiBzdHlsZT0iY29sb3I6cmdiKDAsIDAsIDApIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjE0cHgiPkNoJnVhY3V0ZTsgdGgmaWFjdXRlO2NoOiBjJm9hY3V0ZTsgYiZhYWN1dGU7biBjJmFhY3V0ZTtjIGxv4bqhaSDEkeG7k25nIGjhu5MgduG7m2kgZOG6o2kgxJFvLCDEkcaw4budbmcgayZpYWN1dGU7bmggbeG6t3QgxJHhu5NuZyBo4buTJm5ic3A7diZhZ3JhdmU7IGNoJmFjaXJjO24ga+G6v3QgbuG7kWkga2gmYWFjdXRlO2M8L3NwYW4+PC9zcGFuPjwvcD4NCg0KPHAgc3R5bGU9InRleHQtYWxpZ246anVzdGlmeSI+PHNwYW4gc3R5bGU9ImNvbG9yOnJnYigwLCAwLCAwKSI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxNHB4Ij5IJmF0aWxkZTt5IGxpJmVjaXJjO24gaOG7hyB0cuG7sWMgdGnhur9wIHbhu5tpIGNoJnVhY3V0ZTtuZyB0Jm9jaXJjO2kgxJHhu4MgxJHGsOG7o2MgYiZhYWN1dGU7byBnaSZhYWN1dGU7IHYmYWdyYXZlOyBo4buXIHRy4bujIGvhu7kgdGh14bqtdCB04buRdCBuaOG6pXQhPC9zcGFuPjwvc3Bhbj48L3A+DQpkAgIPZBYGZg8VBgMxNzIDMTcycC9VcGxvYWQvaW1hZ2UvMjAxOS8xMC8zMC8zMjB4MTg4L2RvbmctaG8tZG8tYXAtc3VhdC1sb2FpLWJvdXJkb24tdHViZS1jby1kaWVuLWRhdS1tYXQtNjNtbV8yMDE5LTEwLTMwLTExNDAwOS5qcGdOxJDhu5NuZyBo4buTIMSRbyDDoXAgc3XhuqV0IGxv4bqhaSBCb3VyZG9uIFR1YmUsIGPDsyDEkWnhu4FuIGThuqd1LCBt4bq3dCA2M21tCjIxMy41My4wNjM7PHA+VGhp4bq/dCBr4bq/Jm5ic3A7IHRoZW8gdGkmZWNpcmM7dSBjaHXhuqluIEVOODM3LTE8L3A+DQpkAgIPFQEDMTcyZAIDDxUCAzE3MtsLPHAgc3R5bGU9InRleHQtYWxpZ246anVzdGlmeSI+PHNwYW4gc3R5bGU9ImNvbG9yOnJnYigwLCAwLCAwKSI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxNHB4Ij48c3Ryb25nPlRoJm9jaXJjO25nIHPhu5Ega+G7uSB0aHXhuq10Ojwvc3Ryb25nPjwvc3Bhbj48L3NwYW4+PC9wPg0KDQo8dWw+DQoJPGxpIHN0eWxlPSJ0ZXh0LWFsaWduOmp1c3RpZnkiPjxzcGFuIHN0eWxlPSJjb2xvcjpyZ2IoMCwgMCwgMCkiPsSQxrDhu51uZyBrJmlhY3V0ZTtuaCBt4bq3dCDEkeG7k25nIGjhu5M6IDYzJm5ic3A7bW08L3NwYW4+PC9saT4NCgk8bGkgc3R5bGU9InRleHQtYWxpZ246anVzdGlmeSI+PHNwYW4gc3R5bGU9ImNvbG9yOnJnYigwLCAwLCAwKSI+Q2gmYWNpcmM7biBr4bq/dCBu4buRaTogcmVuIDEvNCZuYnNwO05QVCwgY2gmYWNpcmM7biDEkeG7qW5nL2NoJmFjaXJjO24gc2F1PC9zcGFuPjwvbGk+DQoJPGxpIHN0eWxlPSJ0ZXh0LWFsaWduOmp1c3RpZnkiPjxmb250IGNvbG9yPSIjMDAwMDAwIj5DxqEgY+G6pXUgxJFvOiBo4bujcCBraW0gxJHhu5NuZzwvZm9udD48L2xpPg0KCTxsaSBzdHlsZT0idGV4dC1hbGlnbjpqdXN0aWZ5Ij48c3BhbiBzdHlsZT0iY29sb3I6cmdiKDAsIDAsIDApIj5E4bqjaSDEkW86IG5oaeG7gXUgZOG6o2kgxJFvLCB04burJm5ic3A7MC4uLjE2MC4uLjI1MC4uLjQwMC4uLjYwMCBiYXIsJm5ic3A7MCAtIDZrZy9jbTImbmJzcDsocHNpKSwmbmJzcDswIC0xNmtnL2NtMiAocHNpKSwgMC0xNDAgcHNpLCAwLTE2MHBzaS9iYXIsJm5ic3A7MC01MDAwcHNpPC9zcGFuPjwvbGk+DQoJPGxpIHN0eWxlPSJ0ZXh0LWFsaWduOmp1c3RpZnkiPjxzcGFuIHN0eWxlPSJjb2xvcjpyZ2IoMCwgMCwgMCkiPkMmb2FjdXRlOyDEkWnhu4FuIGThuqd1IGNo4buRbmcgcnVuZyAoZ2x5Y2VyaW4pJm5ic3A7PC9zcGFuPjwvbGk+DQo8L3VsPg0KDQo8cCBzdHlsZT0idGV4dC1hbGlnbjpqdXN0aWZ5Ij48c3BhbiBzdHlsZT0iY29sb3I6cmdiKDAsIDAsIDApIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjE0cHgiPkNoJnVhY3V0ZTsgdGgmaWFjdXRlO2NoOiBjJm9hY3V0ZTsgYiZhYWN1dGU7biBjJmFhY3V0ZTtjIGxv4bqhaSDEkeG7k25nIGjhu5MgduG7m2kgZOG6o2kgxJFvLCDEkcaw4budbmcgayZpYWN1dGU7bmggbeG6t3QgxJHhu5NuZyBo4buTJm5ic3A7diZhZ3JhdmU7IGNoJmFjaXJjO24ga+G6v3QgbuG7kWkga2gmYWFjdXRlO2M8L3NwYW4+PC9zcGFuPjwvcD4NCg0KPHAgc3R5bGU9InRleHQtYWxpZ246anVzdGlmeSI+PHNwYW4gc3R5bGU9ImNvbG9yOnJnYigwLCAwLCAwKSI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxNHB4Ij5IJmF0aWxkZTt5IGxpJmVjaXJjO24gaOG7hyB0cuG7sWMgdGnhur9wIHbhu5tpIGNoJnVhY3V0ZTtuZyB0Jm9jaXJjO2kgxJHhu4MgxJHGsOG7o2MgYiZhYWN1dGU7byBnaSZhYWN1dGU7IHYmYWdyYXZlOyBo4buXIHRy4bujIGvhu7kgdGh14bqtdCB04buRdCBuaOG6pXQhPC9zcGFuPjwvc3Bhbj48L3A+DQpkAgMPZBYGZg8VBgMxNzEDMTcxVy9VcGxvYWQvaW1hZ2UvMjAxOS8xMC8zMC8zMjB4MTg4L2RvbmctaG8tZG8tbmhpZXQtZG8tbG9haS1iaW1ldGFsXzIwMTktMTAtMzAtMTEzNTU3LmpwZy3EkOG7k25nIGjhu5MgxJFvIG5oaeG7h3QgxJHhu5kgbG/huqFpIGJpbWV0YWwAMDxwPlRoaeG6v3Qga+G6vyB0aGVvIGNodeG6qW4mbmJzcDtFTiAxMzE5MDwvcD4NCmQCAg8VAQMxNzFkAgMPFQIDMTcx6wo8cCBzdHlsZT0idGV4dC1hbGlnbjpqdXN0aWZ5Ij48c3BhbiBzdHlsZT0iY29sb3I6cmdiKDAsIDAsIDApIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjE0cHgiPjxzdHJvbmc+VGgmb2NpcmM7bmcgc+G7kSBr4bu5IHRodeG6rXQ6Jm5ic3A7PC9zdHJvbmc+PC9zcGFuPjwvc3Bhbj48L3A+DQoNCjx1bD4NCgk8bGk+PHNwYW4gc3R5bGU9ImNvbG9yOnJnYigwLCAwLCAwKSI+ROG6o2kgxJFvOiAwIC0gMjAwPHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5Om9wZW4gc2FuczsgZm9udC1zaXplOjEwLjVweCI+bzwvc3Bhbj5DPC9zcGFuPjwvbGk+DQoJPGxpPjxzcGFuIHN0eWxlPSJjb2xvcjpyZ2IoMCwgMCwgMCkiPsSQxrDhu51uZyBrJmlhY3V0ZTtuaCBt4bq3dCDEkeG7k25nIGjhu5M6IDEwMG1tPC9zcGFuPjwvbGk+DQoJPGxpPjxzcGFuIHN0eWxlPSJjb2xvcjpyZ2IoMCwgMCwgMCkiPlbhu4sgdHImaWFjdXRlOyBjaCZhY2lyYztuIGvhur90IG7hu5FpOiBjaCZhY2lyYztuIHNhdTwvc3Bhbj48L2xpPg0KCTxsaT48c3BhbiBzdHlsZT0iY29sb3I6cmdiKDAsIDAsIDApIj5L4bq/dCBu4buRaTogcmVuIG5nbyZhZ3JhdmU7aSAxLzIgTlBULCB24bqtdCBsaeG7h3UgaW5veDwvc3Bhbj48L2xpPg0KCTxsaT48c3BhbiBzdHlsZT0iY29sb3I6cmdiKDAsIDAsIDApIj5DaGnhu4F1IHMmYWNpcmM7dSB0aCZhY2lyYztuIGNoJmVncmF2ZTtuOiAyMDBtbTwvc3Bhbj48L2xpPg0KCTxsaT48c3BhbiBzdHlsZT0iY29sb3I6cmdiKDAsIDAsIDApIj7EkMaw4budbmcgayZpYWN1dGU7bmggdGgmYWNpcmM7biDEkW86IDguMCBtbTwvc3Bhbj48L2xpPg0KPC91bD4NCg0KPHAgc3R5bGU9InRleHQtYWxpZ246anVzdGlmeSI+PHNwYW4gc3R5bGU9ImNvbG9yOnJnYigwLCAwLCAwKSI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxNHB4Ij5DaCZ1YWN1dGU7IHRoJmlhY3V0ZTtjaDogYyZvYWN1dGU7IGImYWFjdXRlO24gYyZhYWN1dGU7YyBsb+G6oWkgxJHhu5NuZyBo4buTIHbhu5tpIGThuqNpIMSRbywgxJHGsOG7nW5nIGsmaWFjdXRlO25oIG3hurd0IMSR4buTbmcgaOG7kyZuYnNwO3YmYWdyYXZlOyBjaCZhY2lyYztuIGvhur90IG7hu5FpIGtoJmFhY3V0ZTtjPC9zcGFuPjwvc3Bhbj48L3A+DQoNCjxwIHN0eWxlPSJ0ZXh0LWFsaWduOmp1c3RpZnkiPjxzcGFuIHN0eWxlPSJjb2xvcjpyZ2IoMCwgMCwgMCkiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTRweCI+SCZhdGlsZGU7eSBsaSZlY2lyYztuIGjhu4cgdHLhu7FjIHRp4bq/cCB24bubaSBjaCZ1YWN1dGU7bmcgdCZvY2lyYztpIMSR4buDIMSRxrDhu6NjIGImYWFjdXRlO28gZ2kmYWFjdXRlOyB2JmFncmF2ZTsgaOG7lyB0cuG7oyBr4bu5IHRodeG6rXQgdOG7kXQgbmjhuqV0ITwvc3Bhbj48L3NwYW4+PC9wPg0KZAIED2QWBmYPFQYDMTY5AzE2OVUvVXBsb2FkL2ltYWdlLzIw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b2NpcmM7bmcgbmdoaeG7h3AgcXUmYWFjdXRlOyB0ciZpZ3JhdmU7bmguPC9zcGFuPjwvc3Bhbj48L3A+DQoNCjxwIHN0eWxlPSJ0ZXh0LWFsaWduOmp1c3RpZnkiPjxzcGFuIHN0eWxlPSJjb2xvcjojMDAwMDAwIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjE0cHgiPjxzdHJvbmc+VGgmb2NpcmM7bmcgc+G7kSBr4bu5IHRodeG6rXQ6PC9zdHJvbmc+PC9zcGFuPjwvc3Bhbj48L3A+DQoNCjx1bD4NCgk8bGk+PHNwYW4gc3R5bGU9ImNvbG9yOiMwMDAwMDAiPsSQxrDhu51uZyBrJmlhY3V0ZTtuaCBt4bq3dCDEkeG7k25nIGjhu5M6IDEwMCBtbTwvc3Bhbj48L2xpPg0KCTxsaT48c3BhbiBzdHlsZT0iY29sb3I6IzAwMDAwMCI+Q2gmYWNpcmM7biBr4bq/dCBu4buRaTogcmVuIDEvMiBOUFQsIGNoJmFjaXJjO24gxJHhu6luZzwvc3Bhbj48L2xpPg0KCTxsaT48c3BhbiBzdHlsZT0iY29sb3I6IzAwMDAwMCI+Q8ahIGPhuqV1IMSRbzogYuG6sW5nIHRoJmVhY3V0ZTtwIGtoJm9jaXJjO25nIGfhu4k8L3NwYW4+PC9saT4NCgk8bGk+PHNwYW4gc3R5bGU9ImNvbG9yOiMwMDAwMDAiPkThuqNpIMSRbzogMC4uLjQwMCBrUGEsIDAuLi4xMDAwIGtQYSwgMC4uLjE2MDAga1BhPC9zcGFuPjwvbGk+DQoJPGxpPjxzcGFuIHN0eWxlPSJjb2xvcjojMDAwMDAwIj5N4bq3dCBrJmlhY3V0ZTtuaDogayZpYWN1dGU7bmggYW4gdG8mYWdyYXZlO24gbG/huqFpIGxhbWluYXRlZCBzYWZldHk8L3NwYW4+PC9saT4NCgk8bGk+PHNwYW4gc3R5bGU9ImNvbG9yOiMwMDAwMDAiPkPhuqVwIGLhuqNvIHbhu4c6IElQNjUgKE5FTUEgNFgpPC9zcGFuPjwvbGk+DQoJPGxpPjxzcGFuIHN0eWxlPSJjb2xvcjojMDAwMDAwIj5DJm9hY3V0ZTsgxJFp4buBbiBk4bqndSB0aGVvIHkmZWNpcmM7dSBj4bqndSBj4bunYSBraCZhYWN1dGU7Y2ggaCZhZ3JhdmU7bmc8L3NwYW4+PC9saT4NCjwvdWw+DQoNCjxwIHN0eWxlPSJ0ZXh0LWFsaWduOmp1c3RpZnkiPjxzcGFuIHN0eWxlPSJjb2xvcjojMDAwMDAwIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjE0cHgiPkNoJnVhY3V0ZTsgdGgmaWFjdXRlO2NoOiBjJm9hY3V0ZTsgYiZhYWN1dGU7biBjJmFhY3V0ZTtjIGxv4bqhaSDEkeG7k25nIGjhu5MgduG7m2kgZOG6o2kgxJFvIHYmYWdyYXZlOyBjaCZhY2lyYztuIGvhur90IG7hu5FpIGtoJmFhY3V0ZTtjPC9zcGFuPjwvc3Bhbj48L3A+DQoNCjxwIHN0eWxlPSJ0ZXh0LWFsaWduOmp1c3RpZnkiPjxzcGFuIHN0eWxlPSJjb2xvcjojMDAwMDAwIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjE0cHgiPkgmYXRpbGRlO3kgbGkmZWNpcmM7biBo4buHIHRy4buxYyB0aeG6v3AgduG7m2kgY2gmdWFjdXRlO25nIHQmb2NpcmM7aSDEkeG7gyDEkcaw4bujYyBiJmFhY3V0ZTtvIGdpJmFhY3V0ZTsgdiZhZ3JhdmU7IGjhu5cgdHLhu6Mga+G7uSB0aHXhuq10IHThu5F0IG5o4bqldCE8L3NwYW4+PC9zcGFuPjwvcD4NCmQCAQ9kFgYCAQ8PFgIeC05hdmlnYXRlVXJsBRNqYXZhc2NyaXB0OnZvaWQoMCk7FgIeA3JlbAUIbm9mb2xsb3dkAgMPFgIfAAIBFgJmD2QWAmYPFQMGYWN0aXZlFy9zYW4tcGhhbS93aWthLTY4MS5hc3B4ATFkAgUPDxYCHwEFE2phdmFzY3JpcHQ6dm9pZCgwKTsWAh8CBQhub2ZvbGxvd2QCBA9kFgJmDxYCHgRUZXh0BT3CoMKpIDIwMDkgLSAyMDIywqBC4bqjbiBxdXnhu4FuIHRodeG7mWMgduG7gSBWQVRDT00gQ28uLEx0ZA0KZGRi/tgQL7IeQkMgXzFCF+AZFzLn5w==" />
+</div>
+
+        <header class="" id="header" role="" lang="vn">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container-1004 container-full">
+                        <div class="col-md-12 col-sm-12 col-lg-3 col-xs-12">
+                            <div class="header-top">
+                                <div class="header_logo">
+                                    
+                                        <img src="/images/logo.jpg" />
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-lg-9 col-xs-12">
+                            <div class="header-search">
+                                
+                                <input onkeypress="searchKeyPress(event)" id="txtSearch" class="input-text has-icon" type="text" value="" />
+                                <a style="cursor: pointer" id="btSearch" onclick="do_search()"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                            <script type="text/javascript">
+                                var do_search = function () {
+                                    var e = document.getElementById("txtSearch");
+                                    if (e.value == "") {
+                                        e.value = "Tìm kiếm";
+                                        return false;
+                                    }
+                                    else {
+                                        if (e.value != "Tìm kiếm")
+                                            window.location = "/san-pham.html?key=" + e.value;
+                                            }
+                                            }
+                                        var sfocus = function () {
+
+                                            var e = document.getElementById("txtSearch");
+                                            if (e.value == "Tìm kiếm") {
+                                                e.value = "";
+                                            }
+                                        }
+                                        var sblur = function () {
+                                            var e = document.getElementById("txtSearch");
+                                            if (e.value == "") {
+                                                e.value = "Tìm kiếm";
+                                            }
+                                        }
+                                        function searchKeyPress(e) {
+                                            e.stopPropagation();
+                                            // look for window.event in case event isn't passed in
+                                            if (typeof e == 'undefined' && window.event) { e = window.event; }
+                                            if (e.keyCode == 13) {
+                                                do_search();
+                                                e.preventDefault();
+                                            }
+
+
+                                        }
+                            </script>
+                            <div class="header-menu">
+                                <label for="drop" class="toggle">
+                                    <p>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </p>
+                                </label>
+                                <input type="checkbox" id="drop" />
+                                <ul class="menu" style="font-weight:bold">
+                                    
+                                    <li><a id="a1" href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                                    <li><a id="a578" href="/he-thong-dich-vu-578.html">Hệ thống & Dịch vụ </a>
+                                        <ul>
+                                            
+                                                    <li><a href="/he-thong-dich-vu/he-thong-dieu-khien-qua-trinh-pcs-190.html">Hệ thống điều khiển quá trình (PCS)</a></li>
+                                                
+                                                    <li><a href="/he-thong-dich-vu/he-thong-thiet-bi-truong-an-toan-sis-188.html">Hệ thống thiết bị trường an toàn (SIS)</a></li>
+                                                
+                                                    <li><a href="/he-thong-dich-vu/he-thong-quan-trac-khi-thai-lien-tuc-cems-371.html">Hệ thống quan trắc khí thải liên tục (CEMS)</a></li>
+                                                
+                                                    <li><a href="/he-thong-dich-vu/dich-vu-bao-tri-phong-ngua-180.html">Dịch vụ bảo trì phòng ngừa</a></li>
+                                                
+                                        </ul>
+                                    </li>
+                                    <li><a id="a665" href="/giai-phap/san-pham-665.html">Sản phẩm</a>
+                                         <ul>
+                                            
+                                                    <li><a href="/giai-phap/san-pham-700.html">Thiết bị đo lường hãng WIKA</a></li>
+                                                
+                                                    <li><a href="/giai-phap/san-pham-701.html">Thiết bị đo lường nhãn hiệu Foxboro (Schneider Electric)</a></li>
+                                                
+                                                    <li><a href="/giai-phap/san-pham-714.html">Thiết bị đo lường hãng ABB</a></li>
+                                                
+                                                    <li><a href="/giai-phap/san-pham-715.html">Thiết đo bụi và lưu lượng hãng ENVEA (PCME)</a></li>
+                                                
+                                        </ul>
+
+                                    </li>
+                                    <li><a id="a666" href="/du-an-666.html">Dự án</a></li>
+                                    <li><a id="a5" href="/san-pham/hang-sankho-678.html">Hàng sẵn kho</a>
+                                        <ul>
+                                            
+                                                    <li><a href="/san-pham/wika-681.html">Wika</a>
+
+
+
+
+                                                    </li>
+                                                
+                                                    <li><a href="/san-pham/foxboro-682.html">Foxboro</a>
+
+
+
+
+                                                    </li>
+                                                
+
+                                        </ul>
+                                    </li>
+
+                                    <li><a id="a6" href="/lien-he.html">LIÊN HỆ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+    <banner>
+        <div class="home-slider">
+            <ul class="bxslider">
+                <li><img onerror="$(this).remove()" class="img" src="/upload/image/" /></li>
+            </ul>
+            <div style="background: #f5f5f5">
+                <div class="container-1004 container-full">
+                    <ol class="breadcrumb">
+                        <li><a href="/index.html">Trang chủ</a></li>
+                      
+                        
+                        
+                        <li data-id="3"><a href="/san-pham/san-pham-3.html">Sản phẩm</a></li>
+                        
+                        <li data-id="678"><a href="/san-pham/hang-san-kho-678.html">Hàng sẵn kho</a></li>
+                        
+                        <li data-id="681"><a href="/san-pham/wika-681.html">Wika</a></li>
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </banner>
+    <main class="" id="content" role="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="about-page prodx-page">
+                    <div class="container-1004 container-full">
+                        <div class="prod">
+                            <div class="col-md-3 col-sm-3 col-lg-3 col-xs-12 ">
+                                <div class="art-title-cate hidden-xs">
+                                    <h3>&nbsp;&nbsp;</h3>
+                                </div>
+                                <div class="lst-cate-manu" style="">
+                                    <div class="widget-title">Nhà sản xuất >></div>
+                                    <ul class="lst">
+                                        
+                                                <li class="active">
+                                                    <a class="item" href="/san-pham/wika-681.html" title="Wika">
+                                                        <img class="img" src="/upload/image/2017/01/04/wika_2017-01-04-141207.jpg" />
+                                                    </a>
+                                                    <ul class="lst2">
+                                                        
+                                                    </ul>
+                                                </li>
+                                            
+                                                <li class="">
+                                                    <a class="item" href="/san-pham/foxboro-682.html" title="Foxboro">
+                                                        <img class="img" src="/upload/image/2017/01/04/foxboro_2017-01-04-141246.jpg" />
+                                                    </a>
+                                                    <ul class="lst2">
+                                                        
+                                                    </ul>
+                                                </li>
+                                            
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-lg-9 col-xs-12 ">
+
+                                <div class="lst-prods" style="overflow: hidden">
+
+                                    
+                                    
+
+<div class="art-title-cate">
+    <h3>Wika</h3>
+</div>
+<div class="prodx-desc">
+    <p>
+        
+    </p>
+</div>
+<div class="lst_prods prodx-item-lst">
+    
+
+            <div class="item -item" data-id="174" id="174">
+                <div class="col-left">
+                    <div class="p-thumb" >
+                        <a class="item">
+                            <img src="/Upload/image/2019/10/30/320x188/dong-ho-do-ap-dang-ong-bourdon-mat-100mm_2019-10-30-115108.jpg" width="260" height="" alt="" />
+                        </a>
+                    </div>
+                    <div class="fl prodInfo" style="float:left; max-width: calc(60% - 15px)">
+                        <div class="p-title title">
+                            Đồng hồ đo áp dạng ống Bourdon - mặt 100mm
+                            <br />
+                            <div class="prodA">232.50.100<br /> <p>Thiết kế&nbsp; theo ti&ecirc;u chuẩn EN837-1</p>
+
+
+                                 <div class="p-price">
+                                      
+<p class="prodp  pzero">
+    <span class="np" data-value="0">0</span>
+    <span class="pp" style="display:none" data-value="0">GIÁ KM: 0 VNĐ</span>
+</p>
+                                 </div>
+
+                            </div>
+
+                        </div>
+                       
+                        <a class="btn_vdxt p-more" href="javascript:toggleLayer('commentForm174');" style="cursor: pointer; text-decoration: underline">Xem chi tiết &gt;&gt; </a>
+                    </div>
+                </div>
+              
+                <div id='commentForm174' class="commentForm content format-text" style="margin-top: 15px">
+                    <p style="text-align:justify"><span style="color:rgb(0, 0, 0)"><span style="font-size:14px"><strong>Th&ocirc;ng số kỹ thuật:</strong></span></span></p>
+
+<ul>
+	<li><span style="color:rgb(0, 0, 0)">Đường k&iacute;nh mặt đồng hồ: 100 mm</span></li>
+	<li><span style="color:rgb(0, 0, 0)">Ch&acirc;n kết nối: ren 1/2 NPT, ch&acirc;n đứng</span></li>
+	<li><span style="color:rgb(0, 0, 0); font-family:open sans,sans-serif; font-size:14px">Cơ cấu đo: bằng th&eacute;p kh&ocirc;ng gỉ</span></li>
+	<li><span style="color:rgb(0, 0, 0)">Dải đo: (-0.1)...0...0.15...0.6...1...1.4...1.6...2.5 MPa,&nbsp;0...160...250...400...600...1000...1600...2500...4000...10000&nbsp;kPa,&nbsp;0...1...1.6...2.5...4...6...10...16...40 bar,&nbsp;0 - 6 kg/cm2,&nbsp;0 - 16 kg/cm2 (psi)</span></li>
+	<li><span style="color:rgb(0, 0, 0)">C&oacute; điền dầu chống rung theo y&ecirc;u cầu</span></li>
+</ul>
+
+<p style="text-align:justify"><span style="color:rgb(0, 0, 0)"><span style="font-size:14px">Ch&uacute; th&iacute;ch: c&oacute; b&aacute;n c&aacute;c loại đồng hồ với dải đo v&agrave; ch&acirc;n kết nối kh&aacute;c</span></span></p>
+
+<p style="text-align:justify"><span style="color:rgb(0, 0, 0)"><span style="font-size:14px">H&atilde;y li&ecirc;n hệ trực tiếp với ch&uacute;ng t&ocirc;i để được b&aacute;o gi&aacute; v&agrave; hỗ trợ kỹ thuật tốt nhất!</span></span></p>
+
+                </div>
+            </div>
+
+
+        
+
+            <div class="item -item" data-id="173" id="173">
+                <div class="col-left">
+                    <div class="p-thumb" >
+                        <a class="item">
+                            <img src="/Upload/image/2019/10/30/320x188/dong-ho-do-ap-suat-loai-bourdon-tube-co-dien-dau-mat-100-mm_2019-10-30-114554.jpg" width="260" height="" alt="" />
+                        </a>
+                    </div>
+                    <div class="fl prodInfo" style="float:left; max-width: calc(60% - 15px)">
+                        <div class="p-title title">
+                            Đồng hồ đo áp suất loại Bourdon Tube, có điền dầu, mặt 100 mm
+                            <br />
+                            <div class="prodA">213.53.100<br /> <p>Thiết kế&nbsp; theo ti&ecirc;u chuẩn EN837-1</p>
+
+
+                                 <div class="p-price">
+                                      
+<p class="prodp  pzero">
+    <span class="np" data-value="0">0</span>
+    <span class="pp" style="display:none" data-value="0">GIÁ KM: 0 VNĐ</span>
+</p>
+                                 </div>
+
+                            </div>
+
+                        </div>
+                       
+                        <a class="btn_vdxt p-more" href="javascript:toggleLayer('commentForm173');" style="cursor: pointer; text-decoration: underline">Xem chi tiết &gt;&gt; </a>
+                    </div>
+                </div>
+              
+                <div id='commentForm173' class="commentForm content format-text" style="margin-top: 15px">
+                    <p style="text-align:justify"><span style="color:rgb(0, 0, 0)"><span style="font-size:14px"><strong>Th&ocirc;ng số kỹ thuật</strong></span></span></p>
+
+<ul>
+	<li style="text-align:justify"><span style="color:rgb(0, 0, 0)">Đường k&iacute;nh mặt đồng hồ: 100 mm</span></li>
+	<li style="text-align:justify"><span style="color:rgb(0, 0, 0)">Ch&acirc;n kết nối: ren&nbsp;</span><span style="color:rgb(0, 0, 0)">1/2 NPT, ch&acirc;n đứng</span></li>
+	<li style="text-align:justify"><span style="color:rgb(0, 0, 0)">Cơ cấu đo: hợp kim đồng</span></li>
+	<li style="text-align:justify"><span style="color:rgb(0, 0, 0)">Dải đo: 0 - 25kg/cm2,&nbsp;-1&hellip;0 bar,&nbsp;-1&hellip;15kg/cm2,&nbsp;-1&hellip;1 kg/cm2,&nbsp;0...16kg/cm2,&nbsp;0&hellip;5000 psi</span></li>
+	<li style="text-align:justify"><span style="color:rgb(0, 0, 0)">C&oacute; điền dầu chống rung (glycerin)</span></li>
+</ul>
+
+<p style="text-align:justify"><span style="color:rgb(0, 0, 0)"><span style="font-size:14px">Ch&uacute; th&iacute;ch: c&oacute; b&aacute;n c&aacute;c loại đồng hồ với dải đo, đường k&iacute;nh mặt đồng hồ&nbsp;v&agrave; ch&acirc;n kết nối kh&aacute;c</span></span></p>
+
+<p style="text-align:justify"><span style="color:rgb(0, 0, 0)"><span style="font-size:14px">H&atilde;y li&ecirc;n hệ trực tiếp với ch&uacute;ng t&ocirc;i để được b&aacute;o gi&aacute; v&agrave; hỗ trợ kỹ thuật tốt nhất!</span></span></p>
+
+                </div>
+            </div>
+
+
+        
+
+            <div class="item -item" data-id="172" id="172">
+                <div class="col-left">
+                    <div class="p-thumb" >
+                        <a class="item">
+                            <img src="/Upload/image/2019/10/30/320x188/dong-ho-do-ap-suat-loai-bourdon-tube-co-dien-dau-mat-63mm_2019-10-30-114009.jpg" width="260" height="" alt="" />
+                        </a>
+                    </div>
+                    <div class="fl prodInfo" style="float:left; max-width: calc(60% - 15px)">
+                        <div class="p-title title">
+                            Đồng hồ đo áp suất loại Bourdon Tube, có điền dầu, mặt 63mm
+                            <br />
+                            <div class="prodA">213.53.063<br /> <p>Thiết kế&nbsp; theo ti&ecirc;u chuẩn EN837-1</p>
+
+
+                                 <div class="p-price">
+                                      
+<p class="prodp  pzero">
+    <span class="np" data-value="0">0</span>
+    <span class="pp" style="display:none" data-value="0">GIÁ KM: 0 VNĐ</span>
+</p>
+                                 </div>
+
+                            </div>
+
+                        </div>
+                       
+                        <a class="btn_vdxt p-more" href="javascript:toggleLayer('commentForm172');" style="cursor: pointer; text-decoration: underline">Xem chi tiết &gt;&gt; </a>
+                    </div>
+                </div>
+              
+                <div id='commentForm172' class="commentForm content format-text" style="margin-top: 15px">
+                    <p style="text-align:justify"><span style="color:rgb(0, 0, 0)"><span style="font-size:14px"><strong>Th&ocirc;ng số kỹ thuật:</strong></span></span></p>
+
+<ul>
+	<li style="text-align:justify"><span style="color:rgb(0, 0, 0)">Đường k&iacute;nh mặt đồng hồ: 63&nbsp;mm</span></li>
+	<li style="text-align:justify"><span style="color:rgb(0, 0, 0)">Ch&acirc;n kết nối: ren 1/4&nbsp;NPT, ch&acirc;n đứng/ch&acirc;n sau</span></li>
+	<li style="text-align:justify"><font color="#000000">Cơ cấu đo: hợp kim đồng</font></li>
+	<li style="text-align:justify"><span style="color:rgb(0, 0, 0)">Dải đo: nhiều dải đo, từ&nbsp;0...160...250...400...600 bar,&nbsp;0 - 6kg/cm2&nbsp;(psi),&nbsp;0 -16kg/cm2 (psi), 0-140 psi, 0-160psi/bar,&nbsp;0-5000psi</span></li>
+	<li style="text-align:justify"><span style="color:rgb(0, 0, 0)">C&oacute; điền dầu chống rung (glycerin)&nbsp;</span></li>
+</ul>
+
+<p style="text-align:justify"><span style="color:rgb(0, 0, 0)"><span style="font-size:14px">Ch&uacute; th&iacute;ch: c&oacute; b&aacute;n c&aacute;c loại đồng hồ với dải đo, đường k&iacute;nh mặt đồng hồ&nbsp;v&agrave; ch&acirc;n kết nối kh&aacute;c</span></span></p>
+
+<p style="text-align:justify"><span style="color:rgb(0, 0, 0)"><span style="font-size:14px">H&atilde;y li&ecirc;n hệ trực tiếp với ch&uacute;ng t&ocirc;i để được b&aacute;o gi&aacute; v&agrave; hỗ trợ kỹ thuật tốt nhất!</span></span></p>
+
+                </div>
+            </div>
+
+
+        
+
+            <div class="item -item" data-id="171" id="171">
+                <div class="col-left">
+                    <div class="p-thumb" >
+                        <a class="item">
+                            <img src="/Upload/image/2019/10/30/320x188/dong-ho-do-nhiet-do-loai-bimetal_2019-10-30-113557.jpg" width="260" height="" alt="" />
+                        </a>
+                    </div>
+                    <div class="fl prodInfo" style="float:left; max-width: calc(60% - 15px)">
+                        <div class="p-title title">
+                            Đồng hồ đo nhiệt độ loại bimetal
+                            <br />
+                            <div class="prodA"><br /> <p>Thiết kế theo chuẩn&nbsp;EN 13190</p>
+
+
+                                 <div class="p-price">
+                                      
+<p class="prodp  pzero">
+    <span class="np" data-value="0">0</span>
+    <span class="pp" style="display:none" data-value="0">GIÁ KM: 0 VNĐ</span>
+</p>
+                                 </div>
+
+                            </div>
+
+                        </div>
+                       
+                        <a class="btn_vdxt p-more" href="javascript:toggleLayer('commentForm171');" style="cursor: pointer; text-decoration: underline">Xem chi tiết &gt;&gt; </a>
+                    </div>
+                </div>
+              
+                <div id='commentForm171' class="commentForm content format-text" style="margin-top: 15px">
+                    <p style="text-align:justify"><span style="color:rgb(0, 0, 0)"><span style="font-size:14px"><strong>Th&ocirc;ng số kỹ thuật:&nbsp;</strong></span></span></p>
+
+<ul>
+	<li><span style="color:rgb(0, 0, 0)">Dải đo: 0 - 200<span style="font-family:open sans; font-size:10.5px">o</span>C</span></li>
+	<li><span style="color:rgb(0, 0, 0)">Đường k&iacute;nh mặt đồng hồ: 100mm</span></li>
+	<li><span style="color:rgb(0, 0, 0)">Vị tr&iacute; ch&acirc;n kết nối: ch&acirc;n sau</span></li>
+	<li><span style="color:rgb(0, 0, 0)">Kết nối: ren ngo&agrave;i 1/2 NPT, vật liệu inox</span></li>
+	<li><span style="color:rgb(0, 0, 0)">Chiều s&acirc;u th&acirc;n ch&egrave;n: 200mm</span></li>
+	<li><span style="color:rgb(0, 0, 0)">Đường k&iacute;nh th&acirc;n đo: 8.0 mm</span></li>
+</ul>
+
+<p style="text-align:justify"><span style="color:rgb(0, 0, 0)"><span style="font-size:14px">Ch&uacute; th&iacute;ch: c&oacute; b&aacute;n c&aacute;c loại đồng hồ với dải đo, đường k&iacute;nh mặt đồng hồ&nbsp;v&agrave; ch&acirc;n kết nối kh&aacute;c</span></span></p>
+
+<p style="text-align:justify"><span style="color:rgb(0, 0, 0)"><span style="font-size:14px">H&atilde;y li&ecirc;n hệ trực tiếp với ch&uacute;ng t&ocirc;i để được b&aacute;o gi&aacute; v&agrave; hỗ trợ kỹ thuật tốt nhất!</span></span></p>
+
+                </div>
+            </div>
+
+
+        
+
+            <div class="item -item" data-id="169" id="169">
+                <div class="col-left">
+                    <div class="p-thumb" >
+                        <a class="item">
+                            <img src="/Upload/image/2019/10/30/320x188/dong-ho-do-ap-kem-mang-cach-ly_2019-10-30-111140.jpg" width="260" height="" alt="" />
+                        </a>
+                    </div>
+                    <div class="fl prodInfo" style="float:left; max-width: calc(60% - 15px)">
+                        <div class="p-title title">
+                            Đồng hồ đo áp kèm màng cách ly 
+                            <br />
+                            <div class="prodA">232.50.100 + 990.27<br /> 
+
+                                 <div class="p-price">
+                                      
+<p class="prodp  pzero">
+    <span class="np" data-value="0">0</span>
+    <span class="pp" style="display:none" data-value="0">GIÁ KM: 0 VNĐ</span>
+</p>
+                                 </div>
+
+                            </div>
+
+                        </div>
+                       
+                        <a class="btn_vdxt p-more" href="javascript:toggleLayer('commentForm169');" style="cursor: pointer; text-decoration: underline">Xem chi tiết &gt;&gt; </a>
+                    </div>
+                </div>
+              
+                <div id='commentForm169' class="commentForm content format-text" style="margin-top: 15px">
+                    <p><span style="color:#000000"><strong>Th&ocirc;ng số kỹ thuật:</strong></span></p>
+
+<ul style="list-style-type:square">
+	<li><span style="color:#000000">Model: 232.50.100</span></li>
+	<li><span style="color:#000000">Đường k&iacute;nh mặt đồng hồ: 100 mm</span></li>
+	<li><span style="color:#000000">Kết nối: m&agrave;ng c&aacute;ch ly&nbsp;model 990.27 (kết nối loại mặt b&iacute;ch), vật liệu SS 316</span></li>
+	<li><span style="color:#000000">Cơ cấu đo: bằng th&eacute;p kh&ocirc;ng gỉ</span></li>
+	<li><span style="color:#000000">Dải đo: 0 - 6 bar</span></li>
+	<li><span style="color:#000000">C&oacute; điền dầu chống rung theo y&ecirc;u cầu</span></li>
+</ul>
+
+<p><span style="color:#000000"><span style="font-family:open sans,sans-serif; font-size:14px">H&atilde;y li&ecirc;n hệ trực tiếp với ch&uacute;ng t&ocirc;i để được b&aacute;o gi&aacute; v&agrave; hỗ trợ kỹ thuật tốt nhất!</span></span></p>
+
+                </div>
+            </div>
+
+
+        
+
+            <div class="item -item" data-id="168" id="168">
+                <div class="col-left">
+                    <div class="p-thumb" >
+                        <a class="item">
+                            <img src="/Upload/image/2019/10/30/320x188/dong-ho-do-ap-dang-ong-bourdon-phien-ban-safety_2019-10-30-114742.jpg" width="260" height="" alt="" />
+                        </a>
+                    </div>
+                    <div class="fl prodInfo" style="float:left; max-width: calc(60% - 15px)">
+                        <div class="p-title title">
+                            Đồng hồ đo áp dạng ống Bourdon - phiên bản safety
+                            <br />
+                            <div class="prodA">232.30.100<br /> <p>Thiết kế&nbsp; theo ti&ecirc;u chuẩn EN837-1</p>
+
+
+                                 <div class="p-price">
+                                      
+<p class="prodp  pzero">
+    <span class="np" data-value="0">0</span>
+    <span class="pp" style="display:none" data-value="0">GIÁ KM: 0 VNĐ</span>
+</p>
+                                 </div>
+
+                            </div>
+
+                        </div>
+                       
+                        <a class="btn_vdxt p-more" href="javascript:toggleLayer('commentForm168');" style="cursor: pointer; text-decoration: underline">Xem chi tiết &gt;&gt; </a>
+                    </div>
+                </div>
+              
+                <div id='commentForm168' class="commentForm content format-text" style="margin-top: 15px">
+                    <p style="text-align:justify"><span style="color:#000000"><span style="font-size:14px">Thiết kế bền chắc, mặt đồng hồ dạng solid-front,&nbsp;ph&iacute;a sau c&oacute; n&uacute;t bảo vệ ph&iacute;a sau khi xảy ra qu&aacute; &aacute;p, đ&aacute;p ứng được c&aacute;c y&ecirc;u cầu khắt khe&nbsp; về an to&agrave;n trong ng&agrave;nh c&ocirc;ng nghiệp qu&aacute; tr&igrave;nh.</span></span></p>
+
+<p style="text-align:justify"><span style="color:#000000"><span style="font-size:14px"><strong>Th&ocirc;ng số kỹ thuật:</strong></span></span></p>
+
+<ul>
+	<li><span style="color:#000000">Đường k&iacute;nh mặt đồng hồ: 100 mm</span></li>
+	<li><span style="color:#000000">Ch&acirc;n kết nối: ren 1/2 NPT, ch&acirc;n đứng</span></li>
+	<li><span style="color:#000000">Cơ cấu đo: bằng th&eacute;p kh&ocirc;ng gỉ</span></li>
+	<li><span style="color:#000000">Dải đo: 0...400 kPa, 0...1000 kPa, 0...1600 kPa</span></li>
+	<li><span style="color:#000000">Mặt k&iacute;nh: k&iacute;nh an to&agrave;n loại laminated safety</span></li>
+	<li><span style="color:#000000">Cấp bảo vệ: IP65 (NEMA 4X)</span></li>
+	<li><span style="color:#000000">C&oacute; điền dầu theo y&ecirc;u cầu của kh&aacute;ch h&agrave;ng</span></li>
+</ul>
+
+<p style="text-align:justify"><span style="color:#000000"><span style="font-size:14px">Ch&uacute; th&iacute;ch: c&oacute; b&aacute;n c&aacute;c loại đồng hồ với dải đo v&agrave; ch&acirc;n kết nối kh&aacute;c</span></span></p>
+
+<p style="text-align:justify"><span style="color:#000000"><span style="font-size:14px">H&atilde;y li&ecirc;n hệ trực tiếp với ch&uacute;ng t&ocirc;i để được b&aacute;o gi&aacute; v&agrave; hỗ trợ kỹ thuật tốt nhất!</span></span></p>
+
+                </div>
+            </div>
+
+
+        
+    <script type="text/javascript">
+        var busy = false;
+        var act = 'commentForm-act';
+        function toggleLayer(whichLayer, id) {
+            var a = $('#' + whichLayer), b = a.hasClass(act), bx = a.hasClass('bx');
+            if (busy) return;
+            busy = true;
+            if (b) {
+                $('.' + act).slideUp(function () {
+                    busy = false;
+                    $('.commentForm').removeClass(act);
+                });
+                return;
+
+            }
+            var c = $('.' + act);
+            if (c.length == 0) {
+                a.addClass(act)
+                $('.' + act).slideDown(function () {
+                    busy = false;
+                    if (!bx) {
+                        $('.bxslider' + id).bxSlider({ mode: 'fade', auto: true });
+                        a.addClass('bx');
+                    }
+                });
+            }
+            else {
+                $('.' + act).slideUp(function () {
+                    $('.commentForm').removeClass(act);
+                    a.addClass(act)
+                    $('.' + act).slideDown(function () {
+                        busy = false;
+                    });
+                    if (!bx) {
+                        $('.bxslider' + id).bxSlider({ mode: 'fade', auto: true });
+                        a.addClass('bx');
+                    }
+                });
+
+            }
+            a.slideDown(function () {
+                busy = false;
+            });
+            $('#disblock').css('display', 'none');
+        }
+    </script>
+</div>
+<div style="float: left; width: 100%; height: auto">
+    
+
+<div class="pgs">
+ 
+  <a id="ctl00_ContentPlaceHolder1_ctl00_Pager_lblPrev" rel="nofollow" href="javascript:void(0);">&laquo; </a>
+   
+        <a class="ipage active"  href="/san-pham/wika-681.html">
+            1
+        </a>
+    
+    <a id="ctl00_ContentPlaceHolder1_ctl00_Pager_lblNext" rel="nofollow" href="javascript:void(0);">&raquo;</a>
+ 
+</div>
+
+
+</div>
+
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <style>
+                            .prodx-page .prodx-item-lst .-item:nth-child(2n+1){clear: both}
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        
+        $(document).ready(function () {
+            var domain = window.location.pathname;
+            var url_string = window.location.href;
+            var url = new URL(url_string);
+            var key = url.searchParams.get("key");
+            if (key.length !== 0) {
+                $('.pgs .ipage').each(function () {
+                    var a = $(this).text().trim();
+                    $(this).attr('href', domain + '?key=' + key + '&amp;pi=' + a)
+                })
+            } else {
+                $('.pgs .ipage').each(function () {
+                    var a = $(this).text().trim();
+                    $(this).attr('href', domain + '?pi=' + a)
+                })
+            }
+            
+        })
+    </script>
+
+
+    <script>
+        var prod_detail = function (id) {
+
+        }
+            ;
+        var prod = {
+            'showDetail': function (id) {
+                var d = $('div[data-for="' + id + '"]');
+                if (d.length > 0) {
+                    d.stop().slideDown();
+                }
+                else {
+                    var s = $('div[data-id="' + id + '"]');
+                    d = $('<div class="prodB" style="display:block" data-for="' + id + '"><img class="loader" src="/html/loader_green.gif"/></div>');
+                    s.after(d);
+                    $.post(window.location.href, {
+                        '_ajax_request': true,
+                        'id': id
+                    }, function (data) {
+                        $('div[data-for="' + id + '"]').html(data);
+                    }).error(function (a, textStatus, b) {
+                        $('div[data-for="' + id + '"]').html(a.responseText);
+                    })
+                }
+            },
+            'hideDetail': function (o) {
+                var a = $(o).closest('.prodB[data-for]');
+                a.stop().slideUp();
+            },
+            'tab': {
+                'click': function (o) {
+                    var a = $(o),
+                        b = a.parent(),
+                        c = b.find('select'),
+                        d = $('.tabbody');
+                    if (a.hasClass('active')) return;
+                    b.find('.active').removeClass('active');
+                    a.addClass('active');
+                    c.val(a.text());
+                    var i = b.find('.tab').index(a);
+                    d.css('display', 'none');
+                    d.eq(i).css('display', 'block');
+                },
+                'select': function (o) {
+                    var a = $(o).val(),
+                        tab;
+                    $(o).parent().find('.tab').each(function () {
+                        if ($(this).text() == a) tab = this;
+                    })
+                    if (tab) {
+                        prod.tab.click(tab);
+                    }
+
+
+                }
+            }
+        }
+            ;
+    </script>
+    <script>
+        $('#a5').addClass('active');
+    </script>
+
+        <!-- Footer ================================================== -->
+        <footer class="" id="footer" role="">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container-1004 container-full">
+                        <div class="footer">
+                            <ul style="text-transform: uppercase">
+           
+                                <li><a href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                                <li><a href="/he-thong-dich-vu-578.html">Hệ thống & Dịch vụ </a>
+
+                                </li>
+                                <li><a href="#">Sản phẩm</a></li>
+                                <li><a href="/du-an-666.html">Dự án</a></li>
+                                <li><a href="/san-pham/hang-sankho-678.html">Hàng sẵn kho</a>
+
+                                </li>
+
+                                <li><a href="/lien-he.html">LIÊN HỆ</a></li>
+
+                                <li class="lang">
+                                    <a href="/?lang=en">
+                                        <img src="/images/btn_langEN.jpg" />
+                                    </a>
+                                    <a href="/">
+                                        <img src="/images/btn_langVN.jpg" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="copyright">
+
+                                 © 2009 - 2022 Bản quyền thuộc về VATCOM Co.,Ltd
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JavaScript ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/jquery.js"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-89740908-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
+
+
+
+
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B4DAD9EB" />
+</div></form>
+</body>
+</html>
+
+
+
+

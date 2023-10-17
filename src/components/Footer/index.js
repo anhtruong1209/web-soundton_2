@@ -1,5 +1,5 @@
 import React from 'react';
-import LOGO from '../../image/logo_new.png'
+import LOGO from '../../image/vinatech.png'
 import styled from "styled-components";
 import {MdPhone, MdEmail, MdLocationOn} from "react-icons/md";
 import {useTranslation} from "react-i18next";
@@ -92,6 +92,9 @@ const Footer = () => {
                     <h2><MdLocationOn size={24} style={{marginRight: "4px"}}/>
                         <div style={{width: "80%"}}>Tầng 10, tòa nhà Việt Á, số 9 Duy Tân, 
 p.Dịch Vọng Hậu, Cầu giấy, Hà Nội, Việt Nam.</div>
+                    </h2>
+                    <h2><div size={24} style={{marginRight: "4px"}}>MST:</div>
+                        <div>0107912665</div>
                     </h2>
                 </div>
             </div>

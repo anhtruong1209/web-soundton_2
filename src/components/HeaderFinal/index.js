@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Container, MenuCon} from "./style";
-import LOGO from "../../image/logo_new.png";
+import LOGO from "../../image/vinatech.png";
 import {useTranslation} from "react-i18next";
 import {AiOutlineSearch} from "react-icons/ai";
 // import IMAGE_VIETNAM from "../../image/vietnam.png";

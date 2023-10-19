@@ -465,7 +465,7 @@ html.dark .text-muted {
 }
 #footer {
   background-color: transparent;
-  background-image: url(wp-content/uploads/2019/06/slider_bg_02.jpg);
+  background-image: url(/wp-content/uploads/2019/06/slider_bg_02.jpg);
   background-repeat: no-repeat;
   background-position: center center;
 }

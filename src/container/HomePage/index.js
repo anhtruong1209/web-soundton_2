@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container} from "./styled";
-import IMAGE_TRAPAX from '../../image/gioi_thieu_show_anh.jpg'
+import IMAGE_TRAPAX from '../../image/bg_goi_thieu.png'
 // import KINH_DOANH_1 from '../../image/kinhdoang1.png'
 // import KINH_DOANH_2 from '../../image/kinhdoanh2.png'
 import {useNavigate} from "react-router-dom";
@@ -12,8 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 import {useTranslation} from "react-i18next";
 
 import SLIDE_1 from '../../image/slider/slide9.png'
-import SLIDE_2 from '../../image/slider/slide2.png'
-import SLIDE_3 from '../../image/slider/slide3.png'
+
 import SLIDE_4 from '../../image/slider/slide4.png'
 import SLIDE_5 from '../../image/slider/slide5.png'
 import SLIDE_6 from '../../image/slider/slide6.png'
@@ -185,14 +184,7 @@ const HomePage = () => {
             id: "1",
             url: SLIDE_1
         },
-        {
-            id: "2",
-            url: SLIDE_2
-        },
-        {
-            id: "3",
-            url: SLIDE_3
-        },
+       
         {
             id: "4",
             url: SLIDE_4
@@ -254,7 +246,7 @@ const HomePage = () => {
                 {/*<img style={{width: "100%"}} src={BACKGROUND_1} alt=""/>*/}
             </div>
 
-            <div style={{margin: "auto", display: "flex", flexDirection: "column", alignItems: "center"}}>
+            {/* <div style={{margin: "auto", display: "flex", flexDirection: "column", alignItems: "center"}}>
                 <div className="title_content" style={{textAlign: "center", color: "#0A69C5"}}>
                 VINATECH
                 </div>
@@ -270,7 +262,7 @@ const HomePage = () => {
                 }}>
                     <a style={{color: "white", textDecoration: "unset"}} href="/introduce">{t('VỀ CHÚNG TÔI')}</a>
                 </div>
-            </div>
+            </div> */}
 
             <div style={{display: "flex", flexDirection: "column", alignItems: "center", marginTop: "32px"}}>
                 <div className="title_content" style={{color: "#0A69C5"}}>

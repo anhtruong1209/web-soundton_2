@@ -5,20 +5,7 @@ import {useTranslation} from "react-i18next";
 import {Tooltip} from "@mui/material";
 import styled from "styled-components";
 import Slider from "react-slick";
-import BG_1 from '../../image/about_us/1.jpg'
-import BG_2 from '../../image/about_us/2.jpg'
-import BG_3 from '../../image/about_us/3.jpg'
-import BG_4 from '../../image/about_us/4.jpg'
-import BG_5 from '../../image/about_us/5.jpg'
-import BG_6 from '../../image/about_us/6.jpg'
-import BG_7 from '../../image/about_us/7.jpg'
-import BG_8 from '../../image/about_us/8.jpg'
-import BG_9 from '../../image/about_us/9.jpg'
 
-
-const LIST_BG = [
-    BG_1, BG_2, BG_3, BG_4, BG_5, BG_6, BG_7, BG_8, BG_9
-]
 
 const SliderCustom = styled(Slider)`
   //position: absolute;
@@ -69,17 +56,7 @@ const GioiThieu = () => {
             </div>
 
 
-            <div className={"row"}>
-                <div style={{margin: "100px 0"}}>
-                    <SliderCustom {...settings2}>
-                        {LIST_BG.map((item) => {
-                            return <div style={{display: "flex", justifyContent: "center"}}>
-                                <img src={item} alt=""/>
-                            </div>
-                        })}
-                    </SliderCustom>
-                </div>
-            </div>
+
         </Container>
     );
 };

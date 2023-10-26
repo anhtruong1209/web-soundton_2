@@ -74,7 +74,7 @@ const Footer = () => {
                 </div>
                 <div id={"about_us"} className="item_footer">
                     <a><h1>{t('VỀ CHÚNG TÔI')}</h1></a>
-                    <a href="/introduce"><h2>About VINATECH</h2></a>
+                    <a href="/introduce"><h2>Giới thiệu</h2></a>
                     <a href={"https://www.global.weir"}><h2>{t('Nhà cung cấp')}</h2></a>
                 </div>
                 <div className="item_footer">
@@ -83,9 +83,7 @@ const Footer = () => {
                 </div>
                 <div className="item_footer">
                     <h1>{t('LIÊN HỆ')}</h1>
-                    <h2><MdPhone size={24} style={{marginRight: "4px"}}/>
-                        <div>0107912665</div>
-                    </h2>
+  
                     <h2><MdEmail size={24} style={{marginRight: "4px"}}/>
                         <div style={{width: "80%"}}>Vinatechacc@gmail.com</div>
                     </h2>
